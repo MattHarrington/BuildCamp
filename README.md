@@ -11,7 +11,7 @@ Don't stop there though. Take what you've learned and continue building your pro
 ## Prerequisites ##
 It's assumed that you know one programming language already. Many of you will have taken AP Computer Science and know Java. You'll be in great shape.
 
-You should spend some time learning JavaScript before arriving. A great resources is the free online book [Eloquent JavaScript](http://eloquentjavascript.net/). There's also great JavaScript tutorials on [Codecademy.com](http://www.codecademy.com/). You should know JavaScript's fundamental data types, how to make a function, how to make decisions with `if`, and how to make loops with `for`. You should also know a bit about HTML and CSS.
+You should spend some time learning JavaScript before arriving. Some great resources are the free online book [Eloquent JavaScript](http://eloquentjavascript.net/) and  [Javascript Challenges](https://www.gitbook.io/book/amischol/javascript_challenges). There's also great JavaScript tutorials on [Codecademy.com](http://www.codecademy.com/). You should know JavaScript's fundamental data types, how to make a function, how to make decisions with `if`, and how to make loops with `for`. You should also know a bit about HTML and CSS.
 
 ## What to do now ##
 Your first task in BuildCamp is to clone this repository. This gives you a local copy of it on your own computer so you can follow along. It also gives you the code samples.
