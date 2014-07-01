@@ -3,12 +3,12 @@ Session 6: Introduction to Node.js
 
 #Objective
 
-After the end of this lab, you will know how to:
+After the end of this lab, you will know:
 
 	1. What Node.js is
 	2. How to create a basic Node.js application
-	3. Asynchronous programming using callbacks
-	4. Creating basic web server
+	3. How to create a basic web server
+	4. Asynchronous programming using callbacks
 
 #What is Node.js?
 
