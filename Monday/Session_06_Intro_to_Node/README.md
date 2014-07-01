@@ -127,3 +127,144 @@ In the properties dialog set the Node.js port to 1337 and while we are at it, to
 
 <img src="ScreenShots/ss6.png"/>
 
+Here is your code put all together:
+
+    var http = require('http');
+	var port = process.env.PORT || 1337;
+	http.createServer(function (req, res) {
+		//Write the the response header with a status code of 200 (For HTTP OK)
+		//And with a plain text content type
+    	res.writeHead(200, { 'Content-Type': 'text/plain' });
+		
+		//end() will write the specified string to the response
+    	res.end('Hello World\n');
+	}).listen(port);
+
+#Understanding Callbacks: Reading a file with Node.js
+
+So far we've created a web server with a listener that wrote 'HelloWorld' to the output of the screen. To show how you do asynchronous programming in Node.js we will read data from a text file and write the text to the response message.
+
+First things first is that we need to import the file system module **fs**. Its a good idea to keep all of your **require** statements together on the top of your .js file:
+
+    var http = require('http');
+	var fs = require('fs');
+	var port = process.env.PORT || 1337;
+
+	http.createServer(function (req, res) {
+
+		//Write the the response header with a status code of 200 (For HTTP OK)
+		//And with a plain text content type
+    	res.writeHead(200, { 'Content-Type': 'text/plain' });
+		
+		//end() will write the specified string to the response
+    	res.end('Hello World\n');
+	}).listen(port);
+
+Next to your **app.js** file create a new file called **data.json**:
+
+<img src="ScreenShots/ss7.png"/>
+
+<img src="ScreenShots/ss8.png"/>
+
+Copy and paste the following JSON text (which represents a location of a snack bar) to the file:
+
+    {
+    	"description": "Snack Bar",
+    	"type": "object",
+    	"properties": {
+    	    "latitude": { "type": "number" },
+    	    "longitude": { "type": "number" }
+    	}
+	}
+
+Now lets try reading the data in the file. Using the readFile method in the fs module. According to the [documentation](http://nodejs.org/api/fs.html#fs_fs_readfile_filename_options_callback) the readFile method takes 3 arguments, the first which is a string which represents the path to the file, the second which is the encoding of the file and the last of which is a **callback**.
+
+	fs.readFile('data.json', 'utf8', function (err,data) {
+  		if (err) {
+    		return console.log(err);
+  		}
+  		console.log(data);
+	});
+
+Visual Studio creates all files with UTF-8 encoding and its the most common encoding you will encounter. In fact, you can just drop that argument and readFile will default to this encoding.
+
+The **callback** function is very important and used heavily throughout Node.js programming. The convention of a callback is to have the first parameter be the error (which is null if there is no error) and the following parameter is the resulting data from the original function call. If a callback has no data to return it will just return 1 parameter.
+
+**The typical signature of a callback**
+
+    function (err, data)
+
+The callback's functionality is very intuitive from the name. Node.js will call this function back once the data from the call to readFile has been fetched and is ready to be worked with.
+
+The object types of **err** and **data** are specific to the method being called so you should check the documentation or use a code example to understand how to use the callback parameters.
+
+Run the program and you should see the JSON text content in the file print to the console screen:
+
+<img src="ScreenShots/ss9.png"/>
+
+Now, let's output the file data to the browser instead of the console. In order to this we need to place the call to readFile inside the server message handler:
+
+    http.createServer(function (req, res) {
+    
+	    //Write the the response header with a status code of 200 (For HTTP OK)
+	    //And with a plain text content type
+	    res.writeHead(200, { 'Content-Type': 'text/plain' });
+	
+	    fs.readFile("data.json", "utf-8", function (err, data) {
+	        
+	            if (err) {
+	                console.error(err);
+	            }
+	            else {
+	                //end() will write the specified string to the response
+	                res.end(data);
+	            }
+	        }
+	    );
+
+	}).listen(port);
+
+Because the **res** object is within the closure of the readFile method the callback has access to the object and can write the result of the callback deta to it.
+
+Since the data in the data.json file is JSON, we can easily parse the text in the file into an object using the standard javascript functon JSON.parse:
+
+    var contentObject = JSON.parse(data.trim());
+                
+    res.end('The location of ' + contentObject.description + ' is located at ' + '(' + contentObject.properties.longitude + ', ' + contentObject.properties.latitude + ')');  
+
+This will parse the content into a javascript object which allows us to easily use and manipulate the data: 
+
+<br/>
+<img src="ScreenShots/ss10.png"/>
+
+Putting it all together:
+
+	var http = require('http');
+	var fs = require('fs');
+	var port = process.env.PORT || 1337;
+	
+	http.createServer(function (req, res) {
+	    
+	    //Write the the response header with a status code of 200 (For HTTP OK)
+	    //And with a plain text content type
+	    res.writeHead(200, { 'Content-Type': 'text/plain' });
+	
+	    fs.readFile("data.json", "UTF-8", function (err, data) {
+	        
+	            if (err) {
+	                console.error(err);
+	            }
+	            else {
+	                //end() will write the specified string to the response
+	                var contentObject = JSON.parse(data.trim());
+	                
+	                res.end('The location of ' + contentObject.description + ' is located at ' + '(' + contentObject.properties.longitude + ', ' + contentObject.properties.latitude + ')');  
+	            }
+	        }
+	    );
+	}).listen(port);
+
+
+
+
+There's your crash course. We will use JSON more extensively in Tuesday's lab.

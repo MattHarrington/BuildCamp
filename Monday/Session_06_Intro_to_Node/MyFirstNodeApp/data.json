@@ -1,0 +1,8 @@
+﻿{
+    "description": "Snack Bar",
+    "type": "object",
+    "properties": {
+        "latitude":  "21.333",
+        "longitude": "44.23232"
+    }
+}
