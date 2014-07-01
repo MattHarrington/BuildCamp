@@ -28,7 +28,7 @@ This will generate basic Node.js application with your simple "Hello World":
     console.log('Hello world');
 
 
-The application is just a console application and will just print out "Hello World" to the console output:
+Run the application by either hitting **F5** or hitting the play button. The application is just a console application and will just print out "Hello World" to the console output:
 
 <br/>
 ![](ScreenShots/ss2.png)
@@ -89,7 +89,7 @@ Putting it all together:
 
 	http.createServer(requestListener).listen(port);
 
-Or using an anonymous function we can shorten this to:
+Or using an [anonymous function](http://javascript.about.com/od/byexample/a/usingfunctions-anonymousfunction-example.htm) we can shorten this to:
 
 
 	http.createServer(function(req, res) {
@@ -102,16 +102,16 @@ Or using an anonymous function we can shorten this to:
     	res.end('Hello World\n');
 	}).listen(port);
 
-You should consider using anonymous functions when you don't plan on reusing the function in many places.
+You should consider using [anonymous functions](http://javascript.about.com/od/byexample/a/usingfunctions-anonymousfunction-example.htm) when you don't plan on reusing the function in many places.
 
-Place a breakpoint on the res.writeHead line. Then run the application by pressing F5 or click the play button in Visual Studio. When the application starts go to your web browser and navigate to **http://localhost:1337**:
+Place a [breakpoint](http://www.c-sharpcorner.com/UploadFile/pranayamr/setting-breakpoints-in-visual-studio/) on the res.writeHead line. Then run the application by pressing F5 or click the play button in Visual Studio. When the application starts go to your web browser and navigate to **http://localhost:1337**:
 
 <br/>
 ![](ScreenShots/ss3.png)
 
 ###Setting the right port number
 
-Often times you shouldn't use a static number to define the server port number and instead you should use what's called an environment variable. This allows your application to run in many environments such as the cloud.
+Often times you shouldn't use a static number to define the server port number and instead you should use what's called an [environment variable](http://msdn.microsoft.com/en-us/library/windows/desktop/ms682653(v=vs.85).aspx). This allows your application to run in many environments such as the cloud.
 
 To do this change the **port** variable to use the PORT environment variable:
 
@@ -183,7 +183,8 @@ Now lets try reading the data in the file. Using the readFile method in the fs m
   		if (err) {
     		return console.log(err);
   		}
-  		console.log(data);
+		//trim() will remove any leading or trailing white space
+  		console.log(data.trim());
 	});
 
 Visual Studio creates all files with UTF-8 encoding and its the most common encoding you will encounter. In fact, you can just drop that argument and readFile will default to this encoding.
@@ -217,7 +218,8 @@ Now, let's output the file data to the browser instead of the console. In order 
 	            }
 	            else {
 	                //end() will write the specified string to the response
-	                res.end(data);
+					//trim() will remove any leading or trailing white space
+	                res.end(data.trim());
 	            }
 	        }
 	    );
