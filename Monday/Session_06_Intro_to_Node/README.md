@@ -21,8 +21,7 @@ Node uses javascript, the same language that runs in web browsers to perform app
 Creating a Node server with Visual Studio is super easy. First create a new Node.js web app project by going to <b>File->New...->Project...-> Blank Node.js Console Application</b>:
 
 <br/>
-![]("Screenshots/ss1.png?raw=true")
-![]("Screenshots/ss1.png")
+![]("/Screenshots/ss1.png")
 
 This will generate basic Node.js application with your simple "Hello World":
 
@@ -32,8 +31,7 @@ This will generate basic Node.js application with your simple "Hello World":
 The application is just a console application and will just print out "Hello World" to the console output:
 
 <br/>
-![]("Screenshots/ss2.png?raw=true")
-![]("Screenshots/ss2.png")
+![]("/Screenshots/ss2.png")
 
 #Creating a Web Server
 
