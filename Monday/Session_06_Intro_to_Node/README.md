@@ -21,7 +21,7 @@ Node uses javascript, the same language that runs in web browsers to perform app
 Creating a Node server with Visual Studio is super easy. First create a new Node.js web app project by going to <b>File->New...->Project...-> Blank Node.js Console Application</b>:
 
 <br/>
-<img src="Screenshots/ss1.png"/>
+![]("Screenshots/ss1.png")
 
 This will generate basic Node.js application with your simple "Hello World":
 
@@ -31,7 +31,7 @@ This will generate basic Node.js application with your simple "Hello World":
 The application is just a console application and will just print out "Hello World" to the console output:
 
 <br/>
-<img src="Screenshots/ss2.png"/>
+![]("Screenshots/ss2.png")
 
 #Creating a Web Server
 
@@ -107,7 +107,7 @@ You should consider using anonymous functions when you don't plan on reusing the
 Place a breakpoint on the res.writeHead line. Then run the application by pressing F5 or click the play button in Visual Studio. When the application starts go to your web browser and navigate to **http://localhost:1337**:
 
 <br/>
-<img src="ScreenShots/ss3.png"/>
+![]("Screenshots/ss3.png")
 
 ###Setting the right port number
 
@@ -121,11 +121,11 @@ The behavior of the logical OR operator will default to use the PORT environment
 
 For this to work, the Node.js port value needs to be set in your project properties. Right click on the the project and click on **Properties**
 
-<img src="ScreenShots/ss4.png"/>
+![]("Screenshots/ss4.png")
 
 In the properties dialog set the Node.js port to 1337 and while we are at it, to make things easier, check '**automatically start web browser**' so that the browser starts everytime we start app:
 
-<img src="ScreenShots/ss6.png"/>
+![]("Screenshots/ss6.png")
 
 Here is your code put all together:
 
@@ -162,9 +162,9 @@ First things first is that we need to import the file system module **fs**. Its 
 
 Next to your **app.js** file create a new file called **data.json**:
 
-<img src="ScreenShots/ss7.png"/>
+![]("Screenshots/ss7.png")
 
-<img src="ScreenShots/ss8.png"/>
+![]("Screenshots/ss8.png")
 
 Copy and paste the following JSON text (which represents a location of a snack bar) to the file:
 
@@ -200,7 +200,7 @@ The object types of **err** and **data** are specific to the method being called
 
 Run the program and you should see the JSON text content in the file print to the console screen:
 
-<img src="ScreenShots/ss9.png"/>
+![]("Screenshots/ss9.png")
 
 Now, let's output the file data to the browser instead of the console. In order to this we need to place the call to readFile inside the server message handler:
 
@@ -235,7 +235,7 @@ Since the data in the data.json file is JSON, we can easily parse the text in th
 This will parse the content into a javascript object which allows us to easily use and manipulate the data: 
 
 <br/>
-<img src="ScreenShots/ss10.png"/>
+![]("Screenshots/ss10.png")
 
 Putting it all together:
 
