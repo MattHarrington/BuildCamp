@@ -12,9 +12,9 @@ After the end of this lab, you will know:
 
 #What is Node.js?
 
-Node.js is an asynchronous Input/Output (I/O) engine optimized for server applications and focuses on driving as much throughput as possible in the application. Throughput can be thought of as the measure of how much an application can process concurrently.
+Node.js is an asynchronous Input/Output (I/O) engine optimized for server applications and focuses on driving as much throughput as possible in the application. Throughput can be thought of as the measure of how much an application can process in a given time frame.
 
-Node uses javascript, the same language that runs in web browsers to perform application logic. This creates a more familiar development environment for developing on the server side of web applications.
+Node uses javascript, the same language that runs in web browsers to perform application logic. This creates a more familiar development environment for developing on the server side of a web applications.
 
 #Creating your first Node.js application
 
