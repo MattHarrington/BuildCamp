@@ -385,3 +385,191 @@ And call the api with Advanced Rest Client to validate the sorting:
 Notice the ordering of the response data lists San Francisco BART stations first, and lists East Bay stations toward the end.
 
 ![](ScreenShots/ss16.png)
+
+##Getting Real-Time Train Estimated Arrivals
+
+Whats the use of a mobile BART application if it doesn't tell you when your next train is coming?
+
+The Bart API offers [an api](http://api.bart.gov/docs/etd/etd.aspx) which can give us real time estimated arrivals of any station on the system.
+
+A call to the **GET http://bartjson.azurewebsites.net/api/etd.aspx?cmd=etd&orig=<STATION_ABBREVIATION>&key=<YOUR_API_KEY>** returns us the following JSON format:
+
+    [40]
+		0:  {
+		abbr: "LAKE"
+		name: "Lake Merritt"
+		etd: [3]
+			0:  {
+			abbreviation: "DALY"
+			destination: "Daly City"
+			minutes: "Daly City"
+			}-
+			1:  {
+			abbreviation: "FRMT"
+			destination: "Fremont"
+			minutes: "Fremont"
+			}-
+			2:  {
+			abbreviation: "RICH"
+			destination: "Richmond"
+			minutes: "Richmond"
+			}
+		}
+		1:  {
+		abbr: "FTVL"
+		name: "Fruitvale"
+		etd: [2]
+			0:  {
+			abbreviation: "DUBL"
+			destination: "Dublin/Pleasanton"
+			minutes: "Dublin/Pleasanton"
+			}-
+			1:  {
+			abbreviation: "FRMT"
+			destination: "Fremont"
+			minutes: "Fremont"
+			}-
+		}
+	...
+	]
+
+If the URL parameter **orign** specifies a particular station abbreviation, it will return an array with a single station's estimated arrivals. If **origin** is specified as **all** all estimated arrivals are provided. Notice how each station has an **etd** parameter which is an array of stations.
+
+The APIs we will implement on our server will have a slightly better RESTful convention:
+
+**GET /api/etd** - Returns all estimated time information
+
+**GET /api/etd/<STATION ABBREVIATION>** - Returns the estimated time for the particular station
+
+
+To do the first, we will define a module **etd** which will be responsible for providing the estimate data. Add a new javascript file name **etd.js** under the **routes** folder. Your routes folder should look like this now:
+
+
+![](ScreenShots/ss17.png)
+
+
+Inside etd.js add the require to unirest and make an exported function called **list**:
+
+    var unirest = require('unirest');
+
+	exports.list = function (req, res) {
+    
+
+	}
+
+We call this function list because it will return an object collection (of all Bart station estimated times).
+
+Make a call to the Bart JSON api **GET http://bartjson.azurewebsites.net/api/etd.aspx?cmd=etd&orig=all&key=<YOUR_API_KEY>**, check if there is an error, other wise return the json data:
+
+    var unirest = require('unirest');
+
+	/*
+	    GET /api/etd
+	*/
+	exports.list = function (req, res) {
+	
+    unirest.get("http://bartjson.azurewebsites.net/api/etd.aspx?cmd=etd&orig=all&key=" + process.env.API_KEY, function (apiResponse) {
+        
+	        if (apiResponse.error) {
+	            //there was an error. Indicate to the client what went wrong
+	            res.send(500, { message: apiResponse.error });
+	            return;
+	        }
+	
+	        res.send(apiResponse.body);
+    
+    	});
+
+	}
+
+Now, lets register our api with the Express by first adding a require to the **etd.js** module in **app.js**:
+
+    var etd = require('./routes/etd.js');
+
+And adding the handler as a GET api for the **/api/etd** route:
+
+	app.get('/api/etd', etd.list);
+
+Use Advanced Rest Client to validate that the API works correctly:
+
+![](ScreenShots/ss18.png)
+
+![](ScreenShots/ss19.png)
+
+
+We should also implement an API that will just return a single station, since during rush hour, there can be a lot of trains in the system with lots of estimated arrival data.
+
+This API will be **GET /api/etd/<STATION ABBREVIATION>**.
+
+Add a new export **get** in the etd module:
+
+    exports.get = function (req, res) {
+
+    }
+
+The only tricky part in this api is to grab the last part of the route to get the station abbreviation code which tells us which station to pass in the **orig** parameter to the Bart API:
+
+	exports.get = function (req, res) {
+		//split up the original url called by the client
+	    var parts = req.originalUrl.split('/');
+	    //get the last part of the url which should be our station abbreviation
+	    var station = parts[parts.length - 1];
+	}
+
+In the Express [documentation]() request.originalUrl will contain the original URL called by the client. The last part of that URL will be our station abbreviation code.
+
+Now that we have the station abbreviation we can do the same thing as the **/api/etd** route and just call the Bart Api with **orig=station**:
+
+	//pass the origin parameter set to the station name
+    unirest.get("http://bartjson.azurewebsites.net/api/etd.aspx?cmd=etd&orig=" + station + "&key=" + process.env.API_KEY, function (apiResponse) {
+        
+        if (apiResponse.error) {
+            //there was an error. Indicate to the client what went wrong
+            res.send(500, { message: apiResponse.error });
+            return;
+        }
+        
+        res.send(apiResponse.body);
+    
+    });
+
+Putting it all together the api code for **/api/etd/STATION_ABBREVIATION**:
+
+    /*
+    GET /api/<STATION_ABBREVIATION>
+	*/
+	exports.get = function (req, res) {
+	    //split up the original url called by the client
+	    var parts = req.originalUrl.split('/');
+	    //get the last part of the url which should be our station abbreviation
+	    var station = parts[parts.length - 1];
+	    
+	    //pass the origin parameter set to the station name
+	    unirest.get("http://bartjson.azurewebsites.net/api/etd.aspx?cmd=etd&orig=" + station + "&key=" + process.env.API_KEY, function (apiResponse) {
+	        
+	        if (apiResponse.error) {
+	            //there was an error. Indicate to the client what went wrong
+	            res.send(500, { message: apiResponse.error });
+	            return;
+	        }
+	        
+	        res.send(apiResponse.body);
+	    
+	    });
+	
+	}
+
+Now in **app.js** we have to register this route to the Express app:
+
+	//the * will match any route with '/api/etd/'
+	app.get('/api/etd/*', etd.get);
+
+Run the application and test the api with the Union City station by calling ** GET /api/etd/UTCY** with Advanced Rest Client:
+
+![](ScreenShots/ss20.png)
+
+![](ScreenShots/ss21.png)
+
+Notice how the API returns only 1 station.
+
+Congratulations! You've implemented everything you need on the backend to power the BartNOW web app with live data!

@@ -5,6 +5,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>BartNOWWebService</Name>
     <RootNamespace>BartNOWWebService</RootNamespace>
+    <EnvironmentVariables>API_KEY=MW9S-E7SL-26DU-VV8V</EnvironmentVariables>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -31,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="routes\etd.js" />
     <Compile Include="routes\stations.js" />
     <Content Include="package.json" />
   </ItemGroup>

@@ -7,6 +7,7 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var stations = require('./routes/stations.js');
+var etd = require('./routes/etd.js');
 var app = express();
 
 // all environments
@@ -27,7 +28,9 @@ if ('development' == app.get('env')) {
 //BEGIN API Routes
 
 app.get('/api/stations', stations.get);
-
+app.get('/api/etd', etd.list);
+//the * will match any route with '/api/etd/'
+app.get('/api/etd/*', etd.get);
 
 //END API Routes
 
