@@ -2,14 +2,15 @@
 block pageTitle
     h1 #{recipies.kind}
 block pageContent
+
     ul
-    each recipie in recipies.list
+    each recipe in recipes.list
+        //create a new well for each recipe model
         .well
-            h2
-                recipie.name
-                    img(src='#{recipie.photo}')
-                    h3 Ingredients
-                        h5
-                            ul
-                            each ingredient in recipie.ingredients
-                                li=ingredient
+            h2 #{recipe.name}
+            img(src='#{recipe.photo}')
+            h3 Ingredients
+            h5
+                ul
+                each ingredient in recipe.ingredients
+                    li=ingredient
