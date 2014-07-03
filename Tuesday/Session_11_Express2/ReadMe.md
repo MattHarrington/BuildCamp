@@ -24,7 +24,7 @@ Right click on the npm manager and click **'Install Missing npm packages**:
 
 ###Jade Files
 
-Jade is a language used to create HTML templates on the server. This allows us to write HTML much easier because it avoid having to write as many brackets and also allows for us to **bind** to bind a view to the data model (similar to what Angular.js does in the browser).
+Jade is a language used to create HTML templates on the server. This allows us to write HTML much easier because it avoid having to write as many brackets and also allows for us to **bind** a view to the underlying data model (similar to what Angular.js does in the browser).
 
 ###Stylus Files
 
@@ -40,7 +40,7 @@ The first new thing that happens is we set the views section of the app to the c
 	//mounts the 'views' directory so that it is reachable by the client
 	app.set('views', path.join(__dirname, 'views'));
 
-We then instruct that our view engine that we will be using is jade. Express can be used with a variety of view engines, but jade is the most popular choice:
+We then tell Express that our view engine that we will be using is jade. Express can be used with a variety of view engines, but jade is the most popular choice:
 	
 	app.set('view engine', 'jade');
 
@@ -52,7 +52,7 @@ We will set that we want to use stylus and that the stylus styling files are in 
 
 	app.use(require('stylus').middleware(path.join(__dirname, 'public')));
 
-Lastly, we set our **public** folder to be publicly accessible by the client. After this call, you can access anything in this folder by browsing to it (such as **/stylesheets/style.styl**
+Lastly, we set our **public** folder to be publicly accessible by the client. After this call, you can access anything in this folder by browsing to it (such as **/stylesheets/style.styl**)
 
 	app.use(express.static(path.join(__dirname, 'public')));
 
@@ -94,16 +94,26 @@ You can see that the layout.jade sort-of looks like HTML, except there aren't an
 
 Notice how we have something called **block pageContent**. This tells jade that **layout.jade** will place any block named **pageContent** from an [*extension view*](http://www.devthought.com/code/use-jade-blocks-not-layouts/) it its place.
 
-This same jade looks like this in HTML:
+This same jade looks like this in when it is rendered HTML in the browser:
 
 ![](ScreenShots/ss3.png)
+
+**Index.jade** is the default view of the page. It is an *extension view* of layout.jade (because of the **'extends** keyword). This means that it can place its content in the pageContent block inside layout.jade:
+
+**index.jade**
+
+    extends layout
+
+	block pageContent
+		h1= title
+		p Welcome to #{title}
 
 ##Creating the Home Page
 
 **Layout.jade** is pulling a references to [**Bootstrap**](http://getbootstrap.com/) which you used in BartNOW to create your responsive UI elements.
 
 
-Each page on our website will contain a **pageTitle** and a **pageContent** block. Since we don't have a pageTitle block specified in Layout.jade, we'll add one above the pageContent block. Remember, **tabs matter!!**
+Each page on our website will contain a **pageTitle** and a **pageContent** block. Since we don't have a pageTitle block specified in Layout.jade, we'll add one above the pageContent block. Remember, jade uses tabs/whitespace to determine where html elements begin and end so **be careful with the indentation**:
 
     body
 		block pageTitle
@@ -130,7 +140,7 @@ We can add a new block with a bootstrap [**jumbotron**](http://getbootstrap.com/
 			h1 Node Recipies
 			h2 Welcome! Here you will find a variety of scruptious recipies for you to make
 
-This jade code translates to this HTML:
+The block keyword doesn't map to anything in HTML and is only used by jade. This jade code translates to this HTML:
 
 	<div class="jumbotron">
 		<h1>Node Recipies</h1>
@@ -243,7 +253,7 @@ If you click on any of the items in the navbar you'll see that you get a page no
 
 ![](ScreenShots/ss8.png)
 
-In the next section we will implement the views for each of the recipe kind.
+In the next section we will implement the views for each of the recipe kinds.
 
 ##Creating the Recipes Route
 
@@ -256,11 +266,15 @@ To create a new Recipe route add a new javascript file to the routes folder:
 
 Create a new route handler **list**:
 
+**recipes.js**
+
     exports.list = function (req, res) {
 
 	}
 
 Add a reference to **data.js**, our data source for recipes:
+
+**recipes.js**
 
 	var recipies = require('../data/recipesData.js');
 
@@ -270,15 +284,18 @@ Add a reference to **data.js**, our data source for recipes:
 
 Now in **app.js** add a reference to **./routes/recipes**'
 
+**app.js**
+
 	var recipes = require('./routes/recipes.js');
 
 Then add a route that will use the recipe type as the **id** of the recipe collection and assign it to the recipes.list handler:
 
+**app.js**
 	//default route
 	app.get('/', routes.index);
 	app.get('/recipes/:id', recipes.list);
 
-The last piece we need is to create a new view is to create a new jade template file under the **views** folder:
+The last piece we need is to create a new view template **recipes.jade** file under the **views** folder:
 
 ![](ScreenShots/ss11.png)
 
@@ -429,7 +446,7 @@ However the page is still blank. First we should add a **pageTitle** block. Layo
 		//This makes a reference backing data model of this page
 		h1 #{recipes.kind}
 
-The **#{recipes.kind}** is an important concept with Jade and will use the backing data model's **recipes.kind** value as the title of the page.
+The **#{recipes.kind}** is a jade variable, and it will pull backing data model's **recipes.kind** value as the title of the page.
 
 Run the website again and you will see the clicking on a tab will change the title of the page. This is because the underlying data for the template is changing even though the actual template, **recipes.jade** does not:
 
@@ -466,13 +483,13 @@ We can do a bit better on the UI layout by using the bootstrap [**well**](http:/
             h2 #{recipe.name}
             img(src='#{recipe.photo}')
 
-Reload your webpage and you'll see that a well is created to contain the recipe. We also added the photo as to boot!:
+Reload your webpage and you'll see that a well is created to contain the recipe. We also added the photo using another jade variable **#{recipe.photo}** and which pulls the photo from the recipe data model. This is then placed as the **src** attribute to an **img** html element:
 
 ![](ScreenShots/ss17.png)
 
 Now let's add the ingredients:
 
-block pageContent
+	block pageContent
 
     ul
     each recipe in recipes.list
@@ -486,6 +503,8 @@ block pageContent
                 each ingredient in recipe.ingredients
                     li=ingredient
 
+Within the main **each** loop which iterates through reach recipe, we create new **li** elements within a **ul** element by iterating through the recipe.ingredients collection for each recipe.
+
 Reload the page again and you'll see that you get the ingredients listed!
 
 ![](ScreenShots/ss18.png)
@@ -494,13 +513,14 @@ Switching between tabs changes the underlying data model and reloads the same te
 
 ![](ScreenShots/ss19.png)
 
-One more thing to note, this page is already **mobile optimized** thanks to bootstrap. The line:
+One more thing to note, this page is already **mobile optimized** thanks to bootstrap. This code in your layout.jade does this trick:
 
 **layout.jade**
+
 	//indicate that our site is mobile optimized
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
 
-Actually tells mobile browsers that your website is optimized for mobile browsers. You can test how your site reacts to a smaller window by just re-sizing it:
+This tells mobile browsers that your website is optimized for mobile. You can test how your site reacts to a smaller window by just re-sizing it:
 
 ![](ScreenShots/ss20.png)
 
