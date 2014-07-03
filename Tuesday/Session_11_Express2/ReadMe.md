@@ -1,4 +1,4 @@
-Creating a Cooking Website with Express, Styus and Jade
+Creating a Cooking Website with Express, Stylus and Jade
 =============
 
 #Objective
