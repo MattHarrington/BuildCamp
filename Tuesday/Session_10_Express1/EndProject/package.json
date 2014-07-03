@@ -10,6 +10,8 @@
   "dependencies": {
     "express": "3.4.4",
     "jade": "*",
-    "stylus": "*"
+    "stylus": "*",
+    "unirest": "0.2.7",
+    "stable" :  "0.1.5"
   }
 }
