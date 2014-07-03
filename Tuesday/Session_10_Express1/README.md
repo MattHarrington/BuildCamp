@@ -1,4 +1,4 @@
-Creating the Backend for Your Single Page Web App
+﻿Creating the Backend for Your Single Page Web App
 =============
 
 #Objective
@@ -21,7 +21,7 @@ Express is a web application framework for node which simplifies creating web ap
 #Understanding Web APIs
 
 
-A web API is just an address to a web server (such [this one](http://bartnowapi.azurewebsites.net/api/stations/POWL) which provides textual data (non-visual) to power applications on any device. There are countless APIs all over the web you can use from Geolocating to Facial Recognition.
+A web API is just an address to a web server (such [this one](http://bartnowapi.azurewebsites.net/api/stations/POWL)) which provides textual data (non-visual) to power applications on any device. There are countless APIs all over the web you can use from Geolocating to Facial Recognition.
 
 You can use an [HTTP request](http://eloquentjavascript.net/chapter14.html) to access this data in a Web API programatically. This was discussed in the previous angular.js lab.
 
@@ -62,7 +62,7 @@ An example of URL parameters in an api request address is:
 
     https://graph.facebook.com/api/me?fields=picture
 
-The above api route on this Facebook API is specifying a URL parameter **fields**. Every URL parameter is a key-value pair. In this case the key is fields and the value is 'picture'.
+The above api route on this Facebook API is specifying a URL parameter **fields**. Every URL parameter is a key-value pair. In this case the key is 'fields' and the value is 'picture'.
 
 If you have more than one query parameter they can be separated by '&':
 
@@ -139,7 +139,7 @@ Let's create the first api. In your Visual Studio solution, add a new javascript
 
 ![](ScreenShots/ss5.png)
 
-Node.js uses Requirejs for its module system and **stations.js** will create a new module. We will use the **exports** keyword to define the **get** property of this route which will be a function:
+Node.js uses RequireJS for its module system and **stations.js** will create a new module. We will use the **exports** keyword to define the **get** property of this route which will be a function:
 
     
 	//stations.js	
@@ -159,12 +159,11 @@ Node.js uses Requirejs for its module system and **stations.js** will create a n
 
 In **app.js** add the reference to the module we just created above:
 
-    var stations = requite('./routes/stations.js');
+    var stations = require('./routes/stations.js');
 
-The **stations** module contains the **get** we can it as a route for **/api/stations** to our express app object using its **get** function which tells express that we should assign this handler for all **GET** REST requests which refer to the url path '**/api/stations**:
+The **stations** module exports the **get** function. We can assign the exported **get** function to the **/api/stations** route on our express app object, which tells express that we should assign this handler for all **GET** REST requests which refer to the url path '**/api/stations**:
 
     app.get('/api/stations', stations.get);
-
 
 Run your application and you should see the same console message pop up as before. However now it has an API available that we can call. To test this route out navigate to the **Advanced Rest Client** chrome extension. 
 
