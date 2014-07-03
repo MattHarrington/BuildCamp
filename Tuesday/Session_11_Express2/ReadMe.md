@@ -16,6 +16,12 @@ The solution contains a few more things than before:
 
 ![](ScreenShots/ss1.png)
 
+###Installing the require modules
+
+Right click on the npm manager and click **'Install Missing npm packages**:
+
+![](ScreenShots/ss0.png)
+
 ###Jade Files
 
 Jade is a language used to create HTML templates on the server. This allows us to write HTML much easier because it avoid having to write as many brackets and also allows for us to **bind** to bind a view to the data model (similar to what Angular.js does in the browser).
