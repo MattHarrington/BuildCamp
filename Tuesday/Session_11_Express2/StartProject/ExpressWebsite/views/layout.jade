@@ -1,0 +1,17 @@
+﻿//Layout.jade defines the layout of the entire website. It will contain the navbar and
+//extension views will populate pageTitle and pageContent blocks
+doctype html
+html
+  head
+    title= title
+    //indicate that our site is mobile optimized
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    //add bootstrap dependencies from CDNjs. Using a CDN to distribute these files puts less pressure
+    //on our web server and will be delivered faster to the client than our own server.
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js')
+    link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css')
+  body
+    block content

@@ -1,0 +1,15 @@
+﻿extends layout
+block pageTitle
+    h1 #{recipies.kind}
+block pageContent
+    ul
+    each recipie in recipies.list
+        .well
+            h2
+                recipie.name
+                    img(src='#{recipie.photo}')
+                    h3 Ingredients
+                        h5
+                            ul
+                            each ingredient in recipie.ingredients
+                                li=ingredient

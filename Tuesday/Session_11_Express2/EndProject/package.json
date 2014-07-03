@@ -1,0 +1,17 @@
+{
+  "name": "ExpressWebsite",
+  "version": "0.0.0",
+  "description": "ExpressWebsite",
+  "main": "app.js",
+  "author": {
+    "name": "sedouard",
+    "email": ""
+  },
+  "dependencies": {
+    "bootstrap": "^3.2.0",
+    "express": "^3.4.4",
+    "jade": "*",
+    "nib": "^1.0.3",
+    "stylus": "*"
+  }
+}
