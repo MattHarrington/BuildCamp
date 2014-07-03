@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "BartNOWWebService", "BartNOWWebService.njsproj", "{2CEE3591-4D22-4320-B576-E88BF7E3FBCF}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ExpressWebsite", "ExpressWebsite.njsproj", "{7F74E947-9306-4457-8DED-F6F81BA00B96}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2CEE3591-4D22-4320-B576-E88BF7E3FBCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2CEE3591-4D22-4320-B576-E88BF7E3FBCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2CEE3591-4D22-4320-B576-E88BF7E3FBCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2CEE3591-4D22-4320-B576-E88BF7E3FBCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F74E947-9306-4457-8DED-F6F81BA00B96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F74E947-9306-4457-8DED-F6F81BA00B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F74E947-9306-4457-8DED-F6F81BA00B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F74E947-9306-4457-8DED-F6F81BA00B96}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -212,7 +212,7 @@ Our REST API will need make a similar REST call to the BART service to provide t
 
 The [official Bart API](http://api.bart.gov/docs/stn/stns.aspx) actually responds with a response format called **XML**. Because  isn't ideal for this lab and to avoid complexity we will call this similar API we have created to provide the data in JSON:
 
-	GET - http://bartjson.azurewebsites.gov/docs/stn/stns.aspx?key=<YOUR_API_KEY>
+	GET - http://bartjson.azurewebsites.net/docs/stn/stns.aspx?key=<YOUR_API_KEY>
 
 The API will expect a URL parameter **key** which is your API key that you got when you registered. The response format is expect to to be an array of JSON objects:
 

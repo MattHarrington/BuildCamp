@@ -1,7 +1,7 @@
 {
-  "name": "BartNOWWebService",
+  "name": "ExpressWebsite",
   "version": "0.0.0",
-  "description": "BartNOWWebService",
+  "description": "ExpressWebsite",
   "main": "app.js",
   "author": {
     "name": "sedouard",
@@ -10,8 +10,6 @@
   "dependencies": {
     "express": "3.4.4",
     "jade": "*",
-    "stylus": "*",
-    "unirest": "0.2.7",
-    "stable" :  "0.1.5"
+    "stylus": "*"
   }
 }
