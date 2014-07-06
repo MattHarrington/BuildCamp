@@ -86,13 +86,15 @@ In this section we will cover:
 
 ##Part 4: Merging and Rebasing
 
-- In this section we will cover:
+In this section we will cover:
+
 - Merging branches
 - Resolving conflicts
+- Undoing a merge
 - Rebasing
 - When should you merge and when should you rebase?
 
-[Click here](Part3/README.md "Open Part 4") to open Part 4 of the workshop.
+[Click here](Part4/README.md "Open Part 4") to open Part 4 of the workshop.
 
 #Summary
 You now know how to use Git and GitHub to create and maintain repositories!

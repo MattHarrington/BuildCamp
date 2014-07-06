@@ -32,9 +32,9 @@ Since we only have one branch, not much is going on in this screen right now.
 
 To make a new branch, go back to your main project screen. The text box should say "Filter or create new". Type the name of the new branch you want.
 
-![Adding feature1](Screenshots/Branching03.png)
+![Adding "feature1"](Screenshots/Branching03.png)
 
-Now you have two branches. master, and feature1!
+Now you have two branches. "master", and "feature1"!
 
 ###Switch between branches
 
@@ -42,11 +42,11 @@ To switch between, click on the drop down menu again.
 
 ![Adding feature1](Screenshots/Branching04.png)
 
-Try selecting feature1 and make a new commit.
+Try selecting "feature1" and make a new commit.
 
-![New commit on feature1](Screenshots/Branching05.png)
+![New commit on "feature1"](Screenshots/Branching05.png)
 
-Now switch back to master branch. You'll see that your new commit disappears. If you check your folder, the files are automatically changed. When you're ready to work on your new feature again, select the branch again and you can continue working.
+Now switch back to "master" branch. You'll see that your new commit disappears. If you check your folder, the files are automatically changed. When you're ready to work on your new feature again, select the branch again and you can continue working.
 
 ###Deleting branch
 To delete a branch, you'll need to go to your branch manager again. To get there, click the branches down down menu again and hit the manage button on the top right.
