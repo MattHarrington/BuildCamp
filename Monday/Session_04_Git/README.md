@@ -48,18 +48,19 @@ Simply set your email address to "*username@users.noreply.github.com*" where *us
 
 For more information, follow the instructions here: <https://help.github.com/articles/keeping-your-email-address-private>
 
-
 ##Part 1: Your first repository
-Start up your GitHub client you downloaded in step 0.
-###Create a new local repository
-To create a new local repository, click the "+" icon in the top left corner of the program.
-###Your first commit
-###Change something!
-###Add, delete and rename files
-###Discard changes
-###Revert back
-###Break up into multiple commits
-###Ignoring files
+
+In this section we will cover:
+
+- GitHub Client overview
+- Creating a new local repository
+- Committing changes
+- Discarding changes
+- Renaming an deleting files
+- Reverting changes
+- Ignoring files
+
+[Click here](/Part1/README.md "Open Part 1") to open Part 1 of the workshop.
 
 ##Part 2: Publishing, cloning, and forking.
 ###Publish a new repository
