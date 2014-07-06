@@ -25,7 +25,27 @@ Now, we can call the function we just created
     hello world!
     undefined
 
-###That's all for now###
+### History & Editing Functions on the Fly ###
+In the Interactive Window, press the up arrow twice, and you should get this
+
+    > function hi() {
+    . 	console.log("hello world!")
+    . }
+
+We can go in and edit it, and add a more witty remark
+
+    > function hi() {
+    . 	console.log("That wasn’t flying. That was falling with style.")
+    . }
+    undefined
+
+and call it again. This makes it easy to make quick changes.
+    
+    > hi()
+    That wasn’t flying. That was falling with style.
+    undefined
+
+###Now You're Set to go to Infinity and Beyond!###
 
 	            _._                           _._
            	   ||||                           ||||
@@ -43,9 +63,9 @@ Now, we can call the function we just created
 	               `'"'|`'--.__.^.__.--'`|'"'`
 	                   \                 /
 	                    `,..---'"'---..,'
-	                      :--..___..--:    TO INFINITY...
+	                      :--..___..--:    
 	                       \         /
-	                       |`.     .'|       AND BEYOND!
+	                       |`.     .'|     
 	                       |  :___:  |
 	                       |   | |   |
 	                       |   | |   |
