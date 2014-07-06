@@ -59,7 +59,7 @@ In this section we will cover:
 - Reverting changes
 - Ignoring files
 
-[Click here](/Part1/README.md "Open Part 1") to open Part 1 of the workshop.
+[Click here](Part1/README.md "Open Part 1") to open Part 1 of the workshop.
 
 ##Part 2: Publishing, cloning, and forking.
 
@@ -69,9 +69,9 @@ In this section we will cover:
 - Push changes
 - Clone an existing repository
 - Fork an existing repository
-- Pull request
+- Pull requests
 
-[Click here](/Part2/README.md "Open Part 2") to open Part 2 of the workshop.
+[Click here](Part2/README.md "Open Part 2") to open Part 2 of the workshop.
 
 ##Part 3: Branching
 
@@ -82,7 +82,7 @@ In this section we will cover:
 - Switch between branches
 - Deleting branch
  
-[Click here](/Part3/README.md "Open Part 3") to open Part 3 of the workshop.
+[Click here](Part3/README.md "Open Part 3") to open Part 3 of the workshop.
 
 ##Part 4: Merging and Rebasing
 
@@ -92,7 +92,7 @@ In this section we will cover:
 - Rebasing
 - When should you merge and when should you rebase?
 
-[Click here](/Part3/README.md "Open Part 4") to open Part 4 of the workshop.
+[Click here](Part3/README.md "Open Part 4") to open Part 4 of the workshop.
 
 #Summary
 You now know how to use Git and GitHub to create and maintain repositories!
