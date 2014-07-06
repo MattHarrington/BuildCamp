@@ -54,11 +54,6 @@ Now that the interactive window is open lets type some JavaScript. The interacti
  	  .:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:._.:*~*:.
 
 
-#.#
-#.#
-#.#
-
-
 
 # Hello Node #
 ## Introduction to Node in Visual Studio ##
@@ -107,7 +102,7 @@ and call it again. This makes it easy to make quick changes.
     That wasn’t flying. That was falling with style.
     undefined
 
-###Now You're Set to go to Infinity and Beyond!###
+###Now You're Set to go to Infinity and Beyond with NTVS!###
 
 	            _._                           _._
            	   ||||                           ||||
@@ -140,3 +135,69 @@ and call it again. This makes it easy to make quick changes.
 	                     /    |   |    \
 	                    /.---.|   |.---.\
 	                    `.____;   :____.'
+
+# Text Editing Tools #
+Sometimes Visual Studio has too much power, and you just want to do some simple text editing.
+Download and install one of the following
+
+- [Sublime](http://www.sublimetext.com/2)
+- [Notepad++](http://notepad-plus-plus.org/download/v6.6.7.html)
+
+#PowerShell & Command Line Interface (CLI) Tools#
+In prep for Matt's session, we're going to dip our toes into the waters of PowerShell
+
+Open PowerShell as an administrator (right click, run as administrator)
+
+	PS C:\windows\system32> npm install azure-cli -g
+
+Next, we're going to head to our Azure Management Portal
+
+	PS C:\windows\system32> azure account download
+login to your account, and save the .publishsettings file.
+
+Now we're going to import that into our Powershell
+
+	PS C:\windows\system32> azure account import [your path here]
+mine looked like
+
+	PS C:\windows\system32> azure account import"C:\Users\chmathen\Downloads\Visual Sudio Ultimate with MSDN 7-6-2014 credentials.publishsettings
+
+Now GO AND DELETE THAT FILE. It's a **SECURITY RISK**. 
+
+That's it for that part of the rodeo.
+	
+	           .-'"""'-.
+	      ,____|_______|____,
+	       '._____________.'  REACH
+	           |.-- --.|    FOR THE SKY!
+	           |(o) (o)|
+	          (|       |)
+	           |   U   |
+	 __        | .___. |    YOU'RE MY
+	/|||       |       |     FAVORITE
+	||||       :       :      DEPUTY!
+	|  |/)      `.___.'
+	 \  /       __) (__
+	  \/\      /\ \ / /\
+	   \ \    /\ \ ^ / /\    THERE'S A
+	    \ \  / |  |0_/\_ \    SNAKE IN
+	     \ \/ /|  | \  /\ \    MY BOOT!
+	      \  / |  |0//\\ \ \
+	       \/  | /   \ |  \ \
+	           |/ .-. \|  / /
+	        .-'|-( ~ )-| / /   HI!
+	        \  |--`-'--|/ /   MY NAME'S WOODY!
+	         \ |       | /
+	          \|   |   |/
+	           |   |   |
+	           |   |   |     HOWDY PARDNER!
+	           |   |   |
+	           |   |   |
+	           |   |   |
+	           |___|___|     YEEEHAH COWBOY!
+	          `|---|---|'
+	          *|   |   |*
+	           |_._|_._|
+	          /'  /|\  '\    SOMEONE POISONED
+	         /   /^ ^\   \    THE WATERHOLE!
+	        /__.'     `.__\
