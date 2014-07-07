@@ -50,7 +50,8 @@ Why are we using Azure in BuildCamp?  Besides the fact that BuildCamp is sponsor
 
 In Session 6, you'll learn how to deploy to Azure from Visual Studio.  However, in this session we'll use the portal and drop down to the command line and use the Azure CLI utility you installed in Session 2. This is written in Node and runs on Windows, OSX, or Linux.
 
-1. Log onto the Azure portal
+1. Install GitHub for Windows as outlined in [Part 0 of Session 4](https://github.com/mattharrington/BuildCamp/tree/master/Monday/Session_04_Git#part-0-set-up), the Git session.
+2. Log onto the Azure portal
 2. Click the Plus sign in the lower left corner
 3. Select "Compute -> Web Site -> From Gallery"
 4. Sroll down and select "Node JS Empty Site"
