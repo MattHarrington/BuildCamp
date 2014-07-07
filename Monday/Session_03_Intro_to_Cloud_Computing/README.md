@@ -70,7 +70,7 @@ In Session 6, you'll learn how to deploy to Azure from Visual Studio.  However, 
 17. Edit `server.js` and change the message from "Hello, world!" to "Hello, Azure!".  Use Notepad++ or Sublime to edit the file.
 18. From the Git Shell, type `git add server.js`.
 19. Commit your change with `git commit -m "changed message"`
-20. Push your change to Azure with `git push azure master`
+20. Push your change to Azure with `git push`
 21. Revisit the URL of your site to see your changes
 
 Let's use the Azure command line utility.  Open a PowerShell window, and then:
