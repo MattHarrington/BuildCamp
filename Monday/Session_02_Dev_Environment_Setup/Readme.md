@@ -4,22 +4,23 @@
 Welcome to Christine's tutorial on now to set up your development environment. I'm going to try to make this as easy and painless as possible, promise.
 
 ### Step 0: Install Visual Studio 2013###
-[Here's a link to download VS](http://www.visualstudio.com/en-us/downloads) if you haven't already.     (Warning: It takes a looong time to install)
+
+Download Visual Studio 2013 Professional, Premium, or Ultimate from your Dreamspark account.  If you did not receive a Dreamspark account, contact the BuildCamp coordinator.  You must use one of those Visual Studio editions.  You can't use the Express Edition.  Visual Studio is a large download, so do this on a fast broadband connection.
 
 ### Step 1: Install Node Tools for Visual Studio (NTVS) ###
-Download and install from here: [http://bit.ly/NTVSDownload](http://bit.ly/NTVSDownload) 
 
-Note: Make sure Visual Studio is CLOSED before installing NTVS
+If you're running Visual Studio, close it.  Then download and install the Node Tools for Visual Studio from https://nodejstools.codeplex.com.  Make sure you get the version for Visual Studio 2013.
 
 ### Step 3: Verify Installation Worked ###
+
 1. Open Visual Studio
-2. Click on Views (top tool bar)
-3. Click on Other Windows 
-4. Click on Node.js Ineractive Window
+2. Click on the **View** menu (top tool bar)
+3. Click on **Other Windows** 
+4. Click on **Node.js Interactive Window**
 
-Now that the interactive window is open lets type some JavaScript. The interactive window supports everything you can do in code. Let's keep it simple, showing a variable and the location of the node.js interpreter.
+Now that the interactive window is open lets type some JavaScript. The interactive window supports everything you can do in code. Let's keep it simple, showing a variable and the location of the Node.js interpreter.
 
-    > var  i =100
+    > var  i = 100
     undefined
 	> i
 	100
@@ -58,7 +59,7 @@ Now that the interactive window is open lets type some JavaScript. The interacti
 # Hello Node #
 ## Introduction to Node in Visual Studio ##
 
-Now that we have our development environment configured, let's launch into the code
+Now that we have our development environment configured, let's launch into the code.
 
 
 ### Hello World ###
@@ -140,29 +141,31 @@ and call it again. This makes it easy to make quick changes.
 Sometimes Visual Studio has too much power, and you just want to do some simple text editing.
 Download and install one of the following
 
-- [Sublime](http://www.sublimetext.com/2)
 - [Notepad++](http://notepad-plus-plus.org/download/v6.6.7.html)
+- [Sublime](http://www.sublimetext.com/2)
 
 #PowerShell & Command Line Interface (CLI) Tools#
-In prep for Matt's session, we're going to dip our toes into the waters of PowerShell
+In preparation for Session 3, we're going to dip our toes into the waters of the Azure command line interface.
 
-Open PowerShell as an administrator (right click, run as administrator)
+Open PowerShell and then run this command:
 
-	PS C:\windows\system32> npm install azure-cli -g
+	npm install azure-cli -g
 
 Next, we're going to head to our Azure Management Portal
 
-	PS C:\windows\system32> azure account download
-login to your account, and save the .publishsettings file.
+	azure account download
 
-Now we're going to import that into our Powershell
+Login to your account, and save the `.publishsettings` file. Remember where you save the file.
 
-	PS C:\windows\system32> azure account import [your path here]
-mine looked like
+Now we're going to import that file into the Azure :
 
-	PS C:\windows\system32> azure account import"C:\Users\chmathen\Downloads\Visual Sudio Ultimate with MSDN 7-6-2014 credentials.publishsettings
+	azure account import [your path here]
 
-Now GO AND DELETE THAT FILE. It's a **SECURITY RISK**. 
+Mine looked like:
+
+	azure account import "C:\Users\chmathen\Downloads\Visual Sudio Ultimate with MSDN 7-6-2014 credentials.publishsettings"
+
+Now GO AND DELETE THAT FILE. It's a **SECURITY RISK** because it contains your account credentials.
 
 That's it for that part of the rodeo.
 	
