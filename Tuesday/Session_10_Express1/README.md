@@ -173,7 +173,7 @@ In **app.js** add the reference to the module we just created above:
 The **stations** module exports the **get** function. We can assign the exported **get** function to the **/api/stations** route on our express app object, which tells express that we should assign this handler for all **GET** REST requests which refer to the url path '**/api/stations**:
 
 ```
-    app.get('/api/stations', stations.get);
+    app.get('/api/stations', stations.list);
 ```
 
 Run your application and you should see the same console message pop up as before. However now it has an API available that we can call. To test this route out navigate to the **Advanced Rest Client** chrome extension. 
