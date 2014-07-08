@@ -5,10 +5,8 @@
   <link href="css/bootstrap.css" rel="stylesheet" />
   <link href="css/bartNow.css" rel="stylesheet" />
   <script src="js/angular.js"></script>
-  <script src="js/angular-route.js"></script>
+  <script src="js/angular-resource.js"></script>
   <script src="js/bartNowApp.js"></script>
-  <!-- Bing Maps Control reference -->
-  <script charset="UTF-8" type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
 </head>
 <body ng-controller="MainCtrl">
 
@@ -32,8 +30,8 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div id="navbar" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li ng-class="{active: $route.current.activetab == 'stations'}"><a href="#/stations">Stations</a></li>
-          <li ng-class="{active: $route.current.activetab == 'trains'}"><a href="#/trains">Trains</a></li>
+          <li class="active"><a href="#/stations">Stations</a></li>
+          <li><a href="#/trains">Trains</a></li>
         </ul>
       </div>
 
@@ -42,7 +40,33 @@
 
   <div id="mainContent" class="container">
 
-    <div ng-view></div>
+    <div class="row">
+
+      <!-- Map Column-->
+      <div class="col-xs-12 col-md-8 col-md-push-4">
+        <div id="mapDiv" class="map">
+          <div class="well"><h2>Show the Map Here</h2></div>
+        </div>
+      </div>
+
+      <!-- Stations Column -->
+      <div class="col-xs-12 col-md-4 col-md-pull-8">
+        <div class="text-center" ng-hide="stations">
+          <h3>Loading Stations...</h3>
+          <img src="../images/loader.gif" alt="" />
+        </div>
+
+        <div ng-repeat="station in stations">
+          <p>{{station.name}} ({{station.abbr}})</p>
+          <div ng-repeat="train in station.etd">
+            {{train.destination}}
+            <span ng-repeat="departure in train.estimate"> | <img class="bartlinecolor" ng-src="/images/{{departure.color | lowercase}}.png" /> {{departure.minutes}}</span>
+          </div>
+          <hr />
+        </div>
+      </div>
+
+    </div>
 
   </div>
 
