@@ -21,13 +21,12 @@ exports.list = function (req, res) {
 }
 
 /*
-    GET /api/<STATION_ABBREVIATION>
+    GET /api/:id(<STATION_ABBREVIATION>)
 */
 exports.get = function (req, res) {
-    //split up the original url called by the client
-    var parts = req.originalUrl.split('/');
-    //get the last part of the url which should be our station abbreviation
-    var station = parts[parts.length - 1];
+
+    //the id part of the route
+    var station = req.params.id;
     
     //pass the origin parameter set to the station name
     unirest.get("http://bartjson.azurewebsites.net/api/etd.aspx?cmd=etd&orig=" + station + "&key=" + process.env.API_KEY, function (apiResponse) {

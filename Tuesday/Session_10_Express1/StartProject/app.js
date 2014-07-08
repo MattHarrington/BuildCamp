@@ -24,12 +24,6 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-//BEGIN API Routes
-
-
-//END API Routes
-
-
 //Allow for Cross Origin Resource Sharing (CORS).
 //This allows our web app to access this API from another domain
 app.all('*', function (req, res, next) {
@@ -37,6 +31,14 @@ app.all('*', function (req, res, next) {
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
     next();
 });
+
+
+//BEGIN API Routes
+
+
+//END API Routes
+
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

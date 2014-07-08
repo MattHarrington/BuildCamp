@@ -1,4 +1,4 @@
-﻿Creating the Backend for Your Single Page Web App
+Session 6: Creating your web Backend with Node.js
 =============
 
 #Objective
@@ -107,11 +107,19 @@ Express makes handling REST requests much easier and hides all the gooey details
 
 Open up the starter solution [**StartProject/BartNOWWebService.sln**](StartProject/BartNOWWebService.sln) in Visual Studio.
 
-When the solution is opened, if you aren't prompted to install dependant packages, under the project in the Solution Explorer, right click on **npm->Install missing npm modules**:
+When the solution is opened, if you aren't prompted to install dependent packages, under the project in the Solution Explorer, right click on **npm->Install missing npm modules**:
 
 ![](ScreenShots/ss1.png)
 
 You need to do this because the packages aren't kept in the git repository and must be downloaded to your local directory.
+
+Add the the **routes** folder to the solution as well. We will need it to hold our route definition javascript files:
+
+![](ScreenShots/ss0.png)
+
+Your project should look like this now
+
+![](ScreenShots/ss0-1.png)
 
 Now run the starter project and you should see the following output on your console:
 
@@ -125,7 +133,7 @@ Its good for us to test our back-end without needing our web app client. A usefu
 
 #Creating a Route
 
-[Express routes](http://openmymind.net/NodeJS-Module-Exports-And-Organizing-Express-Routes) define how the server 'routes' the request to a particular handler which performs the request operation. In the above REST request example you can think of the route as the **'api/favorites** part of the url. 
+[Express routes](http://www.javascriptatoms.com/2014/01/create-url-route-node-js-express/) define how the server 'routes' the request to a particular handler which performs the request operation. In the above REST request example you can think of the route as the **'api/favorites** part of the url. 
 
 This backend service will have the following routes:
 
@@ -139,14 +147,14 @@ Let's create the first api. In your Visual Studio solution, add a new javascript
 
 ![](ScreenShots/ss5.png)
 
-Node.js uses RequireJS for its module system and **stations.js** will create a new module. We will use the **exports** keyword to define the **get** property of this route which will be a function:
+Node.js uses [RequireJS](http://www.requirejs.org/) for its module system and **stations.js** will create a new module. We will use the **exports** keyword to define the **get** property of this route which will be a function:
 
     
 	//stations.js	
 	/*
 	* GET /api/stations
 	*/
-	exports.get = function (req, res) {
+	exports.list = function (req, res) {
 	    
 	    //respond to our request with a simple answer
 	    res.send({
@@ -181,7 +189,9 @@ Now you can confirm that your API works as expected!
 
 BartNOW uses the [BART api](http://api.bart.gov/docs/stn/index.aspx) to display live subway times. Up to now you've been using a static .json data file to provide the data We will use the BART API to provide live data to our server.
 
-Our API will call the Bart data service API to provide us with real-time data to our app. First, you must [aquire a free API key](http://api.bart.gov/api/register.aspx) from Bart. API Keys allow Web API owners to manage developers who use the API. They can use it to allow, disallow or throttle API calls from other applications. **Keep your API key a secret!**
+Our API will call the Bart data service API to provide us with real-time data to our app. First, you must [aquire a free API key](http://www.bart.gov/schedules/developers/api) from Bart. The BART Api is also unique in that it has a [**pulic api key**](). That key is **MW9S-E7SL-26DU-VV8V**. 
+
+API Keys allow Web API owners to manage developers who use the API. They can use it to allow, disallow or throttle API calls from other applications. **Keep your API key a secret!**
 
 Once you get your API key from BART (via email), place your key in an environment variable of your project properties by adding **API_KEY=<YOUR_API_KEY_HERE>** to the Environment Variables text box:
 
@@ -200,7 +210,7 @@ Search for **unirest** and click **install**
 
 ![](ScreenShots/ss10.png)
 
-Npm will install the package and now we can pull the unirest module into to stations.js by adding the require statment to the top of the file. Remember, you should always put your require's on top of your file so that its clear what module's you are using.
+Npm will install the package and now we can pull the unirest module into to **stations.js** by adding the require statment to the top of the file. Remember, you should always put your require's on top of your file so that its clear what module's you are using.
 
     var unirest = require('unirest')
 
@@ -212,7 +222,7 @@ Our REST API will need make a similar REST call to the BART service to provide t
 
 The [official Bart API](http://api.bart.gov/docs/stn/stns.aspx) actually responds with a response format called **XML**. Because  isn't ideal for this lab and to avoid complexity we will call this similar API we have created to provide the data in JSON:
 
-	GET - http://bartjson.azurewebsites.net/docs/stn/stns.aspx?key=<YOUR_API_KEY>
+	GET - http://bartjson.azurewebsites.net/api/sts.aspx?key=<YOUR_API_KEY>
 
 The API will expect a URL parameter **key** which is your API key that you got when you registered. The response format is expect to to be an array of JSON objects:
 
@@ -225,6 +235,50 @@ The API will expect a URL parameter **key** which is your API key that you got w
 	    "county": "alameda",
 	    "state": "CA",
 	    "zipcode": "94612"
+		"etd" : [
+			{
+				"abbreviation": "FRMT"
+				"destination": "Fremont"
+				-estimate: [
+					{
+						"minutes": "Leaving",
+						"length": "6",
+						"color": "ORANGE",
+						"bikeflag": "1",
+						"platform":: "2"
+					},
+					{
+						"minutes": "6",
+						"length": "6",
+						"color": "ORANGE",
+						"bikeflag": "1",
+						"platform":: "2"
+					}
+					...
+				]
+			},
+			{
+				"abbreviation": "PITT"
+				"destination": "Pittsburg/Bay Point"
+				-estimate: [
+					{
+						"minutes": "Leaving",
+						"length": "6",
+						"color": "ORANGE",
+						"bikeflag": "1",
+						"platform":: "2"
+					},
+					{
+						"minutes": "6",
+						"length": "6",
+						"color": "ORANGE",
+						"bikeflag": "1",
+						"platform":: "2"
+					}
+					...
+				]
+			}
+		]
 	  },
 	  {
 	    "longitude": "-122.419694",
@@ -234,15 +288,18 @@ The API will expect a URL parameter **key** which is your API key that you got w
 	    "county": "sanfrancisco",
 	    "state": "CA",
 	    "zipcode": "94110"
-	  }
 		...
 	]
 
+In the output of this api call we get a list of 44 BART stations as well as the upcoming real-time departures for each station.
+
 Now that we know what API to call we can make the request within our **stations** api handler using the **unirest.get** function which sends a GET request to a web API:
-	
-	exports.get = function (req, res) {
+
+**stations.js**
+
+	exports.list = function (req, res) {
 		unirest.get('http://bartjson.azurewebsites.net/api/stn.aspx?key=' + process.env.API_KEY,
-	    	function (response) {
+	    	function (apiResponse) {
 	
 	    	}
 		);
@@ -252,13 +309,14 @@ Thus makes our GET request to the Bart API. Unirest.get calls the API and once i
 
 According to the [unirest documentation](https://www.npmjs.org/package/unirest), response.error will contain an error message if there was an error. Its good practice to check if something went wrong and respond appropriately:
 
-	exports.get = function (req, res) {
+**stations.js**
+	exports.list = function (req, res) {
 		unirest.get('http://bartjson.azurewebsites.net/api/stn.aspx?key=' + process.env.API_KEY,
 	    	function (apiResponse) {
 
 				if(apiResponse.error){
 					//indicate to the caller that there was an internal server error (code 500) and sent the error message
-					resp.send(500, {message: apiResponse.error});
+					res.send(500, {message: apiResponse.error});
 					return;
 				}
 
@@ -269,7 +327,7 @@ According to the [unirest documentation](https://www.npmjs.org/package/unirest),
 
 Finally, **response.body** will contain the content body of the message. The body was in JSON is and is automatically parse as a javascript object. We can simply send this back to client:
 
-    exports.get = function (req, res) {
+    exports.list = function (req, res) {
 		unirest.get('http://bartjson.azurewebsites.net/api/stn.aspx?key=' + process.env.API_KEY,
 	    	function (apiResponse) {
 
@@ -391,7 +449,7 @@ Whats the use of a mobile BART application if it doesn't tell you when your next
 
 The Bart API offers [an api](http://api.bart.gov/docs/etd/etd.aspx) which can give us real time estimated arrivals of any station on the system.
 
-A call to the **GET http://bartjson.azurewebsites.net/api/etd.aspx?cmd=etd&orig=<STATION_ABBREVIATION>&key=<YOUR_API_KEY>** returns us the following JSON format:
+A call to the **GET http://bartjson.azurewebsites.net/api/etd.aspx?cmd=etd&orig=STATION_ABBREVIATION&key=YOUR_API_KEY** returns us the following JSON format:
 
     [40]
 		0:  {
@@ -498,7 +556,7 @@ Use Advanced Rest Client to validate that the API works correctly:
 
 We should also implement an API that will just return a single station, since during rush hour, there can be a lot of trains in the system with lots of estimated arrival data.
 
-This API will be **GET /api/etd/<STATION ABBREVIATION>**.
+This API will be **GET /api/etd/STATION_ABBREVIATION**.
 
 Add a new export **get** in the etd module:
 
@@ -509,13 +567,11 @@ Add a new export **get** in the etd module:
 The only tricky part in this api is to grab the last part of the route to get the station abbreviation code which tells us which station to pass in the **orig** parameter to the Bart API:
 
 	exports.get = function (req, res) {
-		//split up the original url called by the client
-	    var parts = req.originalUrl.split('/');
-	    //get the last part of the url which should be our station abbreviation
-	    var station = parts[parts.length - 1];
+		//the ':id' part of the route will b req.params.id
+	    var station = req.params.id;
 	}
 
-In the Express [documentation]() request.originalUrl will contain the original URL called by the client. The last part of that URL will be our station abbreviation code.
+In the Express [documentation]() request.params.id will contain the ':id' portion of the request route. This id will be the abbrevation for our station (For example Powell St Station is abbreviated PWOL, so a possible route is /api/etd/POWL).
 
 Now that we have the station abbreviation we can do the same thing as the **/api/etd** route and just call the Bart Api with **orig=station**:
 
@@ -538,10 +594,8 @@ Putting it all together the api code for **/api/etd/STATION_ABBREVIATION**:
     GET /api/<STATION_ABBREVIATION>
 	*/
 	exports.get = function (req, res) {
-	    //split up the original url called by the client
-	    var parts = req.originalUrl.split('/');
-	    //get the last part of the url which should be our station abbreviation
-	    var station = parts[parts.length - 1];
+	    //the ':id' part of the route will b req.params.id
+	    var station = req.params.id;
 	    
 	    //pass the origin parameter set to the station name
 	    unirest.get("http://bartjson.azurewebsites.net/api/etd.aspx?cmd=etd&orig=" + station + "&key=" + process.env.API_KEY, function (apiResponse) {
@@ -560,8 +614,8 @@ Putting it all together the api code for **/api/etd/STATION_ABBREVIATION**:
 
 Now in **app.js** we have to register this route to the Express app:
 
-	//the * will match any route with '/api/etd/'
-	app.get('/api/etd/*', etd.get);
+	//the ':id' will match any route with '/api/etd/STATION_ABBREVIATION'
+	app.get('/api/etd/:id', etd.get);
 
 Run the application and test the api with the Union City station by calling ** GET /api/etd/UTCY** with Advanced Rest Client:
 
