@@ -26,7 +26,7 @@ The files you need to get started are included in the directory structure along 
 - You have **Visual Studio 2013** (express for Web or a full version)
 - You have the files included with this session:
 	- The **"/Assets"** directory contains the various libraries and additional files you will add to the website you build in this session.
-	- The **"/EndSolution"** directory contains the completed site for this session.  You can use this as a reference.  
+	- The **"/BootstrapEndSolution"** directory contains the completed site for this session.  You can use this as a reference.  
 
 ## Exercises ##
 

@@ -1,0 +1,34 @@
+﻿<div class="row">
+
+  <!-- Map Column-->
+  <div class="col-xs-12 col-md-8 col-md-push-4">
+    <div id="mapDiv" class="map" bart-map></div>
+
+    <!-- Display the Position or Status-->
+    <div ng-show="position">
+      <p>Position (lat,lon): ({{position.latitude}}, {{position.latitude}})</p>
+    </div>
+    <div>
+      <p>Status: {{ geoLocationStatus }}</p>
+    </div>
+
+  </div>
+
+  <!-- Stations Column -->
+  <div class="col-xs-12 col-md-4 col-md-pull-8">
+    <div class="text-center" ng-hide="stations">
+      <h3>Loading Stations...</h3>
+      <img src="../images/loader.gif" alt="" />
+    </div>
+
+    <div ng-show="stations" ng-repeat="station in stations">
+      <p><a href="#/trains/{{station.abbr}}">{{station.name}} ({{station.abbr}})</a></p>
+      <div ng-repeat="train in station.etd">
+        {{train.destination}}
+        <span ng-repeat="departure in train.estimate"> | <img class="bartlinecolor" ng-src="/images/{{departure.color | lowercase}}.png" /> {{departure.minutes}}</span>
+      </div>
+      <hr />
+    </div>
+  </div>
+
+</div>

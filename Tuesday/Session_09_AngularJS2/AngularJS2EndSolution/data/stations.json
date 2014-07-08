@@ -1,0 +1,5512 @@
+[
+  {
+    "longitude": "-122.271604",
+    "latitude": "37.803664",
+    "name": "12th St. Oakland City Center",
+    "abbr": "12TH",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94612",
+    "etd": [
+      {
+        "abbreviation": "24TH",
+        "destination": "24th Street",
+        "estimate": [
+          {
+            "minutes": "25",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "40",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "5",
+            "length": "8",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "20",
+            "length": "8",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "35",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "11",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "27",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "42",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "NCON",
+        "destination": "North Concord",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          },
+          {
+            "minutes": "17",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "6",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          },
+          {
+            "minutes": "12",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          },
+          {
+            "minutes": "22",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "3",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "12",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "20",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "3",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "18",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "33",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.419694",
+    "latitude": "37.765062",
+    "name": "16th St. Mission",
+    "abbr": "16TH",
+    "county": "sanfrancisco",
+    "state": "CA",
+    "zipcode": "94110",
+    "etd": [
+      {
+        "abbreviation": "24TH",
+        "destination": "24th Street",
+        "estimate": [
+          {
+            "minutes": "43",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "58",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "3",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "9",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "19",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DUBL",
+        "destination": "Dublin/Pleasanton",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "21",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "36",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "13",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "28",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "43",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "16",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "29",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "45",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "4",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "9",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "18",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "16",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "32",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "21",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "36",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.269029",
+    "latitude": "37.80787",
+    "name": "19th St. Oakland",
+    "abbr": "19TH",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94612",
+    "etd": [
+      {
+        "abbreviation": "24TH",
+        "destination": "24th Street",
+        "estimate": [
+          {
+            "minutes": "24",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "39",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "3",
+            "length": "8",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "18",
+            "length": "8",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "33",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "9",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "25",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "41",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "NCON",
+        "destination": "North Concord",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          },
+          {
+            "minutes": "19",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          },
+          {
+            "minutes": "14",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          },
+          {
+            "minutes": "23",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "5",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "14",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "22",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "16",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "31",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.418466",
+    "latitude": "37.752254",
+    "name": "24th St. Mission",
+    "abbr": "24TH",
+    "county": "sanfrancisco",
+    "state": "CA",
+    "zipcode": "94110",
+    "etd": [
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "5",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "11",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "22",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DUBL",
+        "destination": "Dublin/Pleasanton",
+        "estimate": [
+          {
+            "minutes": "5",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "19",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "34",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "11",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "26",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "41",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "1",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "18",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "31",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "7",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "16",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "14",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "30",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "10",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "23",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "38",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.26978",
+    "latitude": "37.853024",
+    "name": "Ashby",
+    "abbr": "ASHB",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94703",
+    "etd": [
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "10",
+            "length": "8",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "25",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "40",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "3",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "19",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "34",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "5",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "12",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "20",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.4474142",
+    "latitude": "37.72198087",
+    "name": "Balboa Park",
+    "abbr": "BALB",
+    "county": "sanfrancisco",
+    "state": "CA",
+    "zipcode": "94112",
+    "etd": [
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "1",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "10",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "17",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DUBL",
+        "destination": "Dublin/Pleasanton",
+        "estimate": [
+          {
+            "minutes": "14",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "29",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "44",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "6",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "21",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "36",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "23",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "37",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "11",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "17",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "9",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "24",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "40",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "15",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "28",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "43",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.126871",
+    "latitude": "37.697185",
+    "name": "Bay Fair",
+    "abbr": "BAYF",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94578",
+    "etd": [
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "5",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "15",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "20",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DUBL",
+        "destination": "Dublin/Pleasanton",
+        "estimate": [
+          {
+            "minutes": "11",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "25",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "40",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "3",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "8",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "16",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "9",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "23",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "38",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.075567",
+    "latitude": "37.690754",
+    "name": "Castro Valley",
+    "abbr": "CAST",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94546",
+    "etd": [
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "16",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "31",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DUBL",
+        "destination": "Dublin/Pleasanton",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "15",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "30",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.413756",
+    "latitude": "37.779528",
+    "name": "Civic Center/UN Plaza",
+    "abbr": "CIVC",
+    "county": "sanfrancisco",
+    "state": "CA",
+    "zipcode": "94102",
+    "etd": [
+      {
+        "abbreviation": "24TH",
+        "destination": "24th Street",
+        "estimate": [
+          {
+            "minutes": "41",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "56",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "1",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "7",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "17",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DUBL",
+        "destination": "Dublin/Pleasanton",
+        "estimate": [
+          {
+            "minutes": "9",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "24",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "39",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "16",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "31",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "14",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "27",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "43",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "NCON",
+        "destination": "North Concord",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "11",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "20",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "4",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "19",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "34",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "5",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "19",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "34",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.197273",
+    "latitude": "37.754006",
+    "name": "Coliseum/Oakland Airport",
+    "abbr": "COLS",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94621",
+    "etd": [
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "6",
+            "length": "8",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "13",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "23",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DUBL",
+        "destination": "Dublin/Pleasanton",
+        "estimate": [
+          {
+            "minutes": "3",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "18",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "33",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "1",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "8",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "15",
+            "length": "8",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "16",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "31",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.466233",
+    "latitude": "37.684638",
+    "name": "Colma",
+    "abbr": "COLM",
+    "county": "sanmateo",
+    "state": "CA",
+    "zipcode": "94014",
+    "etd": [
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "13",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "30",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "43",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "10",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "25",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "40",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "18",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "33",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "6",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "22",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "36",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.029095",
+    "latitude": "37.973737",
+    "name": "Concord",
+    "abbr": "CONC",
+    "county": "contracosta",
+    "state": "CA",
+    "zipcode": "94520",
+    "etd": [
+      {
+        "abbreviation": "24TH",
+        "destination": "24th Street",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "9",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "NCON",
+        "destination": "North Concord",
+        "estimate": [
+          {
+            "minutes": "32",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "48",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "13",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "21",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "27",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "1",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "16",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "31",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.4690807",
+    "latitude": "37.70612055",
+    "name": "Daly City",
+    "abbr": "DALY",
+    "county": "sanmateo",
+    "state": "CA",
+    "zipcode": "94014",
+    "etd": [
+      {
+        "abbreviation": "DUBL",
+        "destination": "Dublin/Pleasanton",
+        "estimate": [
+          {
+            "minutes": "11",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "26",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "41",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "3",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "18",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "33",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "10",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "3"
+          },
+          {
+            "minutes": "26",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "3"
+          },
+          {
+            "minutes": "40",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "3"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "13",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "23",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "6",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "21",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "37",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          },
+          {
+            "minutes": "18",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          },
+          {
+            "minutes": "32",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.268045",
+    "latitude": "37.869867",
+    "name": "Downtown Berkeley",
+    "abbr": "DBRK",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94704",
+    "etd": [
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "8",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "22",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "37",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "16",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "31",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "8",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "14",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-121.900367",
+    "latitude": "37.701695",
+    "name": "Dublin/Pleasanton",
+    "abbr": "DUBL",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94588",
+    "etd": [
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "3",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "15",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "30",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.317269",
+    "latitude": "37.925655",
+    "name": "El Cerrito del Norte",
+    "abbr": "DELN",
+    "county": "contracosta",
+    "state": "CA",
+    "zipcode": "94530",
+    "etd": [
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "13",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "28",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "43",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "22",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "36",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "9",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "16",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.2992715",
+    "latitude": "37.9030588",
+    "name": "El Cerrito Plaza",
+    "abbr": "PLZA",
+    "county": "contracosta",
+    "state": "CA",
+    "zipcode": "94530",
+    "etd": [
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "1",
+            "length": "8",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "16",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "31",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "11",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "26",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "39",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "6",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "13",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "20",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.396742",
+    "latitude": "37.792976",
+    "name": "Embarcadero",
+    "abbr": "EMBR",
+    "county": "sanfrancisco",
+    "state": "CA",
+    "zipcode": "94111",
+    "etd": [
+      {
+        "abbreviation": "24TH",
+        "destination": "24th Street",
+        "estimate": [
+          {
+            "minutes": "37",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "52",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "12",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "18",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DUBL",
+        "destination": "Dublin/Pleasanton",
+        "estimate": [
+          {
+            "minutes": "14",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "29",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "44",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "5",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "20",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "36",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "9",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "22",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "39",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "NCON",
+        "destination": "North Concord",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "1",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "11",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "16",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "9",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "24",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "39",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "15",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "30",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-121.9764",
+    "latitude": "37.557355",
+    "name": "Fremont",
+    "abbr": "FRMT",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94536",
+    "etd": [
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "11",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "26",
+            "length": "8",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "41",
+            "length": "8",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "20",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "35",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.224274",
+    "latitude": "37.774963",
+    "name": "Fruitvale",
+    "abbr": "FTVL",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94601",
+    "etd": [
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "1",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "10",
+            "length": "8",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "16",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DUBL",
+        "destination": "Dublin/Pleasanton",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "15",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "30",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "5",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "12",
+            "length": "8",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "20",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "5",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "19",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "34",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.434092",
+    "latitude": "37.732921",
+    "name": "Glen Park",
+    "abbr": "GLEN",
+    "county": "sanfrancisco",
+    "state": "CA",
+    "zipcode": "94131",
+    "etd": [
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "8",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "14",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "24",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DUBL",
+        "destination": "Dublin/Pleasanton",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "17",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "32",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "9",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "24",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "39",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "4",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "21",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "34",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "4",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "13",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "19",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "11",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "27",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "42",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "12",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "26",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "41",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.087967",
+    "latitude": "37.670399",
+    "name": "Hayward",
+    "abbr": "HAYW",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94541",
+    "etd": [
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "11",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "25",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "40",
+            "length": "8",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "12",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "20",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "5",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "19",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "34",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.123801",
+    "latitude": "37.893394",
+    "name": "Lafayette",
+    "abbr": "LAFY",
+    "county": "contracosta",
+    "state": "CA",
+    "zipcode": "94549",
+    "etd": [
+      {
+        "abbreviation": "24TH",
+        "destination": "24th Street",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "22",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "NCON",
+        "destination": "North Concord",
+        "estimate": [
+          {
+            "minutes": "19",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "35",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "8",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "14",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "14",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "29",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "44",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.265609",
+    "latitude": "37.797484",
+    "name": "Lake Merritt",
+    "abbr": "LAKE",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94607",
+    "etd": [
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "5",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "14",
+            "length": "8",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DUBL",
+        "destination": "Dublin/Pleasanton",
+        "estimate": [
+          {
+            "minutes": "11",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "26",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "41",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "8",
+            "length": "8",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "17",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "10",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "24",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "38",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.267227",
+    "latitude": "37.828415",
+    "name": "MacArthur",
+    "abbr": "MCAR",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94609",
+    "etd": [
+      {
+        "abbreviation": "24TH",
+        "destination": "24th Street",
+        "estimate": [
+          {
+            "minutes": "21",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "4"
+          },
+          {
+            "minutes": "35",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "4"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "15",
+            "length": "8",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "30",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "45",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "22",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "37",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "NCON",
+        "destination": "North Concord",
+        "estimate": [
+          {
+            "minutes": "6",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          },
+          {
+            "minutes": "22",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "1",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          },
+          {
+            "minutes": "11",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          },
+          {
+            "minutes": "17",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "8",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "17",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "13",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "4"
+          },
+          {
+            "minutes": "28",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "4"
+          },
+          {
+            "minutes": "43",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.38666",
+    "latitude": "37.599787",
+    "name": "Millbrae",
+    "abbr": "MLBR",
+    "county": "sanmateo",
+    "state": "CA",
+    "zipcode": "94030",
+    "etd": [
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "3"
+          },
+          {
+            "minutes": "21",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "36",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.401407",
+    "latitude": "37.789256",
+    "name": "Montgomery St.",
+    "abbr": "MONT",
+    "county": "sanfrancisco",
+    "state": "CA",
+    "zipcode": "94104",
+    "etd": [
+      {
+        "abbreviation": "24TH",
+        "destination": "24th Street",
+        "estimate": [
+          {
+            "minutes": "38",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "53",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "4",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "14",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "19",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DUBL",
+        "destination": "Dublin/Pleasanton",
+        "estimate": [
+          {
+            "minutes": "12",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "27",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "42",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "3",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "19",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "34",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "11",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "24",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "40",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "NCON",
+        "destination": "North Concord",
+        "estimate": [
+          {
+            "minutes": "5",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "10",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "14",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "22",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "37",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "16",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "31",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.283451",
+    "latitude": "37.87404",
+    "name": "North Berkeley",
+    "abbr": "NBRK",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94702",
+    "etd": [
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "5",
+            "length": "8",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "20",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "35",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "14",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "29",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "42",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "10",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "17",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.024597",
+    "latitude": "38.003275",
+    "name": "North Concord/Martinez",
+    "abbr": "NCON",
+    "county": "contracosta",
+    "state": "CA",
+    "zipcode": "94520",
+    "etd": [
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "16",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "24",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "13",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "28",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "43",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.1837911",
+    "latitude": "37.87836087",
+    "name": "Orinda",
+    "abbr": "ORIN",
+    "county": "contracosta",
+    "state": "CA",
+    "zipcode": "94563",
+    "etd": [
+      {
+        "abbreviation": "24TH",
+        "destination": "24th Street",
+        "estimate": [
+          {
+            "minutes": "12",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "27",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "NCON",
+        "destination": "North Concord",
+        "estimate": [
+          {
+            "minutes": "14",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "30",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "3",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "9",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "19",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "4",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "19",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "34",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-121.945154",
+    "latitude": "38.018914",
+    "name": "Pittsburg/Bay Point",
+    "abbr": "PITT",
+    "county": "contracosta",
+    "state": "CA",
+    "zipcode": "94565",
+    "etd": [
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "20",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "35",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.056013",
+    "latitude": "37.928403",
+    "name": "Pleasant Hill/Contra Costa Centre",
+    "abbr": "PHIL",
+    "county": "contracosta",
+    "state": "CA",
+    "zipcode": "94597",
+    "etd": [
+      {
+        "abbreviation": "24TH",
+        "destination": "24th Street",
+        "estimate": [
+          {
+            "minutes": "14",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "CONC",
+        "destination": "Concord",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "NCON",
+        "destination": "North Concord",
+        "estimate": [
+          {
+            "minutes": "27",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "43",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "8",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "16",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "22",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "22",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "37",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.406857",
+    "latitude": "37.784991",
+    "name": "Powell St.",
+    "abbr": "POWL",
+    "county": "sanfrancisco",
+    "state": "CA",
+    "zipcode": "94102",
+    "etd": [
+      {
+        "abbreviation": "24TH",
+        "destination": "24th Street",
+        "estimate": [
+          {
+            "minutes": "40",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "55",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "6",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "16",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "20",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DUBL",
+        "destination": "Dublin/Pleasanton",
+        "estimate": [
+          {
+            "minutes": "11",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "25",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "40",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "17",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "32",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "12",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "25",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "41",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "NCON",
+        "destination": "North Concord",
+        "estimate": [
+          {
+            "minutes": "4",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "8",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "13",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "22",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "6",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "20",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "36",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "3",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "17",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "33",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.353165",
+    "latitude": "37.936887",
+    "name": "Richmond",
+    "abbr": "RICH",
+    "county": "contracosta",
+    "state": "CA",
+    "zipcode": "94801",
+    "etd": [
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "8",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "23",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "38",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "4",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "17",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "30",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.251793",
+    "latitude": "37.844601",
+    "name": "Rockridge",
+    "abbr": "ROCK",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94618",
+    "etd": [
+      {
+        "abbreviation": "24TH",
+        "destination": "24th Street",
+        "estimate": [
+          {
+            "minutes": "18",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "32",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "NCON",
+        "destination": "North Concord",
+        "estimate": [
+          {
+            "minutes": "9",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "25",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "4",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "13",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "20",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "10",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "25",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "40",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.416038",
+    "latitude": "37.637753",
+    "name": "San Bruno",
+    "abbr": "SBRN",
+    "county": "sanmateo",
+    "state": "CA",
+    "zipcode": "94066",
+    "etd": [
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "6",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "21",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "38",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "18",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "33",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "10",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "26",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "41",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "14",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "29",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "43",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.392612",
+    "latitude": "37.616035",
+    "name": "San Francisco Int'l Airport",
+    "abbr": "SFIA",
+    "county": "sanmateo",
+    "state": "CA",
+    "zipcode": "94128",
+    "etd": [
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "13",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          },
+          {
+            "minutes": "28",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.1613112",
+    "latitude": "37.72261921",
+    "name": "San Leandro",
+    "abbr": "SANL",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94577",
+    "etd": [
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "8",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "9",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "19",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DUBL",
+        "destination": "Dublin/Pleasanton",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "22",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "37",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "5",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "12",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "19",
+            "length": "8",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "13",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "26",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "41",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.0575506",
+    "latitude": "37.63479954",
+    "name": "South Hayward",
+    "abbr": "SHAY",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94544",
+    "etd": [
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "20",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "35",
+            "length": "8",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "11",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "16",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "15",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "30",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.444116",
+    "latitude": "37.664174",
+    "name": "South San Francisco",
+    "abbr": "SSAN",
+    "county": "sanmateo",
+    "state": "CA",
+    "zipcode": "94080",
+    "etd": [
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "17",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "34",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "6",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "21",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "36",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "14",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "30",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "45",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "10",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "25",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "39",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.017867",
+    "latitude": "37.591208",
+    "name": "Union City",
+    "abbr": "UCTY",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94587",
+    "etd": [
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "15",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "30",
+            "length": "8",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "16",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "21",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "9",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "24",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "39",
+            "length": "6",
+            "color": "ORANGE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.067423",
+    "latitude": "37.905628",
+    "name": "Walnut Creek",
+    "abbr": "WCRK",
+    "county": "contracosta",
+    "state": "CA",
+    "zipcode": "94596",
+    "etd": [
+      {
+        "abbreviation": "24TH",
+        "destination": "24th Street",
+        "estimate": [
+          {
+            "minutes": "3",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "17",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "NCON",
+        "destination": "North Concord",
+        "estimate": [
+          {
+            "minutes": "23",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "39",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "5",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "13",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "19",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "10",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "25",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "40",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-121.928099",
+    "latitude": "37.699759",
+    "name": "West Dublin/Pleasanton",
+    "abbr": "WDUB",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94568",
+    "etd": [
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "6",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "21",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "36",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DUBL",
+        "destination": "Dublin/Pleasanton",
+        "estimate": [
+          {
+            "minutes": "12",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "25",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "40",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "longitude": "-122.2945822",
+    "latitude": "37.80467476",
+    "name": "West Oakland",
+    "abbr": "WOAK",
+    "county": "alameda",
+    "state": "CA",
+    "zipcode": "94607",
+    "etd": [
+      {
+        "abbreviation": "24TH",
+        "destination": "24th Street",
+        "estimate": [
+          {
+            "minutes": "30",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "45",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DALY",
+        "destination": "Daly City",
+        "estimate": [
+          {
+            "minutes": "6",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "11",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "19",
+            "length": "8",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "DUBL",
+        "destination": "Dublin/Pleasanton",
+        "estimate": [
+          {
+            "minutes": "6",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "21",
+            "length": "8",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "35",
+            "length": "9",
+            "color": "BLUE",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "FRMT",
+        "destination": "Fremont",
+        "estimate": [
+          {
+            "minutes": "11",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "27",
+            "length": "9",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "42",
+            "length": "10",
+            "color": "GREEN",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "MLBR",
+        "destination": "Millbrae",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "16",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "32",
+            "length": "10",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      },
+      {
+        "abbreviation": "NCON",
+        "destination": "North Concord",
+        "estimate": [
+          {
+            "minutes": "14",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "PITT",
+        "destination": "Pittsburg/Bay Point",
+        "estimate": [
+          {
+            "minutes": "2",
+            "length": "8",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "8",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "18",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "RICH",
+        "destination": "Richmond",
+        "estimate": [
+          {
+            "minutes": "Leaving",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "16",
+            "length": "9",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          },
+          {
+            "minutes": "30",
+            "length": "8",
+            "color": "RED",
+            "bikeflag": "1",
+            "platform": "2"
+          }
+        ]
+      },
+      {
+        "abbreviation": "SFIA",
+        "destination": "SF Airport",
+        "estimate": [
+          {
+            "minutes": "7",
+            "length": "10",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "23",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          },
+          {
+            "minutes": "37",
+            "length": "9",
+            "color": "YELLOW",
+            "bikeflag": "1",
+            "platform": "1"
+          }
+        ]
+      }
+    ]
+  }
+]

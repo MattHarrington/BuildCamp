@@ -1,0 +1,33 @@
+﻿<div ng-show="station">
+  <h2><small>Trains Departing From:</small><br />{{station.name}} ({{station.abbr}})</h2>
+  <div class="row" ng-repeat="train in station.etd">
+    <div class="col-xs-12 col-md-4">
+      <h3><small>To:</small> {{train.destination}}</h3>
+    </div>
+
+    <div class="col-xs-12 col-md-8">
+      <table class="table table-bordered table-responsive" style="">
+        <thead>
+          <tr>
+            <th>Line</th>
+            <th>Departs(mins)</th>
+            <th>Platform</th>
+            <th>Cars</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="departure in train.estimate">
+            <td><img class="bartlinecolor" ng-src="/images/{{departure.color | lowercase}}.png" /></td>
+            <td>{{departure.minutes}}</td>
+            <td>{{departure.platform}}</td>
+            <td>{{departure.length}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div ng-hide="station">
+  <h1>You must first pick a station from the stations tab!</h1>
+</div>

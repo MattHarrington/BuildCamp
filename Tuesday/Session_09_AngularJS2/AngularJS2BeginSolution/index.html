@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html ng-app="bartNowApp">
+<head>
+  <title>bartNow</title>
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/bartNow.css" rel="stylesheet" />
+  <script src="js/angular.js"></script>
+  <script src="js/angular-route.js"></script>
+  <script src="js/bartNowApp.js"></script>
+  <!-- Bing Maps Control reference -->
+  <script charset="UTF-8" type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+</head>
+<body ng-controller="MainCtrl">
+
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+      <div class="navbar-header">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#"><img src="images/BartNowLogoWide_154x24.png" alt="" /></a>
+
+        <!-- Hamburger Button -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li ng-class="{active: $route.current.activetab == 'stations'}"><a href="#/stations">Stations</a></li>
+          <li ng-class="{active: $route.current.activetab == 'trains'}"><a href="#/trains">Trains</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <div id="mainContent" class="container">
+
+    <div ng-view></div>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+</body>
+</html>
