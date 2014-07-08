@@ -593,10 +593,10 @@ All along, the **Stations** and **Trains** links have bee up in the Navigation B
 
 		 <!-- Display the Position or Status-->
 		 <div ng-show="position">
-			<p>Position (lat,lon): (**{{**position.latitude**}}**, **{{**position.latitude**}}**)</p>
+			<p>Position (lat,lon): ({{position.latitude}}, {{position.latitude}})</p>
 		 </div>
 		 <div>
-			<p>Status: **{{** geoLocationStatus **}}**</p>
+			<p>Status: {{ geoLocationStatus }}</p>
 		 </div>
 
 	  </div>
@@ -609,10 +609,10 @@ All along, the **Stations** and **Trains** links have bee up in the Navigation B
 		 </div>
 
 		 <div ng-show="stations" ng-repeat="station in stations">
-			<p><a href="#/trains/{{station.abbr}}">**{{**station.name**}}** (**{{**station.abbr**}}**)</a></p>
+			<p><a href="#/trains/{{station.abbr}}">{{station.name}} ({{station.abbr}})</a></p>
 			<div ng-repeat="train in station.etd">
-			  **{{**train.destination**}}**
-			  <span ng-repeat="departure in train.estimate"> | <img class="bartlinecolor" ng-src="/images/{{departure.color | lowercase}}.png" /> **{{**departure.minutes**}}**</span>
+			  {{train.destination}}
+			  <span ng-repeat="departure in train.estimate"> | <img class="bartlinecolor" ng-src="/images/{{departure.color | lowercase}}.png" /> {{departure.minutes}}</span>
 			</div>
 			<hr />
 		 </div>
