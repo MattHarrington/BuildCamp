@@ -149,7 +149,7 @@ Let's create the first api. In your Visual Studio solution, add a new javascript
 
 Node.js uses [RequireJS](http://www.requirejs.org/) for its module system and **stations.js** will create a new module. We will use the **exports** keyword to define the **get** property of this route which will be a function:
 
-    
+```js    
 	//stations.js	
 	/*
 	* GET /api/stations
@@ -164,14 +164,17 @@ Node.js uses [RequireJS](http://www.requirejs.org/) for its module system and **
 	    return;
 	
 	}
-
+```
 In **app.js** add the reference to the module we just created above:
 
+```js
     var stations = require('./routes/stations.js');
-
+```
 The **stations** module exports the **get** function. We can assign the exported **get** function to the **/api/stations** route on our express app object, which tells express that we should assign this handler for all **GET** REST requests which refer to the url path '**/api/stations**:
 
+```
     app.get('/api/stations', stations.get);
+```
 
 Run your application and you should see the same console message pop up as before. However now it has an API available that we can call. To test this route out navigate to the **Advanced Rest Client** chrome extension. 
 
@@ -212,7 +215,9 @@ Search for **unirest** and click **install**
 
 Npm will install the package and now we can pull the unirest module into to **stations.js** by adding the require statment to the top of the file. Remember, you should always put your require's on top of your file so that its clear what module's you are using.
 
+```js
     var unirest = require('unirest')
+```
 
 **Implementing the API GET - /api/stations**
 
@@ -226,6 +231,7 @@ The [official Bart API](http://api.bart.gov/docs/stn/stns.aspx) actually respond
 
 The API will expect a URL parameter **key** which is your API key that you got when you registered. The response format is expect to to be an array of JSON objects:
 
+```json
     [
 	  {
 	    "longitude": "-122.271604",
@@ -290,13 +296,14 @@ The API will expect a URL parameter **key** which is your API key that you got w
 	    "zipcode": "94110"
 		...
 	]
-
+```
 In the output of this api call we get a list of 44 BART stations as well as the upcoming real-time departures for each station.
 
 Now that we know what API to call we can make the request within our **stations** api handler using the **unirest.get** function which sends a GET request to a web API:
 
 **stations.js**
 
+```js
 	exports.list = function (req, res) {
 		unirest.get('http://bartjson.azurewebsites.net/api/stn.aspx?key=' + process.env.API_KEY,
 	    	function (apiResponse) {
@@ -304,12 +311,13 @@ Now that we know what API to call we can make the request within our **stations*
 	    	}
 		);
 	}
-
+```
 Thus makes our GET request to the Bart API. Unirest.get calls the API and once it gets the response from API, it will execute the callback function provided to it with a **response** object.
 
 According to the [unirest documentation](https://www.npmjs.org/package/unirest), response.error will contain an error message if there was an error. Its good practice to check if something went wrong and respond appropriately:
 
 **stations.js**
+```js
 	exports.list = function (req, res) {
 		unirest.get('http://bartjson.azurewebsites.net/api/stn.aspx?key=' + process.env.API_KEY,
 	    	function (apiResponse) {
@@ -324,9 +332,11 @@ According to the [unirest documentation](https://www.npmjs.org/package/unirest),
 	    	}
 		);
 	}
+```
 
 Finally, **response.body** will contain the content body of the message. The body was in JSON is and is automatically parse as a javascript object. We can simply send this back to client:
 
+```js
     exports.list = function (req, res) {
 		unirest.get('http://bartjson.azurewebsites.net/api/stn.aspx?key=' + process.env.API_KEY,
 	    	function (apiResponse) {
@@ -342,6 +352,7 @@ Finally, **response.body** will contain the content body of the message. The bod
 	    	}
 		);
 	}
+```
 
 Place a breakpoint at **resp.send(apiResponse.body)**. Start up the application and use Advanced Rest Client to test the API. Example the apiResponse.body:
 
@@ -359,7 +370,9 @@ Congratulations you've hooked up the first api!
 
 Add the require to the station.js file:
 
+```js
     var stable = require('stable');
+```
 
 This is great! However by default the BartAPi gives us the list of stations by alphabetical order. It would be more useful if we could sort the collection by nearest location.
 
@@ -367,18 +380,21 @@ Since the data from the Bart API contains latitude and logitude, we can calculat
 
 Lets start by creating a function that will take 3 parameters, **lat, lon, and stationData**. The first two represents the geographic location, and stationData is the stations array returned by the Bart Api:
 
-
+```js
     function sortByLocation(lat, lon, stationData) {
 		
 		
 	}
-
+```
 First we need to compute the distance between the provided lat and lon with the distance of each station. Remember the distance formula? sqrt((y1 - y2)^ + (x1-x2)^2):
 
+```js
     Math.sqrt(Math.pow(lat - stationData[i].latitude, 2) + Math.pow(lon - stationData[i].longitude, 2));
+```
 
 We can actually dynamically add fields to each station object by simply assigning a value to a newly name property. This is one of the best things about javascript:
 
+```js
 	//compute distances from lat lon to each station
     for (var i in stationData) {
         var stationObject = stationData[i];
@@ -387,6 +403,7 @@ We can actually dynamically add fields to each station object by simply assignin
 
         stationObject.distance = Math.sqrt(Math.pow(lat - stationData[i].latitude, 2) + Math.pow(lon - stationData[i].longitude, 2));
     }
+```
 
 Debugging you can see that we've added the distance data to the **stationObject**:
 
@@ -394,13 +411,15 @@ Debugging you can see that we've added the distance data to the **stationObject*
 
 Now let's deal with sorting the station array. We don't really have to do much actually. Since **stable** is a sorting library it can do it for us. We can use the **stable.sort** function which takes the array to perform the sort and a function which is called with two variables **a** and **b** which defines returns true if **a > b** where a and b are items in the array **stationData**:
 
+```js
     return stable(stationData, function (a, b) {
         return a.distance > b.distance;
     });
-
+```
 
 All together the function to be placed in station.js looks like:
 
+```js
     /**
     Sorts a given array of stations with the first element being the closest statioand the
     last being the farthest. Returns the sorted array
@@ -419,9 +438,10 @@ All together the function to be placed in station.js looks like:
 	        return a.distance > b.distance;
 	    });
 	}
-
+```
 Now in the api get handler we can accept query parameters for **lat** and **lon** on the on our REST api by checking for **req.query.lat** and **req.query.lon**:
 
+```js
     if (req.query.lat && req.query.lon) {
         //caller specified a reference location
         res.send(sortByLocation(req.query.lat, req.query.lon, apiResponse.body));
@@ -430,6 +450,7 @@ Now in the api get handler we can accept query parameters for **lat** and **lon*
 		//no lat and/or lon specified so just return the alphabetical array
         res.send(apiResponse.body);
     }
+```
 
 To validate that these optional parameters we first should pick a reasonable latitude and longitude from a [map](http://www.bing.com/maps/):
 
@@ -451,6 +472,7 @@ The Bart API offers [an api](http://api.bart.gov/docs/etd/etd.aspx) which can gi
 
 A call to the **GET http://bartjson.azurewebsites.net/api/etd.aspx?cmd=etd&orig=STATION_ABBREVIATION&key=YOUR_API_KEY** returns us the following JSON format:
 
+```json
     [40]
 		0:  {
 		abbr: "LAKE"
@@ -489,6 +511,7 @@ A call to the **GET http://bartjson.azurewebsites.net/api/etd.aspx?cmd=etd&orig=
 		}
 	...
 	]
+```
 
 If the URL parameter **orign** specifies a particular station abbreviation, it will return an array with a single station's estimated arrivals. If **origin** is specified as **all** all estimated arrivals are provided. Notice how each station has an **etd** parameter which is an array of stations.
 
@@ -507,17 +530,20 @@ To do the first, we will define a module **etd** which will be responsible for p
 
 Inside etd.js add the require to unirest and make an exported function called **list**:
 
+```js
     var unirest = require('unirest');
 
 	exports.list = function (req, res) {
     
 
 	}
+```
 
 We call this function list because it will return an object collection (of all Bart station estimated times).
 
 Make a call to the Bart JSON api **GET http://bartjson.azurewebsites.net/api/etd.aspx?cmd=etd&orig=all&key=<YOUR_API_KEY>**, check if there is an error, other wise return the json data:
 
+```js
     var unirest = require('unirest');
 
 	/*
@@ -538,15 +564,18 @@ Make a call to the Bart JSON api **GET http://bartjson.azurewebsites.net/api/etd
     	});
 
 	}
-
+```
 Now, lets register our api with the Express by first adding a require to the **etd.js** module in **app.js**:
 
+```js
     var etd = require('./routes/etd.js');
+```
 
 And adding the handler as a GET api for the **/api/etd** route:
 
+```js
 	app.get('/api/etd', etd.list);
-
+```
 Use Advanced Rest Client to validate that the API works correctly:
 
 ![](ScreenShots/ss18.png)
@@ -560,21 +589,25 @@ This API will be **GET /api/etd/STATION_ABBREVIATION**.
 
 Add a new export **get** in the etd module:
 
+```js
     exports.get = function (req, res) {
 
     }
+```
 
 The only tricky part in this api is to grab the last part of the route to get the station abbreviation code which tells us which station to pass in the **orig** parameter to the Bart API:
 
+```js
 	exports.get = function (req, res) {
 		//the ':id' part of the route will b req.params.id
 	    var station = req.params.id;
 	}
-
+```
 In the Express [documentation]() request.params.id will contain the ':id' portion of the request route. This id will be the abbrevation for our station (For example Powell St Station is abbreviated PWOL, so a possible route is /api/etd/POWL).
 
 Now that we have the station abbreviation we can do the same thing as the **/api/etd** route and just call the Bart Api with **orig=station**:
 
+```js
 	//pass the origin parameter set to the station name
     unirest.get("http://bartjson.azurewebsites.net/api/etd.aspx?cmd=etd&orig=" + station + "&key=" + process.env.API_KEY, function (apiResponse) {
         
@@ -587,9 +620,10 @@ Now that we have the station abbreviation we can do the same thing as the **/api
         res.send(apiResponse.body);
     
     });
-
+```
 Putting it all together the api code for **/api/etd/STATION_ABBREVIATION**:
 
+```js
     /*
     GET /api/<STATION_ABBREVIATION>
 	*/
@@ -611,12 +645,13 @@ Putting it all together the api code for **/api/etd/STATION_ABBREVIATION**:
 	    });
 	
 	}
-
+```
 Now in **app.js** we have to register this route to the Express app:
 
+```js
 	//the ':id' will match any route with '/api/etd/STATION_ABBREVIATION'
 	app.get('/api/etd/:id', etd.get);
-
+```
 Run the application and test the api with the Union City station by calling ** GET /api/etd/UTCY** with Advanced Rest Client:
 
 ![](ScreenShots/ss20.png)
