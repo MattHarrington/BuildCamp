@@ -112,8 +112,30 @@ In both cases npm's output, including any errors, will be written to the Output 
 
 ####[Visual Studio Help](http://stackoverflow.com/questions/5062614/how-to-decide-when-to-use-node-js)####
 
+#### [JSLint](http://jslint.com/) ####
+
+
 
 ## Okay Christine, I understand... now what? ##
 
-On the GitHub, I've got some broken code, try to get it running!
+Here's some code I've written, but it's broken. Use your new debugging skills to help make it functional. I want it to log the word equal before I log the word Hello.
+
+    function foo() {
+    a = 1;
+    bar();
+    var b = 2;
+    var c = 3;
+    c = a;
+    if (a == c)
+        console.log('equal');
+    
+    console.log('Hello');
+    }
+    
+    
+    function bar() {
+    return true;
+    }
+    
+
 
