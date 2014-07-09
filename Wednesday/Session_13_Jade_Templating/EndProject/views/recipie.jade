@@ -1,0 +1,16 @@
+﻿extends layout
+block pageTitle
+    h1 #{recipies.kind}
+block pageContent
+
+    ul
+    each recipe in recipes.list
+        //create a new well for each recipe model
+        .well
+            h2 #{recipe.name}
+            img(src='#{recipe.photo}')
+            h3 Ingredients
+            h5
+                ul
+                each ingredient in recipe.ingredients
+                    li=ingredient

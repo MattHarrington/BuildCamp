@@ -1,0 +1,16 @@
+{
+  "name": "SocketIoLab",
+  "version": "0.0.0",
+  "description": "SocketIoLab",
+  "main": "app.js",
+  "author": {
+    "name": "sedouard",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "express.io": "^1.1.13",
+    "jade": "*",
+    "stylus": "*"
+  }
+}

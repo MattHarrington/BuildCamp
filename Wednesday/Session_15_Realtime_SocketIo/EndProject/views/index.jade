@@ -1,0 +1,22 @@
+﻿extends layout
+
+block title
+    .jumbotron
+        h1 #{title}
+        p Chat with your friends.
+block content
+    
+    form(class='navbar-form navbar-left' role='search')
+        .form-group
+            input#usernameTextBox(type='text' class='form-control' placeholder='enter your username')
+            br
+            input#roomTextBox(type='text' class='form-control' placeholder='type a room name')
+            button#joinButton(type='button' action='' class='btn btn-default' style='margin-left:10px') Join!
+
+    script(type='text/javascript').
+        
+        $('#joinButton').click(function(evt){
+            //browse to chat room template
+           window.location = 'rooms/' + $('#roomTextBox').val() + '?username=' + $('#usernameTextBox').val();
+           return;
+        });

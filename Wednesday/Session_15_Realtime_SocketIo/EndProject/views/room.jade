@@ -1,0 +1,50 @@
+﻿extends layout
+
+block title
+    //show page title from the title object in underlying model
+    h1 #{title}
+block content
+
+    //this well will hold our conversation of the room
+    .well
+        p#conversation
+
+    .form-group
+        input#chatTextBox(type='text' class='form-control' placeholder='type a room name')
+        button#sendButton(type='submit' class='btn btn-default') Send!
+
+    script(type='text/javascript').
+        //both the room and username is determined from the jade html template
+        var room = '#{title}';
+        var userName = '#{username}';
+        //connect to the server using the socket.io front-end js libraries
+        io = io.connect();
+
+        //send the a message to the 'ready' route with the room and the username
+        //both the room and username is determined from the jade html template
+        io.emit('ready', {room : room, username: userName });
+        
+        //listen for any real-time announce events coming from the server
+        io.on('announce', function(data){
+            //append a new paragraph line to the paragraph with the HTML id conversation
+            $('#conversation').append('<p>'+data.username + ': '+ data.message+'</p>');
+        });
+
+        //listen for any new messages from anybody else in the room
+        io.on('newMessage', function(data){
+            //append a new paragraph with the rea-time message recieved
+            $('#conversation').append('<p>'+data.username + ': '+ data.message+'</p>');
+        });
+
+        $('#sendButton').click(function(evt){
+            //get the message text from the textbox where the user writes the message
+            var messageText = $('#chatTextBox').val();
+
+            //broadcast message to room
+            var messagePayload = {message: messageText, room: room, username: userName };
+            io.emit('sendMessage', messagePayload);
+
+            //write the message we sent in the text box (because we don't recieve our own messages from the server)
+            $('#chatTextBox').val(''); //clears the message text box
+            $('#conversation').append('<p>'+messagePayload.username + ': '+ messagePayload.message+'</p>'); ///adds  message to conversation
+        });
