@@ -15,14 +15,15 @@ block content
 
     script(type='text/javascript').
         //both the room and username is determined from the jade html template
-        var room = '#{title}';
+        var roomName = '#{title}';
         var userName = '#{username}';
+
         //connect to the server using the socket.io front-end js libraries
         io = io.connect();
 
         //send the a message to the 'ready' route with the room and the username
         //both the room and username is determined from the jade html template
-        io.emit('ready', {room : room, username: userName });
+        io.emit('ready', {room : roomName, username: userName });
         
         //listen for any real-time announce events coming from the server
         io.on('announce', function(data){
@@ -37,11 +38,12 @@ block content
         });
 
         $('#sendButton').click(function(evt){
+            
             //get the message text from the textbox where the user writes the message
             var messageText = $('#chatTextBox').val();
 
             //broadcast message to room
-            var messagePayload = {message: messageText, room: room, username: userName };
+            var messagePayload = {message: messageText, room: roomName, username: userName };
             io.emit('sendMessage', messagePayload);
 
             //write the message we sent in the text box (because we don't recieve our own messages from the server)

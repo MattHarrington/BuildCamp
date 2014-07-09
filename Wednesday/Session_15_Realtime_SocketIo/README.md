@@ -407,7 +407,10 @@ The client will use **io.emit** to send this data to the real-time route: (this 
 ```js
 //use the jquery click event on the HTML button with id sendButton
 script(type='text/javascript').
-        
+        //both the room and username is determined from the jade html template
+        var roomName = '#{title}';
+	    var userName = '#{username}';
+
         //connect to the server using the socket.io front-end js libraries
         io = io.connect();
 
@@ -423,9 +426,7 @@ script(type='text/javascript').
 		
 		//this code allows us to execute the passed function everytime the message sendButton is clicked
         $('#sendButton').click(function(evt){
-			//both the room and username is determined from the jade html template
-	        var roomName = '#{title}';
-		    var userName = '#{username}';
+			
 	        var messageText = $('#chatTextBox').val();
 
 	        //broadcast message to room
