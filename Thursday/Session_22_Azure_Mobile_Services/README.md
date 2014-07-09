@@ -52,6 +52,16 @@ Your Mobile Service, database server, and database will now be created.  It will
 7. Return to the ToDo app running in your browser.  Add a few more tasks.
 8. In the portal, go back to the **Browse** tab and look at your data.  You'll now see a column called `urgency`.
 
+If you ever want to add a Node module to this code, pull your mobile services down via Git, then add the module, then push it back to Azure with Git.
+
+## Diversion: create a REST API in 10 seconds ##
+
+1. Click the **API** tab
+2. Click **Create**
+3. Give your API a name.  This should be lowercase and one word.  For example, if your API name is *hokey-pokey*, your API endpoint will be *https://contoso.mobileservices.net/api/hokey-pokey*.
+4. Change the **Get Permission** to *Everyone*
+5. In Chrome's Advanced REST Client, which you used in earlier sessions, connect to your API endpoint.
+
 ## Change entity to add new column ##
 
 1. Go to Visual Studio.  Select **File -> Open -> Web Site**.  Then select the folder which contains the ToDo app you downloaded.
@@ -61,10 +71,81 @@ Your Mobile Service, database server, and database will now be created.  It will
 5. Add more tasks.
 6. In the Azure portal, see how an additional column for *priority* was added.
 
-## Turn on authentication ##
-
-Content coming soon.
 
 ## Publish to Web Sites ##
 
-Content coming soon.
+1. In Visual Studio, make sure you have the latest Azure SDK installed.  Go to **Tools -> Extensions and Updates** and then go to the **Updates** section.  If you see an Azure update, install it.
+2. Right-click on your project and select **Publish**
+3. In **Select a publish target**, choose **Windows Azure Web Sites**
+4. Sign in with your Azure account, if necessary
+5. Choose a URL for your site name
+6. In **Region**, select *West US*
+7. Leave the Database options untouched
+8. Click **Create**
+9. On the next screen, click **Publish**.  Your code will be published to Azure and the site will display, but the ToDo items won't be updated.  This is a security precaution.  You need to tell your Mobile Service to allow connections from your new site.  By default, Mobile Services only allow connections from *localhost* and mobile phone apps.
+10. In the Azure portal, go to your mobile service's details section.  Click **Configure**.
+11. In the **Cross-Origin Resource Sharing (CORS)** section, add your Azure Web Site name.  For example, *my-todo-app.azurewebsites.net*.  Don't add **http://** in front.  Just put the hostname.
+12. In your browser, reload your new website.  You'll now see the ToDo items you previously entered.
+
+
+## Turn on authentication ##
+
+Adding authentication to your web and mobile apps is a lot of work.  Each identity provider does things a little differently.  Luckily, Azure Mobile Services makes this much easier.  It supports authenticating with Twitter, Facebook, Google, and Microsoft accounts.  It also supports authenticating with Active Directory accounts, a very popular identity system used by companies.  For this lab, we'll authenticate with Twitter.
+
+
+
+1. You first need to register your app with Facebook.  Follow these instructions: http://azure.microsoft.com/en-us/documentation/articles/mobile-services-how-to-register-facebook-authentication/.  In step 8, ignore the note which pertains to using the .NET backend.  You use the JavaScript backend, so your URL will end in */login/facebook*, not *signin-facebook*.
+2.  Go to your mobile service's **Identity** tab.  Enter the App ID and App Secret from the above step into the Facebook section.  Click **Save**.
+3.  Go to your mobile service's **Data -> Table -> Permissions** section
+4.  Change the permission for all 4 operations to *Only Authenticated Users*.  Click **Save**.
+5.  Visit your web site in a browser.  Verify that you cannot see previously entered ToDo items or add new ones.
+6.  In Visual Studio, open **index.html**
+7.  Under the H1 element, add this:
+```html
+<div id="logged-in">
+    You are logged in as <span id="login-name"></span>.
+    <button id="log-out">Log out</button>
+</div>
+<div id="logged-out">
+    You are not logged in.
+    <button>Log in</button>
+</div>
+```
+
+8.  Open **app.js**
+9.  At the bottom of that file, comment out the call to `refreshToDoItems()` by adding `//` in front of it.
+10.  Add this code below the line you just commented out:
+```javascript
+function refreshAuthDisplay() {
+    var isLoggedIn = client.currentUser !== null;
+    $("#logged-in").toggle(isLoggedIn);
+    $("#logged-out").toggle(!isLoggedIn);
+
+    if (isLoggedIn) {
+        $("#login-name").text(client.currentUser.userId);
+        refreshTodoItems();
+    }
+}
+
+function logIn() {
+    client.login("facebook").then(refreshAuthDisplay, function(error){
+        alert(error);
+    });
+}
+
+function logOut() {
+    client.logout();
+    refreshAuthDisplay();
+    $('#summary').html('<strong>You must login to access data.</strong>');
+}
+
+// On page init, fetch the data and set up event handlers
+$(function () {
+    refreshAuthDisplay();
+    $('#summary').html('<strong>You must login to access data.</strong>');          
+    $("#logged-out button").click(logIn);
+    $("#logged-in button").click(logOut);
+});
+```
+11.  Save your files and republish your app
+
