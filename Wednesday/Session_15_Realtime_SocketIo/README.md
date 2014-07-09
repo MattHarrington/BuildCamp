@@ -202,7 +202,7 @@ We will add a paragraph with the html **id** as **conversation** to hold the cha
 	//this well will hold our conversation of the room
     block content
 		.well
-    	p#conversation
+    		p#conversation
 ```
 We will use the bootstrap **formgroup** class div to house the textbox where we can compose and send messages:
 
@@ -314,14 +314,14 @@ Here is what that javascript looks like when it is rendered in the browser:
 **(rendered script within HTML script tags in browser)**
 ```js
 <script type="text/javascript">//get the room name from title string in the data model
-	var room = 'coolkidsroom';
+	var roomName = 'coolkidsroom';
 	var userName = 'steve';
 	//connect to the server using the socket.io front-end js libraries
 	io = io.connect();
 	
 	//send the a message to the 'ready' route with the room and the username
 	//both the room and username is determined from the jade html template
-	io.emit('ready', {room : room, username: userName });
+	io.emit('ready', {room : roomName, username: userName });
 </script>
 
 ```
@@ -364,14 +364,14 @@ Now, the front-end javascript must listen for any announce events:
 ```js
     script(type='text/javascript').
         //both the room and username is determined from the jade html template
-        var room = '#{title}';
+        var roomName = '#{title}';
         var userName = '#{username}';
         //connect to the server using the socket.io front-end js libraries
         io = io.connect();
 
         //send the a message to the 'ready' route with the room and the username
         //both the room and username is determined from the jade html template
-        io.emit('ready', {room : room, username: userName });
+        io.emit('ready', {room : roomName, username: userName });
         
         //listen for any real-time announce events coming from the server
         io.on('announce', function(data){
@@ -408,15 +408,15 @@ The client will use **io.emit** to send this data to the real-time route: (this 
 //use the jquery click event on the HTML button with id sendButton
 script(type='text/javascript').
         //both the room and username is determined from the jade html template
-        var room = '#{title}';
+        var roomName = '#{title}';
 	    var userName = '#{username}';
-        var messageText = $('#chatTextBox').val();
+
         //connect to the server using the socket.io front-end js libraries
         io = io.connect();
 
         //send the a message to the 'ready' route with the room and the username
         //both the room and username is determined from the jade html template
-        io.emit('ready', {room : room, username: userName });
+        io.emit('ready', {room : roomName, username: userName });
         
         //listen for any real-time announce events coming from the server
         io.on('announce', function(data){
@@ -426,6 +426,9 @@ script(type='text/javascript').
 		
 		//this code allows us to execute the passed function everytime the message sendButton is clicked
         $('#sendButton').click(function(evt){
+			
+	        var messageText = $('#chatTextBox').val();
+
 	        //broadcast message to room
             var messagePayload = {message: messageText, room: room, username: userName };
             io.emit('sendMessage', messagePayload);
