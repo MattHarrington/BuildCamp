@@ -1,0 +1,48 @@
+﻿extends layout
+
+block pageTitle
+    h1 Image Training Analysis
+    h2 #{data.status}
+block pageContent
+   
+    each analysis in data.photos
+        .well(style='text-algin:center')
+            //add a canvas element which we will draw the image onto with the in-line javascript
+            canvas(id="#{analysis.pid}", width="#{analysis.width}", height="#{analysis.height}")
+            
+            ul
+                li Center (#{analysis.tags[0].center.x}, #{analysis.tags[0].center.y})
+                li eye_left (#{analysis.tags[0].eye_left.x}, #{analysis.tags[0].eye_left.y})
+                li eye_right (#{analysis.tags[0].eye_right.x}, #{analysis.tags[0].eye_right.y})
+
+            //canvas.photo-canvas
+            script(type='text/javascript').
+                var photoUrl = '#{analysis.url}'
+            
+                //create a canvas with teh same width and height as image
+                var canvas = document.getElementById("#{analysis.pid}");
+                var ctx = canvas.getContext('2d');
+                var img = new Image();
+                img.src = photoUrl;
+                ctx.drawImage(img, 0, 0);
+                ctx.strokeStyle = 'rgba(240,0,0,1)';
+
+            
+                var eye_left = {
+                    x : '#{analysis.tags[0].eye_left.x}',
+                    y: '#{analysis.tags[0].eye_left.y}'
+                };
+                var eye_right = {
+                    x : '#{analysis.tags[0].eye_right.x}',
+                    y: '#{analysis.tags[0].eye_right.y}'
+                };
+                var nose = {
+                    x : '#{analysis.tags[0].nose.x}',
+                    y: '#{analysis.tags[0].nose.y}'
+                };
+                ctx.beginPath();
+                //ctx.arc(x,y,radius,start rad, stop rad)
+                ctx.arc(eye_left.x, eye_left.y, 5, 0, 2 * Math.PI);
+                ctx.arc(eye_right.x, eye_right.y, 5, 0, 2 * Math.PI);
+                ctx.arc(nose.x, nose.y, 10, 0, 2 * Math.PI);
+                ctx.stroke();

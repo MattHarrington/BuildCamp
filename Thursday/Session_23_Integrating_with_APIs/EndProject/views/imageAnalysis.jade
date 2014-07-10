@@ -1,0 +1,15 @@
+﻿extends layout
+
+block pageTitle
+    h1 Recognition
+
+block pageContent
+
+    .well
+        img(src='#{photoUrl}')
+        ul
+            each uid in uids
+                li Person: #{uid.uid} Confidence: #{uid.confidence}
+
+
+

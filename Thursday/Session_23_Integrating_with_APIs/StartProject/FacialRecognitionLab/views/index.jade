@@ -1,0 +1,18 @@
+﻿extends layout
+
+block pageTitle
+    h1= title
+    p Welcome to the Image Recognition Lab
+block pageContent
+    .well
+        h3 Recognize
+        .form-group
+            form(method='post', action='/photorec')
+                input(type='text', name='picture', class='form-control', placeholder='imageUrl')
+                input(type='submit', class='form-control', placeholder='Recognize')
+        h3 Train
+        .form-group
+            form(method='post', action='/phototrain')
+                input(type='text', name='name', class='form-control', placeholder='nameIdentifier')
+                input(type='text', name='pictures', class='form-control', placeholder='imageUrl')
+                input(type='submit', class='form-control', placeholder='Train')
