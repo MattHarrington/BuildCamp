@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Markdown Preview</title>
+<style>
+body{font-family:helvetica, arial, freesans, clean, sans-serif;color:#333;line-height:1.6;font-size:14px}.markdown-body{line-height:1.6;font-size:14px}.markdown-body > *:first-child{margin-top:0 !important}.markdown-body > *:last-child{margin-bottom:0 !important}.markdown-body a.absent{color:#c00}.markdown-body h1{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:28px;margin:20px 0 10px;padding:0}.markdown-body h2{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:24px;border-bottom-color:#ccc;border-bottom-width:1px;border-bottom-style:solid;margin:20px 0 10px;padding:0}.markdown-body h3{font-weight:700;-webkit-font-smoothing:antialiased;font-size:18px;margin:20px 0 10px;padding:0}.markdown-body h4{font-weight:700;-webkit-font-smoothing:antialiased;font-size:16px;margin:20px 0 10px;padding:0}.markdown-body h5{font-weight:700;-webkit-font-smoothing:antialiased;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body h6{font-weight:700;-webkit-font-smoothing:antialiased;color:#777;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body blockquote{color:#777;border-left-color:#ddd;border-left-width:4px;border-left-style:solid;margin:15px 0;padding:0 15px}.markdown-body dl{margin:15px 0;padding:0}.markdown-body table{border-collapse:collapse;margin:15px 0;padding:0}.markdown-body pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;margin:15px 0;padding:6px 10px}.markdown-body li p.first{display:inline-block}.markdown-body dl dt{font-size:14px;font-style:italic;font-weight:700;margin:15px 0 5px;padding:0}.markdown-body dl dt:first-child{padding:0}.markdown-body dl dd{margin:0 0 15px;padding:0 15px}.markdown-body table tr{border-top-color:#ccc;border-top-width:1px;border-top-style:solid;background-color:#fff;margin:0;padding:0}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%}.markdown-body span.frame{overflow:hidden;display:block}.markdown-body span.frame > span{border:1px solid #ddd;width:auto;overflow:hidden;float:left;display:block;margin:13px 0 0;padding:7px}.markdown-body span.frame span img{float:left;display:block}.markdown-body span.frame span span{color:#333;clear:both;display:block;padding:5px 0 0}.markdown-body span.align-center > span{text-align:center;overflow:hidden;display:block;margin:13px auto 0}.markdown-body span.align-center span img{text-align:center;margin:0 auto}.markdown-body span.align-right > span{text-align:right;overflow:hidden;display:block;margin:13px 0 0}.markdown-body span.align-right span img{text-align:right;margin:0}.markdown-body span.float-left{overflow:hidden;margin-right:13px;float:left;display:block}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{overflow:hidden;margin-left:13px;float:right;display:block}.markdown-body span.float-right > span{text-align:right;overflow:hidden;display:block;margin:13px auto 0}.markdown-body pre > code{border:currentColor;white-space:pre;margin:0;padding:0}.markdown-body .highlight pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;padding:6px 10px}.markdown-body p,.markdown-body li{margin:15px 0}.markdown-body ul,.markdown-body ol{padding-left:30px;margin:15px 0}.markdown-body > h2:first-child,.markdown-body > h1:first-child,.markdown-body > h1:first-child + h2{border:0 currentColor;padding-top:0;margin-top:0}.markdown-body > h3:first-child,.markdown-body > h4:first-child,.markdown-body > h5:first-child,.markdown-body > h6:first-child{padding-top:0;margin-top:0}.markdown-body h1 + p,.markdown-body h2 + p,.markdown-body h3 + p,.markdown-body h4 + p,.markdown-body h5 + p,.markdown-body h6 + p,.markdown-body ul li > :first-child,.markdown-body ol li > :first-child,.markdown-body dl dt > :first-child,.markdown-body dl dd > :first-child,.markdown-body blockquote > :first-child,.markdown-body table tr th > :first-child,.markdown-body table tr td > :first-child{margin-top:0}.markdown-body ul li > :last-child,.markdown-body ol li > :last-child,.markdown-body dl dt > :last-child,.markdown-body dl dd > :last-child,.markdown-body blockquote > :last-child,.markdown-body table tr th > :last-child,.markdown-body table tr td > :last-child{margin-bottom:0}.markdown-body table tr th,.markdown-body table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}.markdown-body span.align-center,.markdown-body span.align-right{overflow:hidden;clear:both;display:block}.markdown-body code,.markdown-body tt{border-radius:3px;border:1px solid #eaeaea;white-space:nowrap;background-color:#f8f8f8;margin:0 2px;padding:0 5px}.markdown-body pre code,.markdown-body pre tt{border:currentColor;background-color:transparent}span.codelanguage{display:none}
+</style>
+</head>
+<body>
+<div class="markdown-body">
+<p><a name="Construct2"></a></p>
+
+<h1 id="Creating_a_Windows_8_Game_Using_Scirra_Construct_2">Creating a Windows 8 Game Using Scirra Construct 2</h1>
+
+<hr>
+
+<h2 id="Opening_Remarks">Opening Remarks</h2>
+
+<p>This demo walks you through creating a simple Windows 8 game using Construct 2.
+The goal of the game is to help &quot;8&quot; get to the Microsoft Surface device.<br>
+Once it reaches the Surface, we'll see Windows start on the Surface and the 
+game is over.  </p>
+
+<p>This uses some premade graphics files, but all of the source images are there
+if you want to open them in InkScape (.svg files), or Gimp (.xcf files).</p>
+
+<p>There are TONs of great tutorials and samples up on the Scirra.com website as
+well so feel free to use one of those demos instead!</p>
+
+<h2 id="Pre-Requisites">Pre-Requisites</h2>
+
+<p>To follow the steps in the demo below, you will need the following: </p>
+
+<ul>
+<li>Scirra's Construct 2 r149 or later. You can view the list of the <a href="https://www.scirra.com/construct2/releases">latest releases</a> or downlod <a href="https://www.scirra.com/construct2/releases/r149">r149</a> directly.<br></li>
+</ul>
+
+<h2 id="Exercises">Exercises</h2>
+
+<p>There are two main exercises in this lab:</p>
+
+<ol>
+<li><a href="#Create">Creating a Game using Scirra Construct 2</a></li>
+<li><a href="#Export">Exporting the Construct 2 game to Windows 8</a></li>
+</ol>
+
+<hr>
+
+<p><a name="Create"></a></p>
+
+<h2 id="Creating_a_Game_using_Scirra_Construct">Creating a Game using Scirra Construct</h2>
+
+<h3 id="Show_how_to_download_Construct_2">Show how to download Construct 2</h3>
+
+<ul>
+<li>Go to <a href="http://www.scirra.com/">http://www.scirra.com/</a> </li>
+<li>Click the big &quot;Buy&quot; button, to review the free edition features</li>
+<li>Return to the home page</li>
+<li>Show (but don't click ) the big &quot;Download&quot; button to downlaod the latest 
+stable version</li>
+<li>On the home page, scroll to the bottom, and show the Beta Release download link</li>
+<li>Scirra releases new Beta versions very frequently.<br></li>
+</ul>
+
+<h3 id="Create_a_new_Construct_2_game">Create a new Construct 2 game</h3>
+
+<ul>
+<li>Open Construct 2 on your machine</li>
+<li>Find the file menu on the menu bar, it is the left most item on the menu bar</li>
+<li>Click the file menu drop down, select &quot;New&quot;</li>
+<li>Scroll through the list of project to show the selection</li>
+<li>Make note of the many &quot;Example&quot; projects which are working versions of projects</li>
+<li>Select the top item in the list &quot;New empty project&quot;</li>
+<li>Click Open</li>
+</ul>
+
+<h3 id="Configure_the_UI">Configure the UI</h3>
+
+<ul>
+<li>Make sure the &quot;Projects Bar&quot; is showing.  If it isn't, click the &quot;View&quot; 
+ribbon tab along the top, and turn on the &quot;Project Bar&quot; checkbox.  While you
+are there, make sure the the other &quot;bar&quot;s are turned on:
+
+<ul>
+<li>Status Bar</li>
+<li>Properties Bar</li>
+<li>Project Bar</li>
+<li>Layer Bar</li>
+<li>Object Bar</li>
+<li>The &quot;Bars&quot; above are the various &quot;panels&quot; in the UI. </li>
+<li>The &quot;Project Bar&quot; is similar to the &quot;Solution Explorer&quot; in Visual Studio
+It lets you need the Project(s) that are currently open, and their contents</li>
+</ul></li>
+</ul>
+
+<h3 id="Set_the_project_properties">Set the project properties</h3>
+
+<ul>
+<li>In the &quot;Project Bar&quot; (the panel titled &quot;Projects&quot;) </li>
+<li>Select &quot;New project*&quot;</li>
+<li>In the &quot;Properties&quot; bar, set the following properties
+
+<ul>
+<li>Name:            &quot;Platformer8&quot;</li>
+<li>Author:          Your Name</li>
+<li>Description:     &quot;Help 8 get to the Microsoft Surface!&quot;</li>
+<li>Window Size:     1366,768 (good size for a Windows 8 game)</li>
+<li>Fullscreen in Browser: &quot;Letterbox scale&quot; (this will let it scale to fill the screen)</li>
+</ul></li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong>  The &quot;Window Size&quot; sets the size of the viewport.  &quot;Layouts&quot; are where we actually add our graphical elements and Layouts COULD be a different size than the Window.  That would allow you to scroll around a Layout that is bigger than the window.  In this demo, our Window Size and Layout Size will be the same.  You can see the Window size in the Construct 2 designer. It is represented by the dashed gray line.</p>
+
+<p>Fullscreen in Browser: Manages if the &quot;Window Size&quot; is scaled up (or down) to fit the current screen resolution.  By default it doesn't.  By setting it  to &quot;Letterbox Scale&quot; we allow it to scale, but not get distorted.  Black bars will be visible on the sides, or top and bottom edges if the scaled window doesn't completely fill the screen</p>
+</blockquote>
+<h3 id="Save_the_new_project_to_the_Before_folder_for_this_demo">Save the new project to the &quot;Before&quot; folder for this demo</h3>
+
+<ul>
+<li>File the file drop down (left most item on the menu bar), select &quot;Save&quot;</li>
+<li>Browse to the &quot;Before&quot; folder for this demo</li>
+<li>Save it as &quot;Platformer8.capx&quot;</li>
+<li>&quot;.capx&quot; files are basically .zip files that contain the game project contents</li>
+<li>&quot;.Capx&quot; files are what are used by default, and if you &quot;Save As Single File...&quot;</li>
+<li>If you prefer to save it to a folder structure, you can use &quot;Save As Project...&quot;</li>
+<li>For this demo, we'll use the .capx</li>
+<li>Side note, Construct 2 can crash from time to time. It's recommended that you save often during the demo.</li>
+</ul>
+
+<h3 id="Rename_Layout_1_to_GameLayout">Rename &quot;Layout 1&quot; to &quot;GameLayout&quot;</h3>
+
+<ul>
+<li>In Construct 2 &quot;Layouts&quot; make up the visual screens of your game.  You might have multiple layouts.  For example a &quot;Welcome&quot; layout, a &quot;GamePlay&quot; layout, a &quot;GameOver&quot; layout, etc.  Each layout could display different things, and  have different behaviours. </li>
+<li>In this demo, we will just use on Layout.<br></li>
+<li>In the &quot;Project Bar&quot; under the &quot;Platformer8&quot; project, expand &quot;Layouts&quot;</li>
+<li>Right Click on &quot;Layout 1&quot;, and select &quot;Rename&quot;</li>
+<li>Rename it to &quot;GameLayout&quot;</li>
+</ul>
+
+<h3 id="Rename_the_Event_sheet_1_to_GameEvents">Rename the &quot;Event sheet 1&quot; to &quot;GameEvents&quot;</h3>
+
+<ul>
+<li>A &quot;Layout&quot; defines the visual aspects of a game screen</li>
+<li>&quot;Events&quot; allow you to control how the game itself works</li>
+<li>In the Project Bar, under Platofmer8, expand &quot;Event sheets&quot;</li>
+<li>Right click &quot;Event sheet 1&quot;, and select &quot;Rename&quot;</li>
+<li>Rename it to &quot;GameEvents&quot;</li>
+</ul>
+
+<h3 id="Resise_GameLayout_to_match_the_Window_Size">Resise &quot;GameLayout&quot; to match the Window Size</h3>
+
+<ul>
+<li>Right now on the design surface, you should see the dashed gray line for the  Window is not the same size as the layout.  For this demo we want them to be the same.<br></li>
+<li>In the Project Bar, select the &quot;GameLayout&quot;</li>
+<li><p>In the Properties Bar, change the Layout Size to &quot;1366,768&quot;.</p></li>
+<li><p>Save the project (Ctrl-S)</p></li>
+</ul>
+
+<h3 id="Create_a_background_layer">Create a background layer</h3>
+
+<ul>
+<li>In the &quot;Project Bar&quot;, click the &quot;GameLayout&quot;</li>
+<li>At the bottom of the Project Bar, click the &quot;Layers&quot; tab.</li>
+<li>Layers are like a stack of onion skin paper, where each layer is a new sheet of onion skin</li>
+<li>Where top upper layers are transparent, you can see through to the lower layers</li>
+<li>Our GameLayout has a single layer by default named &quot;Layer 0&quot;</li>
+<li>Right click &quot;Layer 0&quot;, and select &quot;Rename&quot;</li>
+<li>Rename the layer to &quot;Background&quot;</li>
+</ul>
+
+<h3 id="Add_a_background_image_to_the_layer">Add a background image to the layer</h3>
+
+<ul>
+<li>In the design surface, right click, and select &quot;Insert new object&quot;</li>
+<li><p>Objects are the various types of things you can add to a game</p>
+
+<ul>
+<li>&quot;Sprites&quot; are the graphical elements that make up our game characters, obstacles, etc.</li>
+<li>&quot;Tile Background&quot; allows you to create a repeating background image</li>
+<li>&quot;Mouse&quot; lets you respond to mouse actions</li>
+<li>&quot;Keyboard&quot; lets you respond to keyboard actions</li>
+<li>&quot;Touch&quot; lets you respond to both touch, and accelerometer actions</li>
+<li>....</li>
+</ul></li>
+<li><p>We want to add a tiled background image to our Background layer.  </p></li>
+<li><p>Select &quot;Tiled Background&quot;</p></li>
+<li><p>In the &quot;Name when inserted&quot; box at the bottom type in &quot;BackgroundImage&quot;</p></li>
+<li><p>click &quot;Insert&quot;</p></li>
+<li><p>The cursor will change to a cross hair.  For a tiled background, where you click will be the top,left corner of the image.  Click somewhere near the top left corner of the layout</p></li>
+<li><p>The &quot;Edit image: BackgroundImage&quot; window should appear.  This would allow you to create your own image here.  We already have an image we want to use though.</p></li>
+<li><p>In the image editor toolbar, click the second icon from the left (looks like an open folder) to open an existing image. </p></li>
+<li><p>Browse the &quot;Assets\Images&quot; folder for this demo</p></li>
+<li><p>Select &quot;Background.jpg&quot; and click &quot;Open&quot;</p></li>
+<li><p>Ingore any tooltips about preferred image sizes.  We won't actually tile this image so id doesn't matter  </p></li>
+<li><p>Close the &quot;Edit image: Background Image&quot; window by clicking on the &quot;X&quot; in top right corner.</p></li>
+<li><p>With the image selected on the design surface, in the Properties Window set</p>
+
+<ul>
+<li>Position: 0,0</li>
+<li>Size:     1366,768</li>
+</ul></li>
+<li><p>To make sure we don't accidentally move the background image in the future we'll lock the &quot;Background&quot; layer. </p></li>
+<li><p>Go to the Project Bar, Layers tab</p></li>
+<li><p>Right click the &quot;Background&quot; layer and select &quot;Locked&quot; </p></li>
+<li><p>Save the project (Ctrl-S)</p></li>
+</ul>
+
+<h3 id="Add_a_Game_layer">Add a &quot;Game&quot; layer</h3>
+
+<ul>
+<li>In the Project Bar, Layers Tab</li>
+<li>Along the top click the &quot;+&quot; icon to add a new layer.</li>
+<li>Name the new layer &quot;Game&quot;</li>
+<li>Make sure that the &quot;Game&quot; layer is selected on the Layers tab.  That will ensure that new items added on the design surface are placed on the &quot;Game&quot; layer. </li>
+</ul>
+
+<h3 id="Add_a_GroundBlock_TiledBackground_image_to_act_as_our_platforms">Add a &quot;GroundBlock&quot; TiledBackground image to act as our platforms</h3>
+
+<ul>
+<li>Right click on the design surface, and select &quot;Insert new object&quot; </li>
+<li>Select &quot;Tiled Background&quot;</li>
+<li>Set the &quot;Name when inserted:&quot; to &quot;GroundBlock&quot;</li>
+<li>Click &quot;Insert&quot; </li>
+<li>Click anywhere on the design surface to create the TiledBackground</li>
+<li>In the &quot;Edit image: GroundBlock&quot; window, click the open folder icon (&quot;Load an image from a file&quot;)</li>
+<li>Browse to the &quot;Assets\Images&quot; folder for the demo</li>
+<li>Select the &quot;GroundBlock.png&quot; image</li>
+<li>Click &quot;Open&quot;</li>
+<li>Close the &quot;Edit image: GroundBlock&quot; window</li>
+<li><p>With the new ground block image selected on the design surface, set:</p>
+
+<ul>
+<li>Position: 0,704</li>
+<li>Size:     1366, 64</li>
+</ul></li>
+<li><p>That will place a block along the bottom of the layout, 64 pixels tall. This is the ground that our platformer can run along. </p></li>
+<li><p>Save the project (Ctrl-S)</p></li>
+</ul>
+
+<h3 id="To_make_the_ground_solid_we_need_to_add_the_Solid_behavior">To make the ground solid, we need to add the &quot;Solid&quot; behavior</h3>
+
+<ul>
+<li>Make sure the GroundBlock object selected on the design surface</li>
+<li>In the &quot;Properties&quot; bar, find the &quot;Behaviours&quot; category, and click the &quot;Behaviours&quot; link</li>
+<li>In the &quot;GroundBlock: Behiours&quot; window, click the &quot;+&quot; icon in the toolbar to add a behavior</li>
+<li>In the &quot;Add behavior&quot; window, show the various behaviors that are available.</li>
+<li>Behaviours are one of the most powerful features of Construct 2.  They allow you to define how the elements in your game behave without having to write ANY code.  Cool!  If you are a programmer, and want to make your own behaviors though, you can!  There is a JavaScript Plug-in API published by Scirra that allows you to do that. </li>
+<li>We will make our player character use the &quot;Platformer&quot; behaviour, but for the player to not fall through the ground, we need the ground to be &quot;Solid&quot;</li>
+<li>Pick the &quot;Solid&quot; behvior (at the top of the list)<br></li>
+<li>Click &quot;Add&quot; </li>
+<li><p>Close the &quot;GroundBlock: Behaviors&quot; window</p></li>
+<li><p>Save the project (Ctrl-S)</p></li>
+</ul>
+
+<h3 id="Add_our_Player_Sprite_to_the_game">Add our Player Sprite to the game</h3>
+
+<ul>
+<li>In the design surface, right click and select &quot;Insert new object&quot; </li>
+<li>This time select the &quot;Sprite&quot; object type</li>
+<li>Set the &quot;Name when inserted:&quot; to &quot;Player&quot;</li>
+<li>Click &quot;Insert&quot; </li>
+<li>Click somewhere above the ground, and on the left edge of the design surface</li>
+<li>In the &quot;Edit image: Player&quot; window (Default, frame 0)&quot; window, click the open file icon, just we have in the past.</li>
+<li>Sprites can actually have multiple &quot;animations&quot;, and each animation can have multiple &quot;frames&quot;. For this demo though our sprite won't be animated.  We will just always show &quot;frame 0&quot; of the &quot;default&quot; image.<br></li>
+<li>Navigate to the &quot;Assets\Images&quot; folder, and select the &quot;Player.png&quot; image, click &quot;Open&quot;</li>
+<li><p>Close the &quot;Edit image: Player (Default, frame 0)&quot; window</p></li>
+<li><p>It's ok (in fact preferred) if the Player sprite is floating ABOVE the ground object we made previously.  This will let the player &quot;Fall&quot; to the ground when the game starts.</p></li>
+<li><p>Save the project (Ctrl-S)</p></li>
+</ul>
+
+<h3 id="Add_the_Platform_behavior_to_our_Player">Add the &quot;Platform&quot; behavior to our Player</h3>
+
+<ul>
+<li>Select the &quot;Player&quot; sprite on the design surface, </li>
+<li>In the &quot;Properties&quot; window, click the &quot;Behaviours&quot; link</li>
+<li>In the &quot;Player: Behaviors&quot; window click the &quot;+&quot; icon to add a behavior</li>
+<li>Select the &quot;Platform&quot; beahvior (at the very bottom of the list) </li>
+<li>Click &quot;Add&quot; </li>
+<li><p>Close the &quot;Player: Behaviors&quot; window</p></li>
+<li><p>Save the project (Ctrl-S)</p></li>
+</ul>
+
+<h3 id="Lets_play_it">Let's play it!</h3>
+
+<ul>
+<li>In the Construct 2 window, switch to the &quot;Home&quot; ribbon along the top and click &quot;Run layout&quot; to run the game in the default browser. </li>
+<li>Use left and right arrow keys on the keyboard to move the Player.  Press the space bar to jump. </li>
+<li>Notice that the Player doesn't &quot;fall&quot; through the ground.  That is because we made our &quot;GroundBlock&quot; TiledImage &quot;Solid&quot; </li>
+<li><p>If you move the Player off the screen, it will disappear and you need to reload the browser to start over.  </p></li>
+<li><p>When you are done playing with what we have so far, return to Constrcut 2.</p></li>
+</ul>
+
+<h3 id="Create_some_more_platforms">Create some more platforms.</h3>
+
+<ul>
+<li>Right now, we really only have one &quot;Platform&quot; for our player, the &quot;GroundBlock&quot;</li>
+<li>You can create multiple copies, or &quot;instances&quot; of each type of object in your game.<br></li>
+<li>In Construct 2, find the &quot;Object Bar&quot; (titled &quot;Objects&quot;).  This shows you all the different objects (not instances) that you have added to the game.<br></li>
+<li>You can also see them in the &quot;Project Bar&quot; under the &quot;Object types&quot; folder in a project. </li>
+<li>From the &quot;Object Bar&quot; click the &quot;GroundBlock&quot; object and drag a new instance onto the design surface. </li>
+<li>Notice that it is the same size as the original one.  We can change each instance to a new size, and position though.<br></li>
+<li>With the new GroundBlock instance selected, in the Properties bar, set the Size to 256,64</li>
+<li><p>Position it somewhere above the ground, but towards the left of the screen. Make it high enough that the Player has to Jump on it, but not so hight that the player can't jump on it.  </p></li>
+<li><p>Create additional platforms for the player to jump around on.  You can do that easily by copying and pasting the current block. An even easier way is to just hold the Ctrl key on the keyboard, and drag an existing block to a new location.  This will create a copy. </p></li>
+<li><p>Go ahead, make your blocks.</p></li>
+<li><p>When you are done, Save the project (Ctrl-S)</p></li>
+</ul>
+
+<h3 id="Try_it_out">Try it out!</h3>
+
+<ul>
+<li>In the Construct 2 window, switch to the &quot;Home&quot; ribbon along the top and click &quot;Run layout&quot; to run the game in the default browser. </li>
+<li>If the new version of the game didn't load in the browser, refresh the browser window.<br></li>
+<li><p>Again, Use left and right arrow keys on the keyboard to move the Player. Press the space bar to jump. </p></li>
+<li><p>Test out your various platforms to make sure that there is a way for the player to get to them.  Go back and resposition them as needed and repeat the test.  Keep doing that until you have a layout you like.  </p></li>
+<li><p>When you are done playing with what we have so far, return to Constrcut 2.</p></li>
+</ul>
+
+<h3 id="Add_the_goal_to_the_game">Add the goal to the game.</h3>
+
+<ul>
+<li>Ok, our Player can move around (because of the Platformer behaviour) and not fall through the platforms (because of the Solid behavior).  However the game is a little boring right now.  We need a &quot;goal&quot; something way to &quot;win&quot; the game.<br></li>
+<li>For our game, the player wins when he reaches a Microsoft Surface device and starts &quot;Windows 8&quot; on it.<br></li>
+<li>So, we need to add a new sprite for our Microsoft Surface.  It also needs to have two &quot;appearances&quot;.  One where it is empty (No windows 8) and one with &quot;Windows 8&quot; running on it.</li>
+<li>So...<br></li>
+<li>Another way to add sprites to the game is to simply drag the files from  the windows explorer onto the artboard.<br></li>
+<li>Open the Windows Explorer to the &quot;Assets\Images&quot; folder</li>
+<li>In Contsruct 2, if you drag multiple files at a time, A new sprite is created, and each file is added (in alphabetical order) as a frame in the default animation.</li>
+<li>Select BOTH with SurfaceEmpty.png&quot; and &quot;SurfaceWithWindows.png&quot; images by first clicking on the &quot;SurfaceEmpty.png&quot; then holding the control key (Ctrl) on the keyboard and clicking on the &quot;SurfaceWithWindows.png&quot; file</li>
+<li>Drag the two selected files from Windows Explorer onto the Construct 2 design surface.</li>
+<li>With the new sprite selected on the Design Surface, look at the Properties bar</li>
+<li>Notice that the sprite object was named after the first selected file (&quot;SurfaceEmpty&quot;)</li>
+<li><p>Change the Name property to just &quot;Surface&quot;</p></li>
+<li><p>Save the project (Ctrl-S)</p></li>
+</ul>
+
+<h3 id="Edit_the_Surface_animation">Edit the &quot;Surface&quot; animation</h3>
+
+<ul>
+<li>Select the &quot;Surface&quot; sprite on the design surface</li>
+<li>Right click on it, and select &quot;Edit animations&quot; </li>
+<li>Click In the &quot;Edit image: Surface (Default, frame 0)&quot; </li>
+<li>In the Construct 2 &quot;Properties&quot; bar (yes event though this other window is open) you can set the properties of the default animation for our surface.</li>
+<li><p>Set the properites to match:</p>
+
+<ul>
+<li>Speed:      0</li>
+<li>Loop:       No</li>
+<li>Repeat count:   0</li>
+<li>Repeat to:  0</li>
+<li>Ping-pong:  No</li>
+</ul></li>
+<li><p>The above settings keep the animation from playing automatically.  We will manually set the animation frame in the ground. By default Frame 0 (the empty surface) will be shown.  When the player reaches the surface sprite though (collides with it) we will change the surface to show frame 1 (the surface with windows).  </p></li>
+<li><p>In the &quot;Animation frames (2)&quot; window, you can click on the different frames to see their images in the editor.  We don't need to change anything here, but if you right click in the &quot;Animation frames (2)&quot; window you can see that you can import new frames, or even a single &quot;strip&quot; image .  Again, don't do anything here. </p></li>
+<li><p>Close the Edit image: Surface (default, frame 0)</p></li>
+<li><p>Save the project (Ctrl-S)</p></li>
+</ul>
+
+<h3 id="Place_the_Surface_sprite_on_the_hardest_to_reach_platform">Place the Surface sprite on the hardest to reach platform</h3>
+
+<ul>
+<li>On the design surface, move your &quot;Surface&quot; sprite to position it as if it were sitting ontop of the hardest platform to reach. </li>
+<li>Also, because we added the &quot;Surface&quot; sprite after our &quot;Player&quot; sprite, the  &quot;Surface&quot; has a higher &quot;Z-Order&quot; and will appear in front of our player if they are on the same place on the screen.  We want the surface to be behind the player so it doesn't hide the player.<br></li>
+<li><p>Right click on the Surface sprite, and &quot;Z Order&quot; | &quot;Send to bottom of layer&quot;</p></li>
+<li><p>Save the project (Ctrl-S)</p></li>
+</ul>
+
+<h3 id="Add_a_GameOver_Layer">Add a &quot;GameOver&quot; Layer!</h3>
+
+<ul>
+<li><p>When the player reaches the Surface, we want to reward them with a nice big graphic.  However, that big graphic will hide all the other stuff in our game and make it difficult to edit them.  To help manage that better, well add a new layer to our &quot;GameLayout&quot; that and add the large graphic to that layer. Then in the editor, we can show or hide that layer as we wish to make editing of the lower layers easier. </p></li>
+<li><p>In the Project Bar, Layers tab, click the &quot;+&quot; icon along the to to add a new layer</p></li>
+<li><p>Name the new layer &quot;GameOver&quot;</p></li>
+<li><p>When the game runs, we don't want this layer to be visible initially.  Well show it only when the player actually wins.</p></li>
+<li><p>Click on the &quot;GameOver&quot; layer on the Layers tab to select it.</p></li>
+<li><p>In the Properties bar for the layer, set:</p>
+
+<ul>
+<li>Initial visibility: &quot;Invisible&quot;</li>
+</ul></li>
+<li><p>Save the project (Ctrl-S)</p></li>
+</ul>
+
+<h3 id="Add_a_You_Win_graphic">Add a &quot;You Win!&quot; graphic</h3>
+
+<ul>
+<li>Now, we'll add our &quot;YouWin&quot; graphic to the new &quot;GameOver&quot; layer.  Make sure the &quot;GameOver&quot; layer is selected in the Layers tab</li>
+<li>Right click on the design surface, and select &quot;Insert new object&quot;</li>
+<li>Select &quot;Sprite&quot;</li>
+<li>Set the &quot;Name when inserted:&quot; to &quot;YouWin&quot;</li>
+<li>Click anywhere on the design surface (we'll place it later)</li>
+<li>In the &quot;Edit image: YouWin (Default, frame 0)&quot;</li>
+<li>Open the Existing &quot;Assets\Images\YouWin.png&quot; image. </li>
+<li>Close the &quot;Edit image: ...&quot; window</li>
+<li><p>Center the image on the screen by: </p>
+
+<ul>
+<li>Right click the YouWin Sprite.  Select &quot;Align&quot; | &quot;Windows&quot; | &quot;Center horizontal&quot;</li>
+<li>Right click the YouWin Sprite.  Select &quot;Align&quot; | &quot;Windows&quot; | &quot;Center vertical&quot;</li>
+</ul></li>
+<li><p>Make sure that the Surface sprite is still visible (if only partially) even with the YouWin sprite on screen.  We want the user to see that Windows appeared on the surface when they reached it.  If the YouWin graphic hides the surface, they won't see that. </p></li>
+<li><p>Notice that the YouWin sprite hides a fair portion of the items on the Game layer In the Project Bar, Layers tab, you can select the &quot;GameOver&quot; layer, right click, and toggle the &quot;Visible&quot; checkmark to show or hide the layer in the designer.  This is different than the &quot;Initial Visibility Property we just set previously.  This setting just determines if the layer is visible in the designer.  Remember you can also lock layers in the designer to prevent you from accidentally modifying their contents</p></li>
+</ul>
+
+<h3 id="Try_it_out">Try it out</h3>
+
+<ul>
+<li>Run the layout in the browser</li>
+<li>Notice that the &quot;YouWin&quot; sprite is NOT visible.</li>
+<li>Get your player up to the surface</li>
+<li>NOTHING HAPPENS!  We need to add events to finish up the game!</li>
+</ul>
+
+<h3 id="Add_Events_to_the_Event_Sheet_to_finish_the_game">Add Events to the Event Sheet to finish the game.</h3>
+
+<ul>
+<li>Events are how we implement our game logic. Behaviors added in some pre-defined functionality, but we have to implement the specific game logic for our game to make it unique.<br></li>
+<li>Events are made up of 
+
+<ul>
+<li>Conditions: These determine when the event occurs</li>
+<li>Actions:    These determine what to do when the event occurs</li>
+</ul></li>
+<li><p>We need two events for our game:</p>
+
+<ul>
+<li>Event: Player collides with Sprite</li>
+<li>Actions: </li>
+<li>Change the Surface &quot;default&quot; animation to frame 1 to show Windows loaded</li>
+<li>Change the Visibility of the GameOver Layer to Visible</li>
+<li>Event: User clicks or taps on the YouWin Image<br></li>
+<li>Actions: </li>
+<li>Change the Visibility of the GameOver Layer back to in Invisible</li>
+<li>Resart the layout</li>
+</ul></li>
+</ul>
+
+<h3 id="Add_an_event_for_when_the_Player_Collides_with_the_Surface">Add an event for when the Player Collides with the Surface</h3>
+
+<ul>
+<li>In the Project Bar, under Platformer8, expand &quot;Event sheets&quot;</li>
+<li>Double click on &quot;GameEvents&quot; to open event sheet</li>
+<li>Click the faint &quot;Add event&quot; link in the top left corner of the event sheet</li>
+<li>In the &quot;Add Event&quot; window, select &quot;Player&quot;, click &quot;Next&quot;</li>
+<li>In the &quot;Collsions&quot; section, select &quot;On collision with another object&quot;, click &quot;Next&quot;</li>
+<li>In the &quot;Parameters for Player: on collision with another object&quot; window click &quot;<click to="" choose="">&quot;</click></li>
+<li>In the &quot;Pick an object&quot; window, select &quot;Surface&quot; and click &quot;OK&quot;</li>
+<li><p>Click &quot;Done&quot; to close the &quot;Parameters for Player:...&quot; window</p></li>
+<li><p>Back on the GameEvents sheet, next to the new event, click &quot;Add action&quot; </p></li>
+<li><p>In the &quot;Add action&quot; window, select &quot;Surface&quot; and click &quot;Next&quot;</p></li>
+<li><p>In the &quot;Animations&quot; section, select &quot;Set frame&quot;, click &quot;Next&quot;</p></li>
+<li><p>Remember for our surface, there were two frames.  Frame 0 was the empty surface, and frame 1 was the surface with windows.  We want to set the animation to frame 1</p></li>
+<li><p>For the Frame number, enter 1, click &quot;Done&quot;</p></li>
+<li><p>Add a second action to the event to show the GameOver layer</p></li>
+<li><p>Just below the &quot;Surface&quot; | &quot;Set animation frame to 1&quot; action, click the &quot;Add action&quot; link again.</p></li>
+<li><p>In the &quot;Add action&quot; window, select &quot;System&quot; and click &quot;Next&quot; </p></li>
+<li><p>Under &quot;Layers &amp; Layout&quot;, select &quot;Set layer visible&quot; and click &quot;Next&quot;</p></li>
+<li><p>In the &quot;Parameters for System: Set layer visible&quot; set  </p>
+
+<ul>
+<li>Layer: 2        Layer number start at 0, GameLayer was our 3rd layer, so it is number 2</li>
+<li>Visibility: &quot;Visible&quot;</li>
+</ul></li>
+<li><p>&quot;Click&quot; Done&quot;</p></li>
+<li><p>Save the project (Ctrl-S)</p></li>
+</ul>
+
+<h3 id="Play_the_game_show_the_the_player_can_win">Play the game, show the the player can win!</h3>
+
+<ul>
+<li>Run the game in the browser</li>
+<li>Get the player up to the Surface</li>
+<li>The Surface screen should now change to show Windows 8</li>
+<li>The GameOver layer, and YouWin sprite should appear</li>
+<li>Click on the YouWin sprite doesn't do anything though.<br></li>
+<li>Next, well listen for the touch events to restart the game....</li>
+<li>Return to Construct 2</li>
+</ul>
+
+<h3 id="Add_the_Touch_object_to_the_game_to_listen_to_touch_and_mouse_events">Add the Touch object to the game to listen to touch (and mouse) events</h3>
+
+<ul>
+<li>We want to have Construct 2 listen for the user tapping, or clicking on our YouWin sprite to re-start the game. </li>
+<li>Construct 2 has specific support for mouse, but the Touch support includes mouse support, so we really only need to use Touch to do both. </li>
+<li>Switch back to the GameLayout layout, right click on the design surface, and select &quot;Insert new object&quot;</li>
+<li>Select the &quot;Touch&quot; object </li>
+<li>Leave the &quot;Name when inserted:&quot; as &quot;Touch&quot;</li>
+<li>Click &quot;Insert&quot; </li>
+</ul>
+
+<h3 id="Listen_for_a_touch_event_on_the_YouWin_sprite_to_restart_the_game">Listen for a touch event on the &quot;YouWin&quot; sprite to restart the game</h3>
+
+<ul>
+<li>Switch back to the GameEvents event sheet</li>
+<li>Just below the event we added previously, click the &quot;Add event&quot; link</li>
+<li>In the &quot;Add event&quot; window, select &quot;Touch&quot; and click &quot;Next&quot;</li>
+<li>For the condition, under the &quot;Touch&quot; category, select &quot;Is touching object&quot;, click &quot;Next&quot;</li>
+<li>In the Parameters for Touch...&quot; window, click &quot;<click to="" choose="">&quot;</click></li>
+<li>In the &quot;Pick an object&quot; window, select &quot;YouWin&quot;, click &quot;OK&quot;</li>
+<li><p>Click &quot;Done&quot; to close the &quot;Parameters for Touch...&quot; window</p></li>
+<li><p>Add an action to hide the GameOver Layer</p></li>
+<li><p>To the right of the new event, click &quot;Add action&quot;</p></li>
+<li><p>In the &quot;Add action&quot; window, select &quot;System&quot;, click &quot;Next&quot;</p></li>
+<li><p>In the &quot;Layers &amp; Layout&quot; section, select &quot;Set layer visible&quot;, click Done</p></li>
+<li><p>In the &quot;Parameters for System: Set layer visible&quot; set  </p>
+
+<ul>
+<li>Layer: 2<br></li>
+<li>Visibility: &quot;Invisible&quot;</li>
+</ul></li>
+<li><p>&quot;Click&quot; Done&quot;</p></li>
+<li><p>Add an action to restart the layout</p></li>
+<li><p>Just below the previous action, click &quot;Add action&quot;</p></li>
+<li><p>In the &quot;Add action&quot; window, select &quot;System&quot;, click &quot;Next&quot;</p></li>
+<li><p>In the &quot;General&quot; section, select &quot;Restart Layout&quot;, click Done</p></li>
+<li><p>OUR GAME IS DONE!  Come on, that is pretty simple isn't it.  Obvioulsy you 
+could create something much more complicated, but this works!</p></li>
+</ul>
+
+<h3 id="Play_it">Play it!</h3>
+
+<ul>
+<li>Run the game in the browser (refresh the browser if needed)</li>
+<li>Get the player up to the surface</li>
+<li>Verify that the surface screen changes to show that Windows 8 is now running</li>
+<li><p>The GameOver layer should also appear, and you can click on the YouWin graphic restart the game.</p></li>
+<li><p>Close the browser and return to Construct 2 when you are done playing</p></li>
+</ul>
+
+<hr>
+
+<p><a name="Export"></a></p>
+
+<h2 id="Exporting_the_Construct_2_game_to_Windows_8">Exporting the Construct 2 game to Windows 8</h2>
+
+<h3 id="Add_the_Windows_8_object_to_the_game">Add the Windows 8 object to the game</h3>
+
+<ul>
+<li><p>Construct 2 ships with a &quot;Windows 8&quot; object that adds specific intelligence about the Windows 8 &quot;Windows Store&quot; app environment to your Construct 2 game.  The &quot;Windows 8&quot; object adds support for :</p>
+
+<ul>
+<li>Snapped &amp; Filled View States</li>
+<li>Trial Mode</li>
+<li>A test mode to test trail vs. purchase behaviour</li>
+<li>About, Support, and Privacy information for the Settings charm</li>
+<li>Roaming Storage</li>
+<li>Share Charm</li>
+<li>Learn more here: <a href="https://www.scirra.com/manual/145/windows-8">https://www.scirra.com/manual/145/windows-8</a></li>
+</ul></li>
+<li><p>In the design surface, right click and select &quot;Insert new object&quot;</p></li>
+<li><p>Select &quot;Windows 8&quot;</p></li>
+<li><p>Leave the &quot;Name when inserted:&quot; as &quot;Windows8&quot;</p></li>
+<li><p>To set the properties on the &quot;Windows8&quot; object&quot;:</p></li>
+<li><p>In the Project Bar, along the bottom, switch to the &quot;Project&quot; tab</p></li>
+<li><p>Under &quot;Platformer8&quot; | &quot;Object types&quot;, select &quot;Windows8&quot;</p></li>
+<li><p>In the Properties bar, set the following properties:</p>
+
+<ul>
+<li>Test mode:      No  (this lets you test trial mode &amp; purchases)</li>
+<li>'About' setting:        Yes</li>
+<li>'Support' setting:  Yes</li>
+<li>'Privacy' setting:  Yes</li>
+</ul></li>
+<li><p>The &quot;About&quot;,&quot;Support&quot;, and &quot;Privacy&quot; settings allow you to have the associated links appear on the &quot;Settings&quot; flyout of the Windows 8 app. To provide the content for each, an .html file is added to the Windows 8 project when the export is done.</p></li>
+<li><p>Save the project (Ctrl-S)</p></li>
+</ul>
+
+<h3 id="Well_use_the_Windows8_object_to_test_if_the_game_is_in_Snap_view_and_if">We'll use the Windows8 object to test if the game is in Snap view, and if</h3>
+
+<h3 id="so_pause_the_game_until_it_is_un-snapped">so, pause the game until it is un-snapped</h3>
+
+<ul>
+<li>First, we need an image, on its own layer to show when the game is &quot;Paused&quot;</li>
+<li>In the Project Bar, at the bottom switch to the Layers tab</li>
+<li>Click the &quot;+&quot; icon along the top to add a new Layer named &quot;GamePaused&quot;</li>
+<li>Notice that the new layer is Layer Number 3</li>
+<li>Make sure the new layer is selected</li>
+<li><p>In the properties panel for the new GamePaused layer, set:</p>
+
+<ul>
+<li>&quot;Initial Visiblity&quot;: &quot;Invisible&quot;</li>
+</ul></li>
+<li><p>On the design surface, right click, select &quot;Insert new object&quot;</p></li>
+<li><p>Add a new sprite named &quot;Paused&quot;</p></li>
+<li><p>Click any where on the surface to add it. </p></li>
+<li><p>In the image editor, open the &quot;Assets\Images\Paused.png&quot; graphic</p></li>
+<li><p>Close the image editor for the sprite</p></li>
+<li><p>Center the image on the surface:</p>
+
+<ul>
+<li>Right click the Paused Sprite.  Select &quot;Align&quot; | &quot;Windows&quot; | &quot;Center horizontal&quot;</li>
+<li>Right click the Paused Sprite.  Select &quot;Align&quot; | &quot;Windows&quot; | &quot;Center vertical&quot;</li>
+</ul></li>
+<li><p>Hide the new GamePaused layer in the designer.  Go to the Properties Bar, Layers Tab. Right Click the &quot;GamePaused&quot; layer, and select &quot;Visible&quot; to toggle the visibility.</p></li>
+</ul>
+
+<h3 id="Add_an_event_to_fire_when_we_are_in_the_Snapped_view_state">Add an event to fire when we are in the &quot;Snapped&quot; view state</h3>
+
+<ul>
+<li>Open the &quot;GameEvents&quot; event sheet</li>
+<li>Below the current events, click &quot;Add event&quot;</li>
+<li>In the &quot;Add event&quot; window, select &quot;Windows8&quot;, click &quot;Next&quot;</li>
+<li>In the &quot;View state&quot; section, select &quot;Compare view state&quot;, click &quot;Next&quot;</li>
+<li><p>For the &quot;State&quot; select &quot;snapped&quot;, click &quot;Done&quot;</p></li>
+<li><p>To the right of the new event, click &quot;Add action&quot;</p></li>
+<li><p>Select &quot;System&quot;, click &quot;Next&quot;</p></li>
+<li><p>Under &quot;Layers &amp; Layout&quot;, select &quot;Set layer visible&quot;, click &quot;Next&quot;</p></li>
+<li><p>Set:</p>
+
+<ul>
+<li>Layer:      3</li>
+<li>Visibility: Visible </li>
+</ul></li>
+<li><p>Click &quot;Done&quot;</p></li>
+<li><p>Next, well add an action to actually pause the game by setting the System timescale value to 0</p></li>
+<li><p>Click &quot;Add action&quot; again</p></li>
+<li><p>Select &quot;System&quot;, click Next</p></li>
+<li><p>Under &quot;Time&quot; (at the end of the list), select &quot;Set time scale&quot;, click &quot;Next&quot;</p></li>
+<li><p>Set the Time scale to 0 (note the instructions above say this will pause the game)</p></li>
+<li><p>Click &quot;Done&quot;</p></li>
+<li><p>Save the project (Ctrl-S)</p></li>
+</ul>
+
+<h3 id="Add_an_Else_event_to_reverse_the_previous_actions_if_the_game_is_NOT">Add an &quot;Else&quot; event to reverse the previous actions if the game is NOT</h3>
+
+<h3 id="in_the_snapped_view">in the snapped view.</h3>
+
+<ul>
+<li>Select the entire previous event by left-clicking in the area just to the left of the &quot;Windows8&quot; object name.  You know you click in the correct place if the entire event, and all of its actions are highlighted in yellow.</li>
+<li>Right click in the same area where you just left-clicked to select the event</li>
+<li>In the pop-up menu select &quot;Add&quot; | &quot;Add 'Else' (X)&quot;</li>
+<li>This adds an &quot;Else&quot; block to the previous event that will run if the game is NOT snapped view.</li>
+<li><p>Add two actions to the new else block to reverse the settings of the snapped view:</p></li>
+<li><p>To the right of the else block, click &quot;Add action&quot;</p></li>
+<li><p>Select &quot;System&quot;, click &quot;Next&quot;</p></li>
+<li><p>Under &quot;Layers &amp; Layout&quot;, select &quot;Set layer visible&quot;, click &quot;Next&quot;</p></li>
+<li><p>Set:</p>
+
+<ul>
+<li>Layer:      3</li>
+<li>Visibility: Invisible  (hide the Paused graphic)</li>
+</ul></li>
+<li><p>Click &quot;Done&quot;</p></li>
+<li><p>Next, well add an action to resume the game by setting the System timescale value to 1</p></li>
+<li><p>Click &quot;Add action&quot; again</p></li>
+<li><p>Select &quot;System&quot;, click Next</p></li>
+<li><p>Under &quot;Time&quot; (at the end of the list), select &quot;Set time scale&quot;, click &quot;Next&quot;</p></li>
+<li><p>Set the Time scale to 1.0 (note the instructions above say this will run the game at normal speed)</p></li>
+<li><p>Click &quot;Done&quot;</p></li>
+<li><p>Because View States only happen when the game is being run as a Windows 8 app, we can't actually test them now.  We'll have to try them out in a bit. </p></li>
+<li><p>Save the project (Ctrl-S)</p></li>
+</ul>
+
+<h3 id="Export_the_Construct_2_Game_to_Windows_8">Export the Construct 2 Game to Windows 8</h3>
+
+<ul>
+<li>From the &quot;Home&quot; ribbon along the top, click &quot;Export project&quot; </li>
+<li>Notice that Construct 2 supports exporting to a large number of platforms</li>
+<li>We want Windows 8 though, so pick &quot;Windows 8&quot;, click &quot;Next&quot;</li>
+<li>Click the ellipses to the right of the &quot;Export files to:&quot; box</li>
+<li>Browse to the &quot;Before&quot; folder for this demo</li>
+<li>Click the &quot;Make New Folder&quot; button</li>
+<li>Name the New Folder &quot;Platformer8Windows8&quot;</li>
+<li>Click OK<br></li>
+<li><p>Set the other options as follows:</p>
+
+<ul>
+<li>&quot;Subfolder for images:&quot;     &quot;images\&quot;</li>
+<li>&quot;Subfolder for project files:&quot;  &quot;media\&quot;</li>
+<li>&quot;PNG recompression:&quot;        &quot;Standard (recommended&quot;</li>
+<li>&quot;Minify script (recommended)&quot;:  CLEAR THE CHECKBOX (requires Java to be installed)</li>
+</ul></li>
+<li><p>Click &quot;Export&quot;</p></li>
+<li><p>Once the Export has completed, click &quot;Open destination folder&quot;</p></li>
+</ul>
+
+<h3 id="Open_the_exported_game_in_Visual_Studio_2012">Open the exported game in Visual Studio 2012</h3>
+
+<ul>
+<li>In the folder where the project was exported, double click on the &quot;Platformer8.sln&quot; file</li>
+<li>Make sure it opens in Visual Studio 2012 (or Visual Studio 2012 Express for Windows 8)</li>
+<li>In the Solution Explorer, double click on the &quot;package.appxmanifest&quot; file</li>
+<li>Switch to the &quot;Packaging&quot; tab (notice the red &quot;x&quot; on the tab)</li>
+<li>Construct 2 does not create package certificate when it creates the project. We need to add one to be able to test our game in Windows 8.</li>
+<li>Click the &quot;Choose Certificate...&quot; button</li>
+<li>In the &quot;Choose Certificate&quot; window, click the &quot;Configure Certificate...&quot; drop down at the bottom</li>
+<li>Select &quot;Create test certificate...&quot;</li>
+<li>In the &quot;Create Test Certificate&quot; window, accept the defaults (including blank passwords), click &quot;OK&quot;</li>
+<li>Click &quot;OK&quot; to close the &quot;Choose Certificate&quot; window</li>
+<li><p>If prompted that a certificate with the same name exists, click &quot;Yes&quot; to replace.</p></li>
+<li><p>NOTE, YOU WILL HAVE TO REPEAT THE ABOVE STEPS EACH TIME YOU EXPORT TO WINDOWS 8 BECAUSE EACH EXPORT OVERWRITES THE FILES FROM THE PREVIOUS EXPORT.</p></li>
+<li><p>In the solution explorer, browse the other files.  If you told the Windows8 object in Construct 2 to have an About, Support and Privacy settting you should see a corresponding file for each:</p>
+
+<ul>
+<li>about.html</li>
+<li>privacy.html</li>
+<li>support.html</li>
+</ul></li>
+<li><p>You can open each of the files, and edit them accordingly.  Again, you will have to repeat this process after each export so you may want to keep a separate copy of those files outside of the project structure. </p></li>
+<li><p>Save the Visual Studio project</p></li>
+</ul>
+
+<h3 id="Run_the_Game_in_Windows_8">Run the Game in Windows 8</h3>
+
+<ul>
+<li>From the Visual Studio menu, select &quot;Debug&quot; | &quot;Start to run the game in Windows 8</li>
+<li>Verify that the game works</li>
+<li>Try dragging the game into Snap view.  Verify that the Pause screen shows and that the game is actually paused (you can't move the player)</li>
+<li>Similarly verify that Full and Filled views work as expected.</li>
+<li>At this point, you are ready to upload your game to the Windows 8 Store! </li>
+</ul>
+
+<h3 id="Done">Done!</h3>
+
+</div>
+</body>
+</html>
