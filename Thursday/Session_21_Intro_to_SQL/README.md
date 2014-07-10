@@ -69,7 +69,23 @@ With Azure though we offer a "Database as a Service" called **"SQL Database"**. 
 
 	![02-020-ServerName](images/02-020-servername.png?raw=true "Server Name")
 
-1. There are a bunch of ways you could connect to your server:
+1. If we want client applications from OUTSIDE the Azure Datacenter to connect to the database, then we need to open a firewall rule on the Azure SQL Server to allow connections from the outside.  To do so, first click on the **"DASHBOARD"** link along the top, then click the **"Manage Allowed IP Addresses"** link:
+
+	![02-022-ManageIPs](images/02-022-manageips.png?raw=true "Manage Allowed IP Addresses")
+
+1. On the server's **"CONFIGURE"** page, first, click the **"ADD TO THE ALLOWED IP ADDRESSES"** to create a new firewall rule for the IP address you are currently accessing the portal as.  Then, create another firewall rule that lets ANY ip address connect (<span style="color: red">**DON'T DO THIS ON A PRODUCTION SERVER, WE ARE DOING IT HERE JUST TO ENSURE YOU DON'T HAVE CONNECTIVITY ISSUES IF YOUR CLIENT IP ADDRESS CHANGES**</span>).  Finally, click **SAVE** to save the new firewall rules.  
+	
+	- **Rule Name:** Everyone
+	- **Start IP Address:** 0.0.0.0
+	- **End IP Address:** 255.255.255.255
+
+	![02-024-FirewallRules](images/02-024-firewallrules.png?raw=true "Firewall Rules")
+
+1. Lastly if you don't remember the SQL credentials you specified when you made the Azure Mobile service, you can find the login name, and reset the password from the server's DASHBOARD page:  
+
+	![02-026-ResetPassword](images/02-026-resetpassword.png?raw=true "Reset Admin Credentials")
+
+1. Ok, so we know the server's address, we've opened up the firewall rules to allow the connection, and we've ensured we know the credentials.  Now its time to connect.  There are a bunch of ways you could connect to your server:
 	- You can connect in code from a variety of platforms and languages
 	- You could use the web based management tools provided by Azure
 	- You could install SQL Server Management Studio 
@@ -77,7 +93,10 @@ With Azure though we offer a "Database as a Service" called **"SQL Database"**. 
 
 1. Open **Visual Studio 2013** and from the menu bar select **"VIEW"** | **"SQL Server Object Explorer"**:
 
+	> **Note:** If you don't see the **SQL Server Object Explorer** it may instead by under **"VIEWS"** | **"Other Windows"** | **"SQL Server Object Explorer"**.  You can also try the keyboard shortcut **Ctrl+\,Ctrl+S** to open the window.  Lastly, make sure that in **"TOOLS"** | **"Extensions and Updates..."* | **"Updates"** | **"Product Updates"** and look for any updates for the **SQL Server Data Tools**.
+
 	![02-030-SQLObjectExplorer](images/02-030-sqlobjectexplorer.png?raw=true "SQL Server Object Explorer")
+
 
 1. In the **SQL Server Object Explorer** window, right click the **SQL Server** node, and select **Add SQL Server...** from the pop-up menu:
 
@@ -95,11 +114,23 @@ With Azure though we offer a "Database as a Service" called **"SQL Database"**. 
 <a name="Querying" />
 ## Querying the Database ##
 
-Ok, so I'm  lame and don't have the rest of this documented.  We'll walk through some queries together......
 
-
----
-
-## What does this mean? ##
+### What does this mean? ###
 
 ![WhatDoesThisMean](images/WhatDoesThisMean.jpg?raw=true)
+
+1. Well, open up the **"Users SQL Queries.sql" file in Visual Studio 2013 and find out. From the Visual Studio 2013 menu bar, select **"FILE"** | **"Open"** | **"File..."**, browser to the folder for this session and open the **"Users SQL Queries.sql"** file:
+
+	![03-010-OpenFile](images/03-010-openfile.png?raw=true "Open File")
+
+1. Click the **"Connect"** button along the top of the query window:
+
+	![03-020-Connect](images/03-020-connect.png?raw=true "Connect")
+	
+1. And then connect to your Azure SQL Database the with the appropriate credentials:
+
+	![03-030-ConnectionDialog](images/03-030-connectiondialog.png?raw=true "Connection Dialog")
+
+1. Now you can read the comments and follow through the file step by step.  In Visual Studio you can select JUST the statements that you want to run each time, then when you execute, only the highlighted lines will be sent to the server.  As you work through the steps select the statements between "GO" statements and execute them in order.  Read the comments as you go, and you should be able to work through it.  The **"CLEAN UP SCRIPT"** at the top deletes the tables so you can create them again and work back through the steps as many times as you like:
+
+![03-040-ScriptExecution](images/03-040-scriptexecution.png?raw=true "Script Execution")
