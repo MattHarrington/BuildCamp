@@ -40,7 +40,7 @@ Although you can call it whatever you want, be sure to call the namespace **main
 
 ### Setting up Visual Studio Solution
 
-Open up the starter project and ensure to **install the missing npm packages**:
+Open up the starter project, [StartProject/FacialRecognitionLab/FacialRecognitionLab.sln](StartProject/FacialRecognitionLab/FacialRecognitionLab.sln) and ensure to **install the missing npm packages**:
 
 ![](ScreenShots/ss3.png)
 
