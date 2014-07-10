@@ -99,3 +99,7 @@ Ok, so I'm  lame and don't have the rest of this documented.  We'll walk through
 
 
 ---
+
+## What does this mean? ##
+
+![WhatDoesThisMean](images/WhatDoesThisMean.jpg?raw=true)
