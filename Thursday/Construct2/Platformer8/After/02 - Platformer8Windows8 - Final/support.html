@@ -1,0 +1,28 @@
+﻿<!doctype HTML>
+<html>
+    <head>
+        <title>Support</title>
+		
+		<link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet">
+		<!-- <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet"> -->
+    </head>
+    <body>
+        <!-- BEGINSETTINGFLYOUT -->
+        <div id="divGamePreferences" data-win-control="WinJS.UI.SettingsFlyout" data-win-options="{settingsCommandId:'support',width:'narrow'}">
+		
+            <!-- Use either 'win-ui-light' or 'win-ui-dark' depending on the contrast between the header title and background color -->
+            <div class="win-ui-dark win-header"> <!-- Background color reflects app's personality -->
+               <button type="button" onclick="WinJS.UI.SettingsFlyout.show()" class="win-backbutton"></button>
+               <div class="win-label">Support</div>
+            </div>                
+            <div class="win-content">
+
+              <p>Include some support information for your app here.</p>
+              
+			  <p>For example: email us at <a href="mailto:example@example.com">example@example.com</a> or visit <a href="http://example.com/support">http://example.com/support</a>.</p>
+
+            </div>
+        </div>
+        <!-- ENDSETTINGSFLYOUT  -->
+    </body>
+</html>

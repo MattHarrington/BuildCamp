@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="2049"
+   height="512"
+   id="svg8103"
+   version="1.1"
+   inkscape:version="0.48.2 r9819"
+   sodipodi:docname="Asphalt Blocks.svg"
+   inkscape:export-filename="C:\Dropbox\Zobie Game\Art\Zombie\Walking Zombie\Walking Zombie Fat Outline.png"
+   inkscape:export-xdpi="5.625"
+   inkscape:export-ydpi="5.625">
+  <defs
+     id="defs8105">
+    <linearGradient
+       id="linearGradient8667">
+      <stop
+         style="stop-color:#875929;stop-opacity:1;"
+         offset="0"
+         id="stop8669" />
+      <stop
+         style="stop-color:#3f2a13;stop-opacity:1;"
+         offset="1"
+         id="stop8671" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.22538958"
+     inkscape:cx="1265.8875"
+     inkscape:cy="221.35862"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1003"
+     inkscape:window-x="1911"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:snap-global="false">
+    <sodipodi:guide
+       orientation="1,0"
+       position="0,0"
+       id="guide8111" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="512,100"
+       id="guide8113" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="1024,100"
+       id="guide8115" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="0,0"
+       id="guide8117" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="1536,100"
+       id="guide8119" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="2048,0"
+       id="guide8127" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="0,512"
+       id="guide8675" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="0,384"
+       id="guide8681" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="0,256"
+       id="guide8684" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="0,128"
+       id="guide8686" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="-512,0"
+       id="guide8751" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="2560,0"
+       id="guide8763" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="3072,0"
+       id="guide8789" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="3584,0"
+       id="guide8791" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata8108">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-540.36218)">
+    <rect
+       style="fill:none;fill-opacity:1;stroke:none"
+       id="rect8795"
+       width="512"
+       height="512"
+       x="3584"
+       y="540.36218" />
+    <g
+       id="g8909"
+       inkscape:export-filename="C:\Dropbox\Zobie Game\Art\Zombie\Blocks and Obstacles\32x32\AsphaltDownLeft32.png"
+       inkscape:export-xdpi="5.625"
+       inkscape:export-ydpi="5.625">
+      <rect
+         y="540.36218"
+         x="8.4204103e-006"
+         height="512"
+         width="512"
+         id="rect8775"
+         style="fill:none;stroke:none" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:none"
+         d="m 5e-6,540.36218 511.999995,0 0,512.00002 -511.999995,0 z"
+         id="path8753" />
+      <path
+         style="fill:#202020;fill-opacity:1;stroke:none"
+         d="m 61.782765,544.24234 c 16.69713,0.3631 43.128465,-0.64669 65.662935,-1.10863 22.53446,-0.46191 47.46592,-1.57051 69.54308,-1.66292 22.07716,-0.0924 42.3819,1.29346 62.89138,1.10862 20.50948,-0.18483 38.13081,-1.68362 59.76057,-1.49869 21.62976,0.18493 48.54002,2.60731 69.90236,2.60731 21.36234,0 36.60213,1.53991 57.01984,0.98538 20.41771,-0.55453 25.78102,-3.23342 65.43707,-4.31123 l 0,512.00002 -511.999995,0 0,-448.09575 c 0,-63.90427 26.35581,-63.90427 61.78276,-60.02411 z"
+         id="path8755"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="czzzzzzccccc" />
+      <path
+         style="fill:#7e6129;fill-opacity:1;stroke:none"
+         d="m 78.693385,684.53224 c 25.170345,0.24592 65.449495,21.26903 89.016605,11.84579 64.98204,-9.20102 84.0293,46.03925 122.3466,21.65259 38.31731,-24.38667 -9.55709,-85.71042 83.9254,-80.81375 38.49734,2.01651 43.99024,11.0827 69.80365,18.35573 25.81341,7.27302 27.28315,11.72812 68.21436,12.78958 l 0,384.00002 -512,0 9.0333949,-142.39541 c 0.017981,-17.37211 0.035963,-34.74422 0.053944,-52.11633 1.5180001,-12.63342 3.0360011,-25.26683 4.5540011,-37.90025 0,0 4.568921,-29.37617 4.568921,-37.0159 0,-7.63974 4.464474,-19.86331 4.464474,-19.86331 l 0,-22.75621 c 0.0283,-46.85968 35.57708,-51.81694 56.01865,-55.78255 z"
+         id="path8757"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cczszcccccczccc" />
+      <path
+         style="fill:#3c2b0f;fill-opacity:1;stroke:none"
+         d="m 81.350335,783.86333 c 9.88703,0.12729 43.267155,12.49885 63.655705,12.49885 20.38856,0 39.49941,20.66374 59.88797,20.66374 20.38854,0 42.0548,-38.69369 62.44336,-38.69369 20.38855,0 40.7771,18.02995 61.16566,18.02995 20.38855,0 45.27226,26.65297 65.66081,26.65297 20.38856,0 20.93457,-34.44099 40.93743,-43.1151 20.00286,-8.67411 32.70086,16.46213 76.89873,16.46213 l 0,256.00002 -512,0 c 4.5471133,-31.7562 3.0811303,-72.5321 13.64134,-95.26868 0,0 9.696604,-16.43506 11.992284,-24.94565 2.29567,-8.51058 -4.96631,-12.82962 -4.96631,-12.82962 0,-3.72473 0,-7.44946 0,-11.17419 0,0 -3.6991,-5.76185 -3.72473,-9.1049 -0.0256,-3.34304 3.72473,-9.51875 3.72473,-9.51875 l 2.007421,-26.11426 c -0.81612,-10.24095 8.5697,-83.62688 58.6756,-79.54282 z"
+         id="path8759"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="czzzzzzcccczcczccc" />
+      <path
+         style="fill:#2b1d00;fill-opacity:1;stroke:none"
+         d="m 56.080265,928.29399 c 22.97179,5.96196 37.89973,-1.75297 52.576525,-1.75297 14.67677,0 35.70909,32.44374 57.40598,35.18168 21.69689,2.73794 28.467,-39.98286 48.85555,-39.98286 20.38854,0 56.99117,-21.8905 77.37972,-21.8905 20.38857,0 36.08522,24.12084 56.47377,24.12084 20.38857,0 28.06655,46.8212 48.45511,46.8212 20.38856,0 8.24035,-39.173 32.9479,-53.20973 24.70756,-14.03673 57.07548,6.78053 81.82518,6.78053 l 0,128.00002 -512,0 c 0,-16.609 0.46468965,-16.9635 -0.12049528,-28.7942 -0.13531,-5.1191 3.72472998,-16.5543 3.72472998,-16.5543 l 0,-11.95424 c 2.14503,-34.70059 33.7137803,-57.35597 52.4760303,-66.76547 z"
+         id="path8761"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="czzzzzzzccccccc" />
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="path8835"
+         d="m 55.719805,606.39988 42.41801,-25.22152 50.443035,16.05006 -34.39298,41.27157 33.24654,29.86219 -42.418,0 -29.807245,-49.35154 z"
+         style="fill:#4d4d4d;stroke:none" />
+      <path
+         sodipodi:nodetypes="cccccccc"
+         style="fill:#4d4d4d;stroke:none"
+         d="m 272.20134,631.00201 -35.85189,-17.31956 -6.14181,-32.92451 28.39151,-2.43245 28.41626,-15.96331 -4.77393,29.80488 -7.333,24.39791 z"
+         id="path8837"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="path8839"
+         d="m 453.7861,562.3682 13.69805,23.30559 26.32362,19.09221 -27.02307,9.04147 -23.86489,22.19861 -21.07847,-19.66704 20.09817,-35.86277 z"
+         style="fill:#4d4d4d;stroke:none" />
+    </g>
+    <g
+       id="g8920"
+       inkscape:export-filename="C:\Dropbox\Zobie Game\Art\Zombie\Blocks and Obstacles\32x32\AsphaltFlat0132.png"
+       inkscape:export-xdpi="5.625"
+       inkscape:export-ydpi="5.625">
+      <rect
+         style="fill:none;stroke:none"
+         id="rect8777"
+         width="512"
+         height="512"
+         x="512"
+         y="540.36218" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="rect8149"
+         d="m 512,540.36218 512,0 0,512.00002 -512,0 z"
+         style="fill:none;stroke:none" />
+      <path
+         sodipodi:nodetypes="czzzzzzzcccc"
+         inkscape:connector-curvature="0"
+         id="rect8688"
+         d="m 512,540.36218 c 20.59425,1.29339 40.525,3.41787 61.78277,3.88016 21.25776,0.46229 43.12845,2.2676 65.66292,1.80567 22.53447,-0.46192 47.46593,-1.57052 69.54309,-1.66292 22.07716,-0.0924 42.3819,-1.62084 62.89138,-1.80568 20.50948,-0.18483 38.49008,0.51212 60.11984,0.69706 21.62976,0.18493 48.18075,0.41156 69.54309,0.41156 21.36234,0 38.0392,2.08583 58.45691,1.5313 20.41771,-0.55453 42.6667,0 64,-4.85715 l 0,512.00002 -512,0 z"
+         style="fill:#202020;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="czczszcccc"
+         inkscape:connector-curvature="0"
+         id="rect8690"
+         d="m 512,668.36218 c 34.98324,0 32.27776,15.92414 58.61449,16.17006 26.33672,0.24592 51.5356,-26.23992 76.19479,-35.66316 67.99323,-9.20102 131.98464,43.87976 172.07752,19.4931 40.09288,-24.38667 57.78703,23.3442 78.77613,27.16112 39.62551,7.20602 57.32651,0.28523 64,0 6.67348,-0.28522 40.97507,-27.14283 62.33707,-27.16112 l 0,384.00002 -512,0 z"
+         style="fill:#7e6129;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="czzzzzzzcccc"
+         inkscape:connector-curvature="0"
+         id="rect8703"
+         d="m 512,796.36218 c 51.91891,0 54.43872,18.68656 64.78391,18.81386 10.34519,0.12729 41.88276,-18.81386 63.21609,-18.81386 21.33333,0 27.77236,-29.0047 49.10569,-29.0047 21.33333,0 57.56098,10.97475 78.89431,10.97475 21.33333,0 42.66667,18.02995 64,18.02995 21.33333,0 47.37013,26.65297 68.70346,26.65297 21.33333,0 21.90465,-34.44099 42.83441,-43.1151 20.92977,-8.67411 34.21618,16.46213 80.46213,16.46213 l 0,256.00002 -512,0 z"
+         style="fill:#3c2b0f;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="czzzzzzzcccc"
+         inkscape:connector-curvature="0"
+         id="rect8705"
+         d="m 512,924.36218 c 50.99438,0 64.11388,20.53457 85.44722,20.53457 21.33333,0 31.71489,-47.45767 54.4172,-44.71973 22.7023,2.73794 65.93918,-8.67015 87.27251,-8.67015 21.33333,0 21.21945,42.89443 42.55278,42.89443 21.33334,0 49.0552,6.84486 70.38853,6.84486 21.33334,0 22.58843,-16.88398 43.92176,-16.88398 21.33333,0 50.42417,10.49545 71.7575,10.49545 21.33334,0 30.34593,-10.49545 56.2425,-10.49545 l 0,128.00002 -512,0 z"
+         style="fill:#2b1d00;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="path8843"
+         d="m 583.38031,573.88374 39.98098,8.42648 14.08683,30.64567 -27.76004,9.06784 -24.51572,22.26336 -21.65332,-19.72441 2.30336,-29.08877 z"
+         style="fill:#4d4d4d;stroke:none" />
+      <path
+         style="fill:#4d4d4d;stroke:none"
+         d="m 928.6682,664.26655 -25.68971,-37.67763 19.07989,-31.944 33.00086,16.09772 14.56892,19.13307 27.56814,16.09989 -31.5401,17.77801 z"
+         id="path8845"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+      <path
+         style="fill:#4d4d4d;stroke:none"
+         d="m 749.10959,630.93214 -29.32481,-12.31744 8.78156,-35.88301 28.58801,-12.37874 32.34739,11.24898 -7.09857,29.0353 20.19961,30.95486 z"
+         id="path8847"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+    </g>
+    <g
+       id="g8931"
+       inkscape:export-filename="C:\Dropbox\Zobie Game\Art\Zombie\Blocks and Obstacles\32x32\AsphaltFlat0232.png"
+       inkscape:export-xdpi="5.625"
+       inkscape:export-ydpi="5.625">
+      <rect
+         y="540.36218"
+         x="1024"
+         height="512"
+         width="512"
+         id="rect8779"
+         style="fill:none;stroke:none" />
+      <rect
+         style="fill:none;stroke:none"
+         id="rect8151"
+         width="512"
+         height="512"
+         x="1024"
+         y="540.36218" />
+      <path
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:none"
+         d="m 1024,540.36218 512,0 0,512.00002 -512,0 z"
+         id="path8713" />
+      <path
+         style="fill:#202020;fill-opacity:1;stroke:none"
+         d="m 1024,540.36218 c 24.5794,0 51.5189,5.36651 72.7668,5.82858 21.2478,0.46207 36.2041,-5.18459 56.7603,-4.99969 20.5562,0.1849 43.3031,2.86982 65.3803,2.77742 22.0771,-0.0924 42.3819,-2.86937 62.8914,-3.05421 20.5094,-0.18484 41.5428,0.9281 63.1725,1.11303 21.6298,0.18493 47.2095,-0.55945 68.5718,-0.55945 21.3623,0 39.7043,1.53026 60.122,0.97573 20.4177,-0.55453 41.0016,-2.08141 62.3349,-2.08141 l 0,512.00002 -512,0 z"
+         id="path8715"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="czzzzzzzcccc" />
+      <path
+         style="fill:#7e6129;fill-opacity:1;stroke:none"
+         d="m 1024,668.36218 c 34.9832,0 32.2778,15.92414 58.6145,16.17006 26.3367,0.24592 67.7608,24.99758 92.42,15.57434 67.9932,-9.20102 88.4328,17.78518 135.3573,17.78518 46.9246,0 51.7154,-65.22412 72.7984,-68.48221 47.3112,-7.31127 83.7992,46.39898 90.4727,46.11375 6.6735,-0.28522 40.9751,-27.14283 62.3371,-27.16112 l 0,384.00002 -512,0 z"
+         id="path8717"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="czczszcccc" />
+      <path
+         style="fill:#3c2b0f;fill-opacity:1;stroke:none"
+         d="m 1024,796.36218 c 51.9189,0 43.3373,28.0801 53.6825,28.2074 10.3451,0.12729 62.3777,6.80489 83.711,6.80489 21.3334,0 55.953,-35.01229 77.2864,-35.01229 21.3333,0 52.4372,-35.86625 73.7705,-35.86625 21.3333,0 49.4984,-1.70792 71.6856,-18.78708 22.1873,-17.07917 24.3133,22.38318 45.6466,22.38318 21.3334,0 33.8601,7.88547 53.9359,10.68427 20.0758,2.7988 6.0356,21.58588 52.2815,21.58588 l 0,256.00002 -512,0 z"
+         id="path8719"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="czzzzzzzcccc" />
+      <path
+         style="fill:#2b1d00;fill-opacity:1;stroke:none"
+         d="m 1024,924.36218 c 50.9944,0 55.5743,-20.45543 76.9076,-20.45543 21.3334,0 51.356,-1.34392 74.0583,1.39402 22.7023,2.73794 24.0952,57.08464 45.4285,57.08464 21.3334,0 57.0857,-38.02323 78.4191,-38.02323 21.3333,0 30.2681,17.73794 51.6014,17.73794 21.3334,0 45.6453,-68.97544 66.9786,-68.97544 21.3334,0 47.0084,18.18108 68.3417,18.18108 21.3334,0 24.3682,33.05642 50.2648,33.05642 l 0,128.00002 -512,0 z"
+         id="path8721"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="czzzzzzzcccc" />
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="path8849"
+         d="m 1062.5049,578.32862 32.3212,-12.07928 20.0305,19.78371 -17.783,21.34512 -16.6879,7.25346 -16.8044,17.35261 -7.373,-26.38368 z"
+         style="fill:#4d4d4d;stroke:none" />
+      <path
+         style="fill:#4d4d4d;stroke:none"
+         d="m 1257.8769,672.60907 -60.491,-27.0051 31.5743,-36.22339 31.6574,15.81813 34.8268,-15.44424 20.8237,23.32442 -23.8216,26.98367 z"
+         id="path8851"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+      <path
+         style="fill:#4d4d4d;stroke:none"
+         d="m 1443.8746,570.99646 19.5695,15.23318 25.6372,12.26982 -24.697,12.72419 -18.1953,0.17423 -22.2395,9.42901 3.4953,-27.17061 z"
+         id="path8853"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+    </g>
+    <g
+       id="g8943"
+       inkscape:export-filename="C:\Dropbox\Zobie Game\Art\Zombie\Blocks and Obstacles\32x32\AsphaltFlat0332.png"
+       inkscape:export-xdpi="5.625"
+       inkscape:export-ydpi="5.625">
+      <rect
+         style="fill:none;stroke:none"
+         id="rect8781"
+         width="512"
+         height="512"
+         x="1536"
+         y="540.36218" />
+      <rect
+         y="540.36218"
+         x="1536"
+         height="512"
+         width="512"
+         id="rect8153"
+         style="fill:none;stroke:none" />
+      <rect
+         y="540.36218"
+         x="1536"
+         height="512"
+         width="512"
+         id="rect8723"
+         style="fill:none;stroke:none" />
+      <path
+         id="path8725"
+         d="m 1536,540.36218 512,0 0,512.00002 -512,0 z"
+         style="fill:none;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="czzzzzzzcccc"
+         inkscape:connector-curvature="0"
+         id="path8727"
+         d="m 1536,540.36218 c 24.5794,0 54.4333,7.30937 75.6811,7.77144 21.2479,0.46207 33.2899,-7.12745 53.846,-6.94255 20.5562,0.1849 43.3031,2.86982 65.3803,2.77742 22.0772,-0.0924 42.3819,-2.86937 62.8914,-3.05421 20.5095,-0.18484 41.5428,0.9281 63.1726,1.11303 21.6297,0.18493 47.2094,-0.55945 68.5717,-0.55945 21.3624,0 39.7044,1.53026 60.1221,0.97573 20.4177,-0.55453 41.0015,-2.08141 62.3348,-2.08141 l 0,512.00002 -512,0 z"
+         style="fill:#202020;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="czczszcccc"
+         inkscape:connector-curvature="0"
+         id="path8729"
+         d="m 1536,668.36218 c 34.9833,0 32.2778,15.92414 58.6145,16.17006 26.3367,0.24592 47.7792,-32.72682 72.4384,-42.15006 67.9933,-9.20102 101.7539,-24.39805 148.6784,-24.39805 46.9246,0 85.018,21.36249 106.1011,18.1044 47.3111,-7.31127 59.512,13.40803 70.1102,20.18735 10.5981,6.77931 34.6954,12.10459 56.0574,12.0863 l 0,384.00002 -512,0 z"
+         style="fill:#7e6129;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="czzzzzzzcccc"
+         inkscape:connector-curvature="0"
+         id="path8731"
+         d="m 1536,796.36218 c 51.9189,0 43.3373,28.0801 53.6825,28.2074 10.3452,0.12729 53.497,35.66709 74.8304,35.66709 21.3333,0 53.7329,16.05161 75.0662,16.05161 21.3333,0 59.0977,12.97747 80.431,12.97747 21.3334,0 58.3791,13.83327 80.5664,-3.24589 22.1873,-17.07917 33.1938,-35.34122 54.5272,-35.34122 21.3333,0 20.539,-78.70114 40.6148,-75.90234 20.0758,2.7988 6.0356,21.58588 52.2815,21.58588 l 0,256.00002 -512,0 z"
+         style="fill:#3c2b0f;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="czzzzzzzcccc"
+         inkscape:connector-curvature="0"
+         id="path8733"
+         d="m 1536,924.36218 c 50.9944,0 57.7945,17.28745 79.1279,17.28745 21.3333,0 38.0349,14.19727 60.7372,16.93521 22.7023,2.73794 35.196,3.80054 56.5294,3.80054 21.3333,0 50.4252,-6.94083 71.7585,-6.94083 21.3333,0 59.1303,35.4993 80.4636,35.4993 21.3334,0 56.7461,-37.89307 78.0795,-37.89307 21.3333,0 13.7058,-61.74502 35.0391,-61.74502 21.3334,0 24.3683,33.05642 50.2648,33.05642 l 0,128.00002 -512,0 z"
+         style="fill:#2b1d00;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="path8857"
+         d="m 1573.115,579.91095 24.7639,1.3272 28.0522,-4.57079 26.5651,25.4104 -23.4384,36.34189 -18.0313,-25.15024 -38.456,-5.37437 z"
+         style="fill:#4d4d4d;stroke:none" />
+      <path
+         style="fill:#4d4d4d;stroke:none"
+         d="m 1948.2954,598.31123 11.4317,-16.03572 8.8776,-20.75081 40.3859,-4.41035 -6.261,28.6021 -10.7719,33.20942 -25.1347,-8.33689 z"
+         id="path8859"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+    </g>
+    <g
+       id="g8955"
+       inkscape:export-filename="C:\Dropbox\Zobie Game\Art\Zombie\Blocks and Obstacles\32x32\AsphaltFlat0432.png"
+       inkscape:export-xdpi="5.625"
+       inkscape:export-ydpi="5.625">
+      <rect
+         y="540.36218"
+         x="2048"
+         height="512"
+         width="512"
+         id="rect8783"
+         style="fill:none;stroke:none" />
+      <rect
+         style="fill:none;stroke:none"
+         id="rect8155"
+         width="512"
+         height="512"
+         x="2048"
+         y="540.36218" />
+      <rect
+         style="fill:none;stroke:none"
+         id="rect8735"
+         width="512"
+         height="512"
+         x="2048"
+         y="540.36218" />
+      <rect
+         style="fill:none;stroke:none"
+         id="rect8737"
+         width="512"
+         height="512"
+         x="2048"
+         y="540.36218" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:none"
+         d="m 2048,540.36218 512,0 0,512.00002 -512,0 z"
+         id="path8739" />
+      <path
+         style="fill:#202020;fill-opacity:1;stroke:none"
+         d="m 2048,540.36218 c 24.5794,0 49.5761,7.30937 70.8239,7.77144 21.2479,0.46207 38.1471,-7.12745 58.7032,-6.94255 20.5562,0.1849 43.3031,2.86982 65.3803,2.77742 22.0772,-0.0924 42.3819,-2.86937 62.8914,-3.05421 20.5095,-0.18484 41.5428,0.9281 63.1726,1.11303 21.6297,0.18493 47.2094,-0.55945 68.5717,-0.55945 21.3624,0 39.7044,1.53026 60.1221,0.97573 20.4177,-0.55453 41.0015,-2.08141 62.3348,-2.08141 l 0,512.00002 -512,0 z"
+         id="path8741"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="czzzzzzzcccc" />
+      <path
+         style="fill:#7e6129;fill-opacity:1;stroke:none"
+         d="m 2048,668.36218 c 34.9833,0 32.2778,15.92414 58.6145,16.17006 26.3367,0.24592 67.9331,-6.74682 92.5923,-16.17006 67.9933,-9.20102 70.0835,0 117.008,0 46.9246,0 79.2597,30.48649 100.3428,27.2284 47.3111,-7.31127 76.7868,-46.09402 87.385,-39.3147 10.5981,6.77931 34.6954,12.10459 56.0574,12.0863 l 0,384.00002 -512,0 z"
+         id="path8743"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="czczszcccc" />
+      <path
+         style="fill:#3c2b0f;fill-opacity:1;stroke:none"
+         d="m 2048,796.36218 c 51.9189,0 16.4636,40.76839 83.4336,0 66.9699,-40.76839 53.4969,0 74.8303,0 21.3334,0 44.1358,0 65.4691,0 21.3333,0 45.6618,0 66.9951,0 21.3334,0 51.6611,-14.18669 73.8484,-31.26585 22.1873,-17.07917 40.8715,6.88605 62.2049,6.88605 21.3333,0 12.8613,-0.005 32.9371,2.79392 20.0758,2.7988 6.0356,21.58588 52.2815,21.58588 l 0,256.00002 -512,0 z"
+         id="path8745"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="czzzzzzzcccc" />
+      <path
+         style="fill:#2b1d00;fill-opacity:1;stroke:none"
+         d="m 2048,924.36218 c 50.9944,0 74.1096,-46.05344 95.443,-46.05344 21.3333,0 49.5514,15.15697 72.2537,17.89491 22.7023,2.73794 61.1082,-45.73918 82.4416,-45.73918 21.3333,0 13.9562,73.89771 35.2895,73.89771 21.3333,0 45.6943,35.87093 67.0276,35.87093 21.3334,0 30.834,-35.87093 52.1674,-35.87093 21.3333,0 39.6179,22.60679 60.9512,22.60679 21.3334,0 20.5295,-22.60679 46.426,-22.60679 l 0,128.00002 -512,0 z"
+         id="path8747"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="czzzzzzzcccc" />
+      <path
+         style="fill:#4d4d4d;stroke:none"
+         d="m 2101.217,657.65543 -24.4165,-24.38041 9.6727,-26.43966 34.5256,-10.06669 5.8099,29.53882 22.766,8.07535 -20.9351,17.66867 z"
+         id="path8861"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="path8863"
+         d="m 2386.3678,644.60941 21.4894,-4.01347 14.6365,-34.65149 7.4329,26.76937 -3.5316,17.85009 4.7067,23.69281 -54.364,-2.67696 z"
+         style="fill:#4d4d4d;stroke:none" />
+      <path
+         inkscape:transform-center-y="203.92294"
+         inkscape:transform-center-x="-13.524474"
+         style="fill:#4d4d4d;stroke:none"
+         d="m 2255.6264,569.68176 49.6415,-7.81768 22.8175,34.06811 -31.5962,25.27635 -32.2006,-14.29908 -22.7627,39.65076 -28.4096,-28.69783 z"
+         id="path8865"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+    </g>
+    <g
+       id="g8969"
+       inkscape:export-filename="C:\Dropbox\Zobie Game\Art\Zombie\Blocks and Obstacles\32x32\AsphaltUpRight32.png"
+       inkscape:export-xdpi="5.625"
+       inkscape:export-ydpi="5.625">
+      <rect
+         y="540.36218"
+         x="2560"
+         height="512"
+         width="512"
+         id="rect8787"
+         style="fill:none;fill-opacity:1;stroke:none" />
+      <rect
+         style="fill:none;stroke:none"
+         id="rect8797"
+         width="512"
+         height="512"
+         x="2560"
+         y="540.36218" />
+      <rect
+         y="540.36218"
+         x="2560"
+         height="512"
+         width="512"
+         id="rect8799"
+         style="fill:none;stroke:none" />
+      <rect
+         y="540.36218"
+         x="2560"
+         height="512"
+         width="512"
+         id="rect8801"
+         style="fill:none;stroke:none" />
+      <rect
+         y="540.36218"
+         x="2560"
+         height="512"
+         width="512"
+         id="rect8803"
+         style="fill:none;stroke:none" />
+      <path
+         id="path8805"
+         d="m 2560,540.36218 512,0 0,512.00002 -512,0 z"
+         style="fill:none;stroke:none"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         sodipodi:nodetypes="czzzzzzzcccc"
+         inkscape:connector-curvature="0"
+         id="path8807"
+         d="m 2560,540.36218 c 24.5794,0 49.5761,7.30937 70.8239,7.77144 21.2479,0.46207 38.1471,-7.12745 58.7032,-6.94255 20.5562,0.1849 43.3031,2.86982 65.3803,2.77742 22.0772,-0.0924 42.3819,-2.86937 62.8914,-3.05421 20.5095,-0.18484 41.5428,0.9281 63.1726,1.11303 21.6297,0.18493 47.2094,-0.55945 68.5717,-0.55945 21.3624,0 49.6052,21.33189 70.0229,20.77736 20.4177,-0.55453 52.434,0.88883 52.434,-21.88304 l 0,512.00002 -512,0 z"
+         style="fill:#202020;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="czczszcccc"
+         inkscape:connector-curvature="0"
+         id="path8809"
+         d="m 2560,668.36218 c 34.9833,0 41.1885,-0.24592 67.5252,0 26.3367,0.24592 57.0422,31.20503 81.7014,21.78179 67.9933,-9.20102 58.2026,10.89089 105.1271,10.89089 46.9246,0 83.22,42.36747 104.3031,39.10938 47.3111,-7.31127 84.7074,-59.69576 99.266,-71.78206 14.5585,-12.0863 32.7152,-82.23796 54.0772,-83.78112 l 0,467.78114 -512,0 z"
+         style="fill:#7e6129;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="czzzzzzzcccc"
+         inkscape:connector-curvature="0"
+         id="path8811"
+         d="m 2560,796.36218 c 51.9189,0 16.4636,40.76839 83.4336,0 66.9699,-40.76839 72.3084,-35.64293 93.6418,-35.64293 21.3334,0 33.245,35.64293 54.5783,35.64293 21.3333,0 76.3543,43.56358 97.6876,43.56358 21.3334,0 48.6908,-0.32555 70.8781,-17.40471 22.1873,-17.07917 15.1294,-26.15887 36.4628,-26.15887 21.3333,0 3.2676,-16.89777 18.0064,-30.10998 14.7387,-13.21221 -12.5917,-74.53638 57.3114,-97.89002 l 0,384.00002 -512,0 z"
+         style="fill:#3c2b0f;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="czzzzzzzscccc"
+         inkscape:connector-curvature="0"
+         id="path8813"
+         d="m 2560,924.36218 c 50.9944,0 74.1096,-46.05344 95.443,-46.05344 21.3333,0 49.5514,15.15697 72.2537,17.89491 22.7023,2.73794 61.1082,-45.73918 82.4416,-45.73918 21.3333,0 13.9562,73.89771 35.2895,73.89771 21.3333,0 45.6943,35.87093 67.0276,35.87093 21.3334,0 30.834,-35.87093 52.1674,-35.87093 21.3333,0 29.7937,-72.37628 46.1,-72.44102 16.3063,-0.0647 6.5662,-178.10236 47.8562,-259.98952 C 3072,565.31476 3072,540.36218 3072,540.36218 l 0,512.00002 -512,0 z"
+         style="fill:#2b1d00;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="path8867"
+         d="m 2974.8384,665.92294 -49.5079,33.58387 -4.3096,-42.19195 -43.366,-45.01754 52.1951,-0.21513 21.2066,-36.11516 14.3517,52.35123 z"
+         style="fill:#4d4d4d;stroke:none" />
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="path8869"
+         d="m 2632.3599,586.74397 41.4516,-11.91261 48.0696,24.51327 -34.3262,13.67405 -0.8061,19.82533 37.9788,35.55583 -93.9285,-35.52271 z"
+         style="fill:#4d4d4d;stroke:none"
+         inkscape:transform-center-x="-13.524474"
+         inkscape:transform-center-y="203.92294" />
+      <path
+         inkscape:transform-center-y="-3.3360008"
+         inkscape:transform-center-x="10.179393"
+         style="fill:#4d4d4d;stroke:none"
+         d="m 2844.3587,571.82552 -8.8317,27.26367 -31.3598,17.38128 -20.7198,-4.8823 -1.7517,-15.31473 -7.7619,-25.03933 37.396,9.2143 z"
+         id="path8871"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+    </g>
+    <g
+       id="g8984"
+       inkscape:export-filename="C:\Dropbox\Zobie Game\Art\Zombie\Blocks and Obstacles\32x32\AsphaltUpLeft32.png"
+       inkscape:export-xdpi="5.625"
+       inkscape:export-ydpi="5.625">
+      <rect
+         transform="scale(-1,1)"
+         style="fill:none;stroke:none"
+         id="rect8873"
+         width="512"
+         height="512"
+         x="-3584"
+         y="540.36218" />
+      <rect
+         transform="scale(-1,1)"
+         y="540.36218"
+         x="-3584"
+         height="512"
+         width="512"
+         id="rect8875"
+         style="fill:none;stroke:none" />
+      <rect
+         transform="scale(-1,1)"
+         style="fill:none;stroke:none"
+         id="rect8877"
+         width="512"
+         height="512"
+         x="-3584"
+         y="540.36218" />
+      <rect
+         transform="scale(-1,1)"
+         style="fill:none;stroke:none"
+         id="rect8879"
+         width="512"
+         height="512"
+         x="-3584"
+         y="540.36218" />
+      <rect
+         transform="scale(-1,1)"
+         style="fill:none;stroke:none"
+         id="rect8881"
+         width="512"
+         height="512"
+         x="-3584"
+         y="540.36218" />
+      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:none"
+         d="m 3584,540.36216 -512,0 0,512.00004 512,0 z"
+         id="path8883" />
+      <path
+         style="fill:#202020;fill-opacity:1;stroke:none"
+         d="m 3584,540.36216 c -24.5794,0 -49.5761,7.30937 -70.8239,7.77144 -21.2479,0.46207 -38.1471,-7.12745 -58.7032,-6.94255 -20.5562,0.1849 -43.3031,2.86982 -65.3803,2.77742 -22.0772,-0.0924 -42.3819,-2.86937 -62.8914,-3.05421 -20.5095,-0.18484 -41.5428,0.9281 -63.1726,1.11303 -21.6297,0.18493 -47.2094,-0.55945 -68.5717,-0.55945 -21.3624,0 -49.6052,21.33189 -70.0229,20.77736 -20.4177,-0.55453 -52.434,0.88883 -52.434,-21.88304 l 0,512.00004 512,0 z"
+         id="path8885"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="czzzzzzzcccc" />
+      <path
+         style="fill:#7e6129;fill-opacity:1;stroke:none"
+         d="m 3584,668.36216 c -34.9833,0 -41.1885,-0.24592 -67.5252,0 -26.3367,0.24592 -57.0422,31.20503 -81.7014,21.78179 -67.9933,-9.20102 -58.2026,10.89089 -105.1271,10.89089 -46.9246,0 -65.965,-6.26013 -87.0481,-9.51822 -47.3111,-7.31127 -76.8643,28.14765 -116.521,-23.15446 C 3086.4205,617.06005 3093.362,586.1242 3072,584.58104 l 0,467.78116 512,0 z"
+         id="path8887"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="czczszcccc" />
+      <path
+         style="fill:#3c2b0f;fill-opacity:1;stroke:none"
+         d="m 3584,796.36216 c -51.9189,0 -16.4636,40.76839 -83.4336,0 -66.9699,-40.76839 -53.4848,14.55331 -74.8182,14.55331 -21.3334,0 -48.9313,-55.33775 -70.2646,-55.33775 -21.3333,0 -59.0994,23.17136 -80.4327,23.17136 -21.3334,0 -33.0045,49.87068 -55.1918,32.79152 -22.1873,-17.07917 -51.2079,-15.17844 -72.5413,-15.17844 -21.3333,0 -3.2676,-16.89777 -18.0064,-30.10998 -14.7387,-13.21221 12.5917,-74.53638 -57.3114,-97.89002 l 0,384.00004 512,0 z"
+         id="path8889"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="czzzzzzzcccc" />
+      <path
+         style="fill:#2b1d00;fill-opacity:1;stroke:none"
+         d="m 3584,924.36216 c -50.9944,0 -61.5605,-41.34754 -82.8939,-41.34754 -21.3333,0 -49.5514,27.70603 -72.2537,30.44397 -22.7023,2.73794 -32.8729,49.94739 -54.2063,49.94739 -21.3333,0 -56.3092,-65.71057 -77.6425,-65.71057 -21.3333,0 -39.4198,-8.05078 -60.7531,-8.05078 -21.3334,0 -33.9713,-20.1846 -55.3047,-20.1846 -21.3333,0 -31.3623,-17.47415 -47.6686,-17.53889 -16.3063,-0.0647 -6.5662,-178.10236 -47.8562,-259.98952 C 3072,565.31474 3072,540.36216 3072,540.36216 l 0,512.00004 512,0 z"
+         id="path8891"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="czzzzzzzscccc" />
+      <path
+         style="fill:#4d4d4d;stroke:none"
+         d="m 3138.8405,634.77831 49.5079,33.58387 14.8561,-31.14461 32.8195,-56.06488 -52.1951,-0.21513 -22.5249,2.11577 -22.2616,15.43861 z"
+         id="path8893"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+      <path
+         inkscape:transform-center-y="-7.60746"
+         inkscape:transform-center-x="-4.5117784"
+         style="fill:#4d4d4d;stroke:none"
+         d="m 3452.8365,627.02652 14.1061,41.33566 13.5248,-48.57394 52.349,-0.84242 -12.2561,-19.67508 -19.4088,-38.54211 -82.2843,57.565 z"
+         id="path8895"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+      <path
+         sodipodi:nodetypes="cccccccc"
+         inkscape:connector-curvature="0"
+         id="path8897"
+         d="m 3281.8441,598.19166 22.0148,24.62705 -0.9388,45.54347 39.8353,-30.40787 1.7517,-15.31473 7.7619,-25.03933 -35.4185,-6.60539 z"
+         style="fill:#4d4d4d;stroke:none"
+         inkscape:transform-center-x="-10.179393"
+         inkscape:transform-center-y="-3.3360008" />
+    </g>
+    <g
+       id="g8999"
+       transform="scale(-1,1)"
+       inkscape:export-filename="C:\Dropbox\Zobie Game\Art\Zombie\Blocks and Obstacles\32x32\AsphaltDownRight32.png"
+       inkscape:export-xdpi="5.625"
+       inkscape:export-ydpi="5.625">
+      <rect
+         style="fill:none;stroke:none"
+         id="rect9001"
+         width="512"
+         height="512"
+         x="8.4204103e-006"
+         y="540.36218" />
+      <path
+         id="path9003"
+         d="m 5e-6,540.36218 511.999995,0 0,512.00002 -511.999995,0 z"
+         style="fill:none;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         sodipodi:nodetypes="czzzzzzccccc"
+         inkscape:connector-curvature="0"
+         id="path9005"
+         d="m 61.782765,544.24234 c 16.69713,0.3631 43.128465,-0.64669 65.662935,-1.10863 22.53446,-0.46191 47.46592,-1.57051 69.54308,-1.66292 22.07716,-0.0924 42.3819,1.29346 62.89138,1.10862 20.50948,-0.18483 38.13081,-1.68362 59.76057,-1.49869 21.62976,0.18493 48.54002,2.60731 69.90236,2.60731 21.36234,0 36.60213,1.53991 57.01984,0.98538 20.41771,-0.55453 25.78102,-3.23342 65.43707,-4.31123 l 0,512.00002 -511.999995,0 0,-448.09575 c 0,-63.90427 26.35581,-63.90427 61.78276,-60.02411 z"
+         style="fill:#202020;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="cczszccczzzzzzc"
+         inkscape:connector-curvature="0"
+         id="path9007"
+         d="m 78.693385,684.53224 c 25.170345,0.24592 83.503575,-6.74682 107.070685,-16.17006 64.98204,-9.20102 65.97522,74.0551 104.29252,49.66844 38.31731,-24.38667 -10.84667,-54.56511 82.63582,-49.66844 38.49734,2.01651 45.27982,-20.06261 71.09323,-12.78958 25.81341,7.27302 27.28315,11.72812 68.21436,12.78958 l 0,384.00002 -512,0 c 0,0 9.0244044,-133.70935 9.0333949,-142.39541 0.00899,-8.68605 -0.7153654,-37.0878 0.053944,-52.11633 0.7693094,-15.02853 5.0553801,-26.1219 5.8143801,-32.43861 0.759,-6.31671 4.989048,-30.63654 4.989048,-38.27628 0,-7.63973 -5.150908,-17.34272 -4.358181,-24.4847 0.792727,-7.14198 7.127999,1.09376 7.142149,-22.33608 0.01415,-23.42984 35.57708,-51.81694 56.01865,-55.78255 z"
+         style="fill:#7e6129;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="czzzzzzccccccccc"
+         inkscape:connector-curvature="0"
+         id="path9009"
+         d="m 92.95653,796.36218 c 9.88703,0.12729 54.87335,-34.81859 75.2619,-34.81859 20.38856,0 16.28702,55.48233 36.67558,55.48233 20.38854,0 60.10888,-56.74777 80.49744,-56.74777 20.38855,0 34.32922,36.08403 54.71778,36.08403 20.38855,0 33.66606,26.65297 54.05461,26.65297 20.38856,0 40.27823,-17.97886 60.28109,-26.65297 20.00286,-8.67411 13.3572,0 57.55507,0 l 0,256.00002 -512,0 c 4.5471133,-31.7562 3.0811303,-72.5321 13.64134,-95.26868 0,0 1.294075,-23.99734 3.589755,-32.50793 13.218137,-9.002 23.258838,-16.656 14.415914,-24.70618 -0.0256,-3.34304 -6.778431,-17.08102 -6.778431,-17.08102 L 22.674735,863.40615 C 21.858615,853.1652 42.85063,792.27812 92.95653,796.36218 z"
+         style="fill:#3c2b0f;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="czzzzzzzccccccc"
+         inkscape:connector-curvature="0"
+         id="path9011"
+         d="m 56.080265,928.29399 c 22.97179,5.96196 44.347615,-3.93181 59.024415,-3.93181 14.67677,0 26.68205,-2.73794 48.37894,0 21.69689,2.73794 55.54812,28.32751 75.93667,28.32751 20.38854,0 42.80582,-28.32751 63.19437,-28.32751 20.38857,0 29.63733,19.34366 50.02588,19.34366 20.38857,0 33.22486,-38.68732 53.61342,-38.68732 20.38856,0 26.29443,83.6739 51.00198,69.63717 C 481.9635,960.61896 487.2503,924.36218 512,924.36218 l 0,128.00002 -512,0 c 0,-16.609 0.46468965,-16.9635 -0.12049528,-28.7942 -0.13531,-5.1191 3.72472998,-16.5543 3.72472998,-16.5543 l 0,-11.95424 c 2.14503,-34.70059 33.7137803,-57.35597 52.4760303,-66.76547 z"
+         style="fill:#2b1d00;fill-opacity:1;stroke:none" />
+      <path
+         style="fill:#4d4d4d;stroke:none"
+         d="m 64.753788,586.99584 37.518172,-4.08395 30.00149,27.1782 -37.029227,17.7981 13.652787,31.32965 -29.512527,-13.46404 -5.073702,-43.79778 z"
+         id="path9013"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9015"
+         d="m 292.52463,575.46272 -29.50967,32.0687 8.45184,31.25474 -26.47943,-0.83627 -31.91543,-11.63642 19.03679,-23.42482 18.54952,-17.46271 z"
+         style="fill:#4d4d4d;stroke:none"
+         sodipodi:nodetypes="cccccccc" />
+      <path
+         style="fill:#4d4d4d;stroke:none"
+         d="m 419.94424,591.90251 26.05679,-7.19937 25.25471,-20.48524 1.7393,28.44239 15.26553,28.79713 -24.45241,15.27004 -32.28176,-5.1 z"
+         id="path9017"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+    </g>
+  </g>
+</svg>

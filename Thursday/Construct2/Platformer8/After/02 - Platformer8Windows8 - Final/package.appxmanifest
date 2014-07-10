@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="b4c9dcf0-64d3-45dd-b984-2d101074e2c2" Version="1.0.0.0" Publisher="CN=bstateha" />
+  <Properties>
+    <DisplayName>Platformer8</DisplayName>
+    <Description>Help 8 get to the Microsoft Surface!</Description>
+    <PublisherDisplayName>Bret Stateham</PublisherDisplayName>
+    <Logo>app-storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.0</OSMinVersion>
+    <OSMaxVersionTested>6.2.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="index.html">
+      <VisualElements DisplayName="Platformer8" Logo="app-logo.png" SmallLogo="app-smalllogo.png" Description="Help 8 get to the Microsoft Surface!" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="splashscreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+</Package>
