@@ -5,6 +5,8 @@ What does *scaling* mean?  If you run your web app on one single web server and 
 
 What does *cache* mean?  Dictionary.com says: *a hiding place, especially one in the ground, for ammunition, food, treasures, etc.*  When you cache data, you store it in a special place so you can quickly retrieve it later.  Databases are typically very slow because they persist data to disk.  However, they're reliable.  In addition to storing data in a database, you can also cache it to speed up performance.
 
+Latency numbers every programmer should know: https://gist.github.com/jboner/2841832.
+
 ### Scaling ###
 
 Let's get scaling out of the way first.  Luckily, one benefit of PaaS is that scaling is very simple:
@@ -100,6 +102,7 @@ client.hkeys("hash key", function (err, replies) {
 ```
 
 6. Run the code.  This creates a client to the Redis server you already have running.  The native Redis commands are mapped to functions on the `client` object.
+7. Documentation for the `redis` npm module is here: https://github.com/mranney/node_redis.
 
 
 Continue learning Redis with this interactive tutorial: http://try.redis.io/.
