@@ -26,6 +26,17 @@ Skybiometry is a company that offers an API which provides facial recogition ser
 
 ![](ScreenShots/ss1.png)
 
+### Creating a Namespace
+
+You need to create a namespace after you sign up. On the account under **namespaces** click **create a new namespace**.
+
+
+![](ScreenShots/ss0.png)
+
+
+![](ScreenShots/ss0-2.png)
+
+Although you can call it whatever you want, be sure to call the namespace **mainnamespace** or the code samples **will not work**.
 
 ### Setting up Visual Studio Solution
 
