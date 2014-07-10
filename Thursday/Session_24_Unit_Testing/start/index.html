@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator Unit Tests</title>
+    <link rel="stylesheet" href="./css/vender/mocha.css" />
+</head>
+<body>
+    <div id="mocha"></div>
+	<script src="./js/vender/expect.js"></script>
+	<script src="./js/vender/mocha.js"></script>
+	<script src="./js/calculator.js"></script>
+    <script>mocha.setup("bdd");</script>
+	<script src="./test/calculator-tests.js"></script>
+    <script>
+        mocha.ignoreLeaks();
+        mocha.run();
+    </script>
+</body>
+</html>
