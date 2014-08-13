@@ -37,7 +37,7 @@ Now take a look at **app.js**, it has a few subtle differences from our previous
 
 **app.js**
 
-    
+```js
     
 	/**
 	 * Module dependencies.
@@ -80,7 +80,7 @@ Now take a look at **app.js**, it has a few subtle differences from our previous
 	//END REGULAR HTTP ROUTES
 	
 	app.listen(app.get('port'));
-
+```
 
 Everything is almost the same as before except a couple things. First off the require to express is actually a require to **express.io** module.
 
