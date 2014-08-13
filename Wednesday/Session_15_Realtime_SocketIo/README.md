@@ -101,7 +101,7 @@ This will start our express server on the port number specified by the app.set('
 
 This lab will use Express jade templates to create the front-end client using [Server-side rendering](http://openmymind.net/2012/5/30/Client-Side-vs-Server-Side-Rendering/). The starter project already has the **index.jade** view created. This view just contains a jumbotron, two input text boxes, a 'join' button and a tiny amount of in-line javascript to navigate to the **rooms** route that we will go to once the button is clicked.
 
-    
+```jade  
     extends layout
 
 	block title
@@ -126,9 +126,9 @@ This lab will use Express jade templates to create the front-end client using [S
 	           window.location = 'rooms/' + $('#roomTextBox').val() + '?username=' + $('#usernameTextBox').val();
 	           return;
 	        });
-
+```
 The page layout is already created for you and is very similar to the **layout.jade** from the  [NodeRecipes](../../Tuesday/Session_10_Express1/README.md) lab. First it pulls in references to bootstrap and the socket.io client side library. It contains a bootstrap [**navbar**](http://getbootstrap.com/components/#navbar) controller and extendable blocks for **title** and **content** for *extension views*.
-
+```jade
     doctype html
 	html
 	  head
@@ -156,7 +156,7 @@ The page layout is already created for you and is very similar to the **layout.j
 	                                a(href='/') Join Room
 	      block title
 	      block content
-
+```
 ### Creating the home page (http) route
 
 However we don't have our default route setup to show this view. To do this we add a route to our **//BEGIN HTTP ROUTES** section of **app.js**. This time, for brevity, we will define the route handler within the file. Although best practice is to break it out to a different file like the previous labs.
