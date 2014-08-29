@@ -243,6 +243,7 @@ This will parse the content into a javascript object which allows us to easily u
 
 Putting it all together:
 
+```js
 	var http = require('http');
 	var fs = require('fs');
 	var port = process.env.PORT || 1337;
@@ -268,7 +269,7 @@ Putting it all together:
 	    );
 	}).listen(port);
 
-
+```
 
 
 And there's your crash course. Tuesday we will use JSON more extensively in Tuesday's lab with Express to create a web application.
