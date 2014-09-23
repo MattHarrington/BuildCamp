@@ -289,7 +289,7 @@ Add a reference to **data.js**, our data source for recipes:
 
 **recipes.js**
 ```js
-	var recipies = require('../data/recipesData.js');
+	var recipies = require('../data/recipeData.js');
 
 	exports.list = function (req, res) {	
 
