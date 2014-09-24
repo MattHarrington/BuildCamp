@@ -36,8 +36,7 @@ You need to create a namespace after you sign up. On the account under **namespa
 
 ![](ScreenShots/ss0-2.png)
 
-Although you can call it whatever you want, be sure to call the namespace **mainnamespace** or the code samples **will not work**.
-
+You can call it whatever you want but note that the namespace name must be unique to all other namespaces. The code example uses the namespace name **mainnamespace**
 ### Setting up Visual Studio Solution
 
 Open up the starter project, [StartProject/FacialRecognitionLab/FacialRecognitionLab.sln](StartProject/FacialRecognitionLab/FacialRecognitionLab.sln) and ensure to **install the missing npm packages**:
