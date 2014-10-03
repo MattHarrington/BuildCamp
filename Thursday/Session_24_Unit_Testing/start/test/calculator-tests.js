@@ -10,4 +10,11 @@ describe("Calculator", function () {
             expect(calculator.add(1, 1)).to.be(2);
         });
     });
+
+    describe("Subtract", function () {
+        it("should return the difference of both operands", function () {
+            expect(calculator.subtract(5, 3)).to.be(2);
+        });
+    });
+
 });
