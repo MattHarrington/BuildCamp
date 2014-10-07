@@ -15,3 +15,7 @@ You should spend some time learning JavaScript before arriving. A great resource
 
 ## What to do now ##
 Your first task in BuildCamp is to clone this repository. This gives you a local copy of it on your own computer so you can follow along. It also gives you the code samples.
+
+Added by mbhdavis.
+
+More added by mbhdavis.
