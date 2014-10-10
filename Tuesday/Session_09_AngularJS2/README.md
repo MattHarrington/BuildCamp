@@ -177,12 +177,9 @@ Ok, so we have a position, but that's kind of a boring display.  Let's put it on
 
 	bartNowApp.directive("bartMap", function () {
 
-	  //Initialize a variable to reference the Bing map control.
-	  var map;
-
 	  return {
 		 restrict: 'A', //require the bart-map "A"ttribute on the target element
-		 link: function (scope, elem, attrs) {
+		 link: function (scope, elem) {
 
 			var map = null;
 			var stationPinLayer = new Microsoft.Maps.EntityCollection();
@@ -244,7 +241,7 @@ Ok, so we have a position, but that's kind of a boring display.  Let's put it on
 			  }
 			});
 		 }
-	  }
+	  };
 	});
 
 	//Create the MainCtrl Controller...
